@@ -311,6 +311,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/femcn.github.io/2020/07/15/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/femcn.github.io/2020/07/15/hello-world/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -378,8 +388,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/femcn.github.io/2020/07/23/article-title/" rel="prev" title="My first blog">
-                My first blog <i class="fa fa-chevron-right"></i>
+              <a href="/femcn.github.io/2020/08/04/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" rel="prev" title="搭建博客时遇到的问题">
+                搭建博客时遇到的问题 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -408,6 +418,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
 
   
 
@@ -699,6 +716,43 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'femcn',
+            repo: 'femcn.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'e06a3e9afb8a1f9e2daf32efc34436d39ddfdf1e',
+            
+                client_id: '66be804dba013f733606'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
 
 
 
