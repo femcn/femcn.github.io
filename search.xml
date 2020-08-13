@@ -1,6 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>java note</title>
+    <url>/femcn.github.io/2020/08/12/java-note/</url>
+    <content><![CDATA[<h2 id="java的学习之路"><a href="#java的学习之路" class="headerlink" title="java的学习之路"></a>java的学习之路</h2><h3 id="java开发的集成环境IDE下载"><a href="#java开发的集成环境IDE下载" class="headerlink" title="java开发的集成环境IDE下载"></a>java开发的集成环境IDE下载</h3><h4 id="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）"><a href="#1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）" class="headerlink" title="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）"></a>1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）</h4><p>教程直接看这篇博客，讲的很清楚了：<a href="https://blog.csdn.net/qq_38436214/article/details/105071088" target="_blank" rel="noopener">https://blog.csdn.net/qq_38436214/article/details/105071088</a></p>
+<h4 id="2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）"><a href="#2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）" class="headerlink" title="2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [https://www.jetbrains.com/idea/]选择社区版（免费）"></a>2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [<a href="https://www.jetbrains.com/idea/]选择社区版（免费）" target="_blank" rel="noopener">https://www.jetbrains.com/idea/]选择社区版（免费）</a></h4><ul>
+<li><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%871.png" class title="图片1">选右边那个</li>
+<li>下载后双击下载好的程序，点next，选安装路径，选操作位数</li>
+<li><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%872.png" class title="图片2">其他不用多选</li>
+<li>继续点next，直接点安装</li>
+<li>等待安装完成</li>
+</ul>
+<h4 id="3、IDEA初次使用"><a href="#3、IDEA初次使用" class="headerlink" title="3、IDEA初次使用"></a>3、IDEA初次使用</h4><ul>
+<li>启动后点已阅读，点don’t send</li>
+<li>选择主题<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%873.png" class title="图片3">点next</li>
+<li>直接点next<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%874.png" class title="图片4"></li>
+<li>点右下start开始使用<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%875.png" class title="图片5"></li>
+<li>new project后进入主页面<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%876.png" class title="图片6"></li>
+<li>展开左边侧栏，右键src，新建一个 package<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%877.png" class title="图片7"></li>
+<li>右键刚才新建的package，新建一个class<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%878.png" class title="图片8"></li>
+<li>写下代码<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%879.png" class title="图片9"></li>
+<li>点run<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8710.png" class title="图片10"><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8711.png" class title="图片11"></li>
+</ul>
+<h3 id="java基本概念"><a href="#java基本概念" class="headerlink" title="java基本概念"></a>java基本概念</h3><h4 id="1、JVM：Java-虚拟机（JVM）是运行-Java-字节码-JVM-可以理解的代码-的虚拟机。JVM-有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的-JVM-实现，是-Java-语言“一次编译，随处可以运行”的关键所在。"><a href="#1、JVM：Java-虚拟机（JVM）是运行-Java-字节码-JVM-可以理解的代码-的虚拟机。JVM-有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的-JVM-实现，是-Java-语言“一次编译，随处可以运行”的关键所在。" class="headerlink" title="1、JVM：Java 虚拟机（JVM）是运行 Java 字节码(JVM 可以理解的代码)的虚拟机。JVM 有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM 实现，是 Java 语言“一次编译，随处可以运行”的关键所在。"></a>1、JVM：Java 虚拟机（JVM）是运行 Java 字节码(JVM 可以理解的代码)的虚拟机。JVM 有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM 实现，是 Java 语言“一次编译，随处可以运行”的关键所在。</h4><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8712.png" class title="图片12">
+
+<h4 id="2、JDK和JRE："><a href="#2、JDK和JRE：" class="headerlink" title="2、JDK和JRE："></a>2、JDK和JRE：</h4><h4 id="JDK-Java-Development-Kit，它是功能齐全的-Java-SDK-软件开发工具包-。它拥有-JRE-所拥有的一切，还有编译器（javac）和工具（如-javadoc-和-jdb）。它能够创建和编译程序。"><a href="#JDK-Java-Development-Kit，它是功能齐全的-Java-SDK-软件开发工具包-。它拥有-JRE-所拥有的一切，还有编译器（javac）和工具（如-javadoc-和-jdb）。它能够创建和编译程序。" class="headerlink" title="JDK: Java Development Kit，它是功能齐全的 Java SDK(软件开发工具包)。它拥有 JRE 所拥有的一切，还有编译器（javac）和工具（如 javadoc 和 jdb）。它能够创建和编译程序。"></a>JDK: Java Development Kit，它是功能齐全的 Java SDK(软件开发工具包)。它拥有 JRE 所拥有的一切，还有编译器（javac）和工具（如 javadoc 和 jdb）。它能够创建和编译程序。</h4><h4 id="JRE-Java-运行时环境。它是运行已编译-Java-程序所需的所有内容的集合，包括-Java-虚拟机（JVM），Java-类库，java-命令和其他的一些基础构件。但是，它不能用于创建新程序。"><a href="#JRE-Java-运行时环境。它是运行已编译-Java-程序所需的所有内容的集合，包括-Java-虚拟机（JVM），Java-类库，java-命令和其他的一些基础构件。但是，它不能用于创建新程序。" class="headerlink" title="JRE: Java 运行时环境。它是运行已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，java 命令和其他的一些基础构件。但是，它不能用于创建新程序。"></a>JRE: Java 运行时环境。它是运行已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，java 命令和其他的一些基础构件。但是，它不能用于创建新程序。</h4><h4 id="3、为什么说java语言“编译与解释并存”？"><a href="#3、为什么说java语言“编译与解释并存”？" class="headerlink" title="3、为什么说java语言“编译与解释并存”？"></a>3、为什么说java语言“编译与解释并存”？</h4><h4 id="高级编程语言按照程序的执行方式分为编译型和解释型两种。"><a href="#高级编程语言按照程序的执行方式分为编译型和解释型两种。" class="headerlink" title="高级编程语言按照程序的执行方式分为编译型和解释型两种。"></a>高级编程语言按照程序的执行方式分为编译型和解释型两种。</h4><h4 id="简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。"><a href="#简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。" class="headerlink" title="简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。"></a>简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。</h4><h4 id="比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读，-有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。"><a href="#比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读，-有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。" class="headerlink" title="比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读， 有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。"></a>比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读， 有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。</h4><h4 id="Java-程序要经过先编译，后解释两个步骤，由-Java-编写的程序需要先经过编译步骤，生成字节码（-class-文件），这种字节码必须由-Java-解释器来解释执行。因此，我们可以认为-Java-语言编译与解释并存。"><a href="#Java-程序要经过先编译，后解释两个步骤，由-Java-编写的程序需要先经过编译步骤，生成字节码（-class-文件），这种字节码必须由-Java-解释器来解释执行。因此，我们可以认为-Java-语言编译与解释并存。" class="headerlink" title="Java 程序要经过先编译，后解释两个步骤，由 Java 编写的程序需要先经过编译步骤，生成字节码（*.class 文件），这种字节码必须由 Java 解释器来解释执行。因此，我们可以认为 Java 语言编译与解释并存。"></a>Java 程序要经过先编译，后解释两个步骤，由 Java 编写的程序需要先经过编译步骤，生成字节码（*.class 文件），这种字节码必须由 Java 解释器来解释执行。因此，我们可以认为 Java 语言编译与解释并存。</h4>]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+  </entry>
+  <entry>
     <title>搭建博客时遇到的问题</title>
     <url>/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<h2 id="1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"><a href="#1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）" class="headerlink" title="1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"></a>1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）</h2><h3 id="解决办法：先清除缓存，再部署网站，建议养成此习惯"><a href="#解决办法：先清除缓存，再部署网站，建议养成此习惯" class="headerlink" title="解决办法：先清除缓存，再部署网站，建议养成此习惯"></a><strong>解决办法：先清除缓存，再部署网站，建议养成此习惯</strong></h3><h4 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="- hexo clean"></a>- hexo clean</h4><h4 id="hexo-g"><a href="#hexo-g" class="headerlink" title="- hexo g"></a>- hexo g</h4><h4 id="hexo-s"><a href="#hexo-s" class="headerlink" title="- hexo s"></a>- hexo s</h4><hr>
@@ -23,33 +52,6 @@
 <h2 id="6、博客文章上插入图片"><a href="#6、博客文章上插入图片" class="headerlink" title="6、博客文章上插入图片"></a>6、博客文章上插入图片</h2><h3 id="1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true"><a href="#1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true" class="headerlink" title="1、把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true"></a>1、把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></h3><h3 id="2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件"><a href="#2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件" class="headerlink" title="2、在你的hexo目录下执行这样一句话npm install https://github.com/7ym0n/hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件"></a>2、在你的hexo目录下执行这样一句话<strong>npm install <a href="https://github.com/7ym0n/hexo-asset-image" target="_blank" rel="noopener">https://github.com/7ym0n/hexo-asset-image</a> –save</strong>，这是下载安装一个可以上传本地图片的插件</h3><h3 id="3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹"><a href="#3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹" class="headerlink" title="3、等待一小段时间后，再运行hexo n &quot;xxxx&quot;来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹"></a>3、等待一小段时间后，再运行<code>hexo n &quot;xxxx&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个<strong>同名的文件夹</strong></h3><h3 id="4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"><a href="#4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是" class="headerlink" title="4、最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"></a>4、最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是<img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%876.png" class title="图片6"></h3>]]></content>
       <categories>
         <category>blog</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>java note</title>
-    <url>/femcn.github.io/2020/08/12/java-note/</url>
-    <content><![CDATA[<h2 id="java的学习之路"><a href="#java的学习之路" class="headerlink" title="java的学习之路"></a>java的学习之路</h2><h3 id="java开发的集成环境IDE下载"><a href="#java开发的集成环境IDE下载" class="headerlink" title="java开发的集成环境IDE下载"></a>java开发的集成环境IDE下载</h3><h4 id="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）"><a href="#1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）" class="headerlink" title="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）"></a>1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）</h4><p>教程直接看这篇博客，讲的很清楚了：<a href="https://blog.csdn.net/qq_38436214/article/details/105071088" target="_blank" rel="noopener">https://blog.csdn.net/qq_38436214/article/details/105071088</a></p>
-<h4 id="2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）"><a href="#2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）" class="headerlink" title="2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [https://www.jetbrains.com/idea/]选择社区版（免费）"></a>2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [<a href="https://www.jetbrains.com/idea/]选择社区版（免费）" target="_blank" rel="noopener">https://www.jetbrains.com/idea/]选择社区版（免费）</a></h4><ul>
-<li><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%871.png" class title="图片1">选右边那个</li>
-<li>下载后双击下载好的程序，点next，选安装路径，选操作位数</li>
-<li><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%872.png" class title="图片2">其他不用多选</li>
-<li>继续点next，直接点安装</li>
-<li>等待安装完成</li>
-</ul>
-<h4 id="3、IDEA初次使用"><a href="#3、IDEA初次使用" class="headerlink" title="3、IDEA初次使用"></a>3、IDEA初次使用</h4><ul>
-<li>启动后点已阅读，点don’t send</li>
-<li>选择主题<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%873.png" class title="图片3">点next</li>
-<li>直接点next<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%874.png" class title="图片4"></li>
-<li>点右下start开始使用<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%875.png" class title="图片5"></li>
-<li>new project后进入主页面<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%876.png" class title="图片6"></li>
-<li>展开左边侧栏，右键src，新建一个 package<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%877.png" class title="图片7"></li>
-<li>右键刚才新建的package，新建一个class<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%878.png" class title="图片8"></li>
-<li>写下代码<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%879.png" class title="图片9"></li>
-<li>点run<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8710.png" class title="图片10"><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8711.png" class title="图片11"></li>
-</ul>
-]]></content>
-      <categories>
-        <category>java</category>
       </categories>
   </entry>
   <entry>
