@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/femcn.github.io/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/femcn.github.io/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/femcn.github.io/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/femcn.github.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/femcn.github.io/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/femcn.github.io/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/femcn.github.io/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/femcn.github.io/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/femcn.github.io/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="注：我这里的Next主题版本是5.1.4，如果不行可能版本不同，可以去Next官网看教程评论系统选择:Valine配置步骤：1、注册LeanCloud：https:&#x2F;&#x2F;leancloud.cn&#x2F;dashboard&#x2F;login.html#&#x2F;signup，然后在账号设置那里实名认证    2、创建应用  名称自己起，选开发版  点这里的齿轮图标进入设置  点安全中心，服务开关留下数据存储就行，其他可以">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo博客添加评论功能">
+<meta property="og:url" content="https://femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/index.html">
+<meta property="og:site_name" content="Femcn&#39;s Blogs">
+<meta property="og:description" content="注：我这里的Next主题版本是5.1.4，如果不行可能版本不同，可以去Next官网看教程评论系统选择:Valine配置步骤：1、注册LeanCloud：https:&#x2F;&#x2F;leancloud.cn&#x2F;dashboard&#x2F;login.html#&#x2F;signup，然后在账号设置那里实名认证    2、创建应用  名称自己起，选开发版  点这里的齿轮图标进入设置  点安全中心，服务开关留下数据存储就行，其他可以">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%871.png">
+<meta property="og:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%872.png">
+<meta property="og:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%873.png">
+<meta property="og:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%874.png">
+<meta property="og:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%875.png">
+<meta property="og:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%876.png">
+<meta property="og:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%877.png">
+<meta property="og:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%878.png">
+<meta property="og:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%879.png">
+<meta property="og:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%8710.png">
+<meta property="og:updated_time" content="2020-09-08T07:13:21.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%871.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/femcn.github.io/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://femcn.github.io/2020/09/08/hexo博客添加评论功能/"/>
+
+
+
+
+
+
+  <title>hexo博客添加评论功能 | Femcn's Blogs</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/femcn.github.io/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Femcn's Blogs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/femcn.github.io/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/femcn.github.io/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/femcn.github.io/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/femcn.github.io/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/femcn.github.io/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://femcn.github.io/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="femcn">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/femcn.github.io/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Femcn's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">hexo博客添加评论功能</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-09-08T15:13:21+08:00">
+                2020-09-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/femcn.github.io/categories/blog/" itemprop="url" rel="index">
+                    <span itemprop="name">blog</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/" class="leancloud_visitors" data-flag-title="hexo博客添加评论功能">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  285
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  1
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="注：我这里的Next主题版本是5-1-4，如果不行可能版本不同，可以去Next官网看教程"><a href="#注：我这里的Next主题版本是5-1-4，如果不行可能版本不同，可以去Next官网看教程" class="headerlink" title="注：我这里的Next主题版本是5.1.4，如果不行可能版本不同，可以去Next官网看教程"></a>注：我这里的Next主题版本是5.1.4，如果不行可能版本不同，可以去Next官网看教程</h3><h3 id="评论系统选择-Valine"><a href="#评论系统选择-Valine" class="headerlink" title="评论系统选择:Valine"></a>评论系统选择:Valine</h3><h3 id="配置步骤："><a href="#配置步骤：" class="headerlink" title="配置步骤："></a>配置步骤：</h3><h3 id="1、注册LeanCloud：https-leancloud-cn-dashboard-login-html-signup，然后在账号设置那里实名认证"><a href="#1、注册LeanCloud：https-leancloud-cn-dashboard-login-html-signup，然后在账号设置那里实名认证" class="headerlink" title="1、注册LeanCloud：https://leancloud.cn/dashboard/login.html#/signup，然后在账号设置那里实名认证"></a>1、注册LeanCloud：<a href="https://leancloud.cn/dashboard/login.html#/signup，然后在账号设置那里实名认证" target="_blank" rel="noopener">https://leancloud.cn/dashboard/login.html#/signup，然后在账号设置那里实名认证</a></h3><img src="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<img src="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%872.png" class title="图片2">
+
+<h3 id="2、创建应用"><a href="#2、创建应用" class="headerlink" title="2、创建应用"></a>2、创建应用</h3><img src="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%873.png" class title="图片3">
+
+<h3 id="名称自己起，选开发版"><a href="#名称自己起，选开发版" class="headerlink" title="名称自己起，选开发版"></a>名称自己起，选开发版</h3><img src="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%874.png" class title="图片4">
+
+<h3 id="点这里的齿轮图标进入设置"><a href="#点这里的齿轮图标进入设置" class="headerlink" title="点这里的齿轮图标进入设置"></a>点这里的齿轮图标进入设置</h3><img src="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%875.png" class title="图片5">
+
+<h3 id="点安全中心，服务开关留下数据存储就行，其他可以关掉，下面的web安全域名把你的博客网址粘贴进去"><a href="#点安全中心，服务开关留下数据存储就行，其他可以关掉，下面的web安全域名把你的博客网址粘贴进去" class="headerlink" title="点安全中心，服务开关留下数据存储就行，其他可以关掉，下面的web安全域名把你的博客网址粘贴进去"></a>点安全中心，服务开关留下数据存储就行，其他可以关掉，下面的web安全域名把你的博客网址粘贴进去</h3><img src="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%876.png" class title="图片6">
+
+<h3 id="点应用Keys-准备复制id和key"><a href="#点应用Keys-准备复制id和key" class="headerlink" title="点应用Keys,准备复制id和key"></a>点应用Keys,准备复制id和key</h3><img src="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%877.png" class title="图片7">
+
+<h3 id="3、修改配置文件"><a href="#3、修改配置文件" class="headerlink" title="3、修改配置文件"></a>3、修改配置文件</h3><h3 id="进入主题配置文件-themes-next-config-yml-ctrl加F找到valine-enable后面改成true-然后粘贴id和key"><a href="#进入主题配置文件-themes-next-config-yml-ctrl加F找到valine-enable后面改成true-然后粘贴id和key" class="headerlink" title="进入主题配置文件\themes\next\_config.yml,ctrl加F找到valine,enable后面改成true,然后粘贴id和key"></a>进入主题配置文件<code>\themes\next\_config.yml</code>,ctrl加F找到valine,enable后面改成true,然后粘贴id和key</h3><img src="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%878.png" class title="图片8">
+
+<h3 id="保存再部署上传，评论设置到这里就完成了"><a href="#保存再部署上传，评论设置到这里就完成了" class="headerlink" title="保存再部署上传，评论设置到这里就完成了"></a>保存再部署上传，评论设置到这里就完成了</h3><h3 id="下面是阅读次数功能设置，自带的不蒜子统计也有，选一个来用就行"><a href="#下面是阅读次数功能设置，自带的不蒜子统计也有，选一个来用就行" class="headerlink" title="下面是阅读次数功能设置，自带的不蒜子统计也有，选一个来用就行"></a>下面是阅读次数功能设置，自带的不蒜子统计也有，选一个来用就行</h3><h3 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h3><h3 id="1、回到刚才的leancloud网站，点击存储，创建一个class，名字必须是counter"><a href="#1、回到刚才的leancloud网站，点击存储，创建一个class，名字必须是counter" class="headerlink" title="1、回到刚才的leancloud网站，点击存储，创建一个class，名字必须是counter"></a>1、回到刚才的leancloud网站，点击存储，创建一个class，名字必须是counter</h3><img src="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%879.png" class title="图片9">
+
+<h3 id="2、回到主题配置文件，找到leancloud-visitors，同样enable设置成true-粘贴id和key-保存后再部署上传就完成了"><a href="#2、回到主题配置文件，找到leancloud-visitors，同样enable设置成true-粘贴id和key-保存后再部署上传就完成了" class="headerlink" title="2、回到主题配置文件，找到leancloud_visitors，同样enable设置成true,粘贴id和key,保存后再部署上传就完成了"></a>2、回到主题配置文件，找到leancloud_visitors，同样enable设置成true,粘贴id和key,保存后再部署上传就完成了</h3><img src="/femcn.github.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%8710.png" class title="图片10">
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/femcn.github.io/2020/09/07/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%92%9C%E5%AD%90%E8%AE%BF%E5%AE%A2%E7%BB%9F%E8%AE%A1/" rel="next" title="Hexo博客添加不蒜子访客统计">
+                <i class="fa fa-chevron-left"></i> Hexo博客添加不蒜子访客统计
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/femcn.github.io/2020/09/12/%E5%B8%B8%E7%94%A8%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/" rel="prev" title="常用搜索方式">
+                常用搜索方式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/femcn.github.io/images/avatar.jpg"
+                alt="femcn" />
+            
+              <p class="site-author-name" itemprop="name">femcn</p>
+              <p class="site-description motion-element" itemprop="description">less is more</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/femcn.github.io/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">10</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/femcn.github.io/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/femcn" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:1402892792@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#注：我这里的Next主题版本是5-1-4，如果不行可能版本不同，可以去Next官网看教程"><span class="nav-number">1.</span> <span class="nav-text">注：我这里的Next主题版本是5.1.4，如果不行可能版本不同，可以去Next官网看教程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评论系统选择-Valine"><span class="nav-number">2.</span> <span class="nav-text">评论系统选择:Valine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#配置步骤："><span class="nav-number">3.</span> <span class="nav-text">配置步骤：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1、注册LeanCloud：https-leancloud-cn-dashboard-login-html-signup，然后在账号设置那里实名认证"><span class="nav-number">4.</span> <span class="nav-text">1、注册LeanCloud：https://leancloud.cn/dashboard/login.html#/signup，然后在账号设置那里实名认证</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、创建应用"><span class="nav-number">5.</span> <span class="nav-text">2、创建应用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#名称自己起，选开发版"><span class="nav-number">6.</span> <span class="nav-text">名称自己起，选开发版</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#点这里的齿轮图标进入设置"><span class="nav-number">7.</span> <span class="nav-text">点这里的齿轮图标进入设置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#点安全中心，服务开关留下数据存储就行，其他可以关掉，下面的web安全域名把你的博客网址粘贴进去"><span class="nav-number">8.</span> <span class="nav-text">点安全中心，服务开关留下数据存储就行，其他可以关掉，下面的web安全域名把你的博客网址粘贴进去</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#点应用Keys-准备复制id和key"><span class="nav-number">9.</span> <span class="nav-text">点应用Keys,准备复制id和key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、修改配置文件"><span class="nav-number">10.</span> <span class="nav-text">3、修改配置文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#进入主题配置文件-themes-next-config-yml-ctrl加F找到valine-enable后面改成true-然后粘贴id和key"><span class="nav-number">11.</span> <span class="nav-text">进入主题配置文件\themes\next\_config.yml,ctrl加F找到valine,enable后面改成true,然后粘贴id和key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#保存再部署上传，评论设置到这里就完成了"><span class="nav-number">12.</span> <span class="nav-text">保存再部署上传，评论设置到这里就完成了</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下面是阅读次数功能设置，自带的不蒜子统计也有，选一个来用就行"><span class="nav-number">13.</span> <span class="nav-text">下面是阅读次数功能设置，自带的不蒜子统计也有，选一个来用就行</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#步骤："><span class="nav-number">14.</span> <span class="nav-text">步骤：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1、回到刚才的leancloud网站，点击存储，创建一个class，名字必须是counter"><span class="nav-number">15.</span> <span class="nav-text">1、回到刚才的leancloud网站，点击存储，创建一个class，名字必须是counter</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、回到主题配置文件，找到leancloud-visitors，同样enable设置成true-粘贴id和key-保存后再部署上传就完成了"><span class="nav-number">16.</span> <span class="nav-text">2、回到主题配置文件，找到leancloud_visitors，同样enable设置成true,粘贴id和key,保存后再部署上传就完成了</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2020.8.2 &mdash; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">femcn</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">6.8k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/femcn.github.io/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.github.io/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.github.io/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.github.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.github.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.github.io/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.github.io/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/femcn.github.io/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/femcn.github.io/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/femcn.github.io/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/femcn.github.io/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/femcn.github.io/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/femcn.github.io/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/femcn.github.io/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'femcn',
+            repo: 'femcn.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'e06a3e9afb8a1f9e2daf32efc34436d39ddfdf1e',
+            
+                client_id: '66be804dba013f733606'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'ճ��id',
+        appKey: 'ճ��key',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("ճ��id", "ճ��key");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
