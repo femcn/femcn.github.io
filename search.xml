@@ -26,6 +26,82 @@
       </categories>
   </entry>
   <entry>
+    <title>java note</title>
+    <url>/femcn.github.io/2020/08/12/java-note/</url>
+    <content><![CDATA[<h2 id="java的学习之路"><a href="#java的学习之路" class="headerlink" title="java的学习之路"></a>java的学习之路</h2><h3 id="java开发的集成环境IDE下载"><a href="#java开发的集成环境IDE下载" class="headerlink" title="java开发的集成环境IDE下载"></a>java开发的集成环境IDE下载</h3><h4 id="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https-blog-csdn-net-qq-38436214-article-details-105071088"><a href="#1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https-blog-csdn-net-qq-38436214-article-details-105071088" class="headerlink" title="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https://blog.csdn.net/qq_38436214/article/details/105071088"></a>1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：<a href="https://blog.csdn.net/qq_38436214/article/details/105071088" target="_blank" rel="noopener">https://blog.csdn.net/qq_38436214/article/details/105071088</a></h4><h4 id="2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）"><a href="#2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）" class="headerlink" title="2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [https://www.jetbrains.com/idea/]选择社区版（免费）"></a>2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [<a href="https://www.jetbrains.com/idea/]选择社区版（免费）" target="_blank" rel="noopener">https://www.jetbrains.com/idea/]选择社区版（免费）</a></h4><ul>
+<li><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%871.png" class title="图片1">选右边那个</li>
+<li>下载后双击下载好的程序，点next，选安装路径，选操作位数</li>
+<li><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%872.png" class title="图片2">其他不用多选</li>
+<li>继续点next，直接点安装</li>
+<li>等待安装完成</li>
+</ul>
+<h4 id="3、IDEA初次使用"><a href="#3、IDEA初次使用" class="headerlink" title="3、IDEA初次使用"></a>3、IDEA初次使用</h4><ul>
+<li>启动后点已阅读，点don’t send</li>
+<li>选择主题<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%873.png" class title="图片3">点next</li>
+<li>直接点next<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%874.png" class title="图片4"></li>
+<li>点右下start开始使用<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%875.png" class title="图片5"></li>
+<li>new project后进入主页面<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%876.png" class title="图片6"></li>
+<li>展开左边侧栏，右键src，新建一个 package<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%877.png" class title="图片7"></li>
+<li>右键刚才新建的package，新建一个class<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%878.png" class title="图片8"></li>
+<li>写下代码<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%879.png" class title="图片9"></li>
+<li>点run<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8710.png" class title="图片10"><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8711.png" class title="图片11"></li>
+</ul>
+<h3 id="java基本概念"><a href="#java基本概念" class="headerlink" title="java基本概念"></a>java基本概念</h3><h4 id="1、JVM：Java-虚拟机（JVM）是运行-Java-字节码-JVM-可以理解的代码-的虚拟机。JVM-有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的-JVM-实现，是-Java-语言“一次编译，随处可以运行”的关键所在。"><a href="#1、JVM：Java-虚拟机（JVM）是运行-Java-字节码-JVM-可以理解的代码-的虚拟机。JVM-有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的-JVM-实现，是-Java-语言“一次编译，随处可以运行”的关键所在。" class="headerlink" title="1、JVM：Java 虚拟机（JVM）是运行 Java 字节码(JVM 可以理解的代码)的虚拟机。JVM 有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM 实现，是 Java 语言“一次编译，随处可以运行”的关键所在。"></a>1、JVM：Java 虚拟机（JVM）是运行 Java 字节码(JVM 可以理解的代码)的虚拟机。JVM 有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM 实现，是 Java 语言“一次编译，随处可以运行”的关键所在。</h4><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8712.png" class title="图片12">
+
+
+
+<h4 id="2、JDK和JRE："><a href="#2、JDK和JRE：" class="headerlink" title="2、JDK和JRE："></a>2、JDK和JRE：</h4><h4 id="JDK-Java-Development-Kit，它是功能齐全的-Java-SDK-软件开发工具包-。它拥有-JRE-所拥有的一切，还有编译器（javac）和工具（如-javadoc-和-jdb）。它能够创建和编译程序。"><a href="#JDK-Java-Development-Kit，它是功能齐全的-Java-SDK-软件开发工具包-。它拥有-JRE-所拥有的一切，还有编译器（javac）和工具（如-javadoc-和-jdb）。它能够创建和编译程序。" class="headerlink" title="JDK: Java Development Kit，它是功能齐全的 Java SDK(软件开发工具包)。它拥有 JRE 所拥有的一切，还有编译器（javac）和工具（如 javadoc 和 jdb）。它能够创建和编译程序。"></a>JDK: Java Development Kit，它是功能齐全的 Java SDK(软件开发工具包)。它拥有 JRE 所拥有的一切，还有编译器（javac）和工具（如 javadoc 和 jdb）。它能够创建和编译程序。</h4><h4 id="JRE-Java-运行时环境。它是运行已编译-Java-程序所需的所有内容的集合，包括-Java-虚拟机（JVM），Java-类库，java-命令和其他的一些基础构件。但是，它不能用于创建新程序。"><a href="#JRE-Java-运行时环境。它是运行已编译-Java-程序所需的所有内容的集合，包括-Java-虚拟机（JVM），Java-类库，java-命令和其他的一些基础构件。但是，它不能用于创建新程序。" class="headerlink" title="JRE: Java 运行时环境。它是运行已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，java 命令和其他的一些基础构件。但是，它不能用于创建新程序。"></a>JRE: Java 运行时环境。它是运行已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，java 命令和其他的一些基础构件。但是，它不能用于创建新程序。</h4><h4 id="3、为什么说java语言“编译与解释并存”？"><a href="#3、为什么说java语言“编译与解释并存”？" class="headerlink" title="3、为什么说java语言“编译与解释并存”？"></a>3、为什么说java语言“编译与解释并存”？</h4><h4 id="高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读，-有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java-程序要经过先编译，后解释两个步骤，由-Java-编写的程序需要先经过编译步骤，生成字节码（-class-文件），这种字节码必须由-Java-解释器来解释执行。因此，我们可以认为-Java-语言编译与解释并存。"><a href="#高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读，-有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java-程序要经过先编译，后解释两个步骤，由-Java-编写的程序需要先经过编译步骤，生成字节码（-class-文件），这种字节码必须由-Java-解释器来解释执行。因此，我们可以认为-Java-语言编译与解释并存。" class="headerlink" title="高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读， 有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java 程序要经过先编译，后解释两个步骤，由 Java 编写的程序需要先经过编译步骤，生成字节码（*.class 文件），这种字节码必须由 Java 解释器来解释执行。因此，我们可以认为 Java 语言编译与解释并存。"></a>高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读， 有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java 程序要经过先编译，后解释两个步骤，由 Java 编写的程序需要先经过编译步骤，生成字节码（*.class 文件），这种字节码必须由 Java 解释器来解释执行。因此，我们可以认为 Java 语言编译与解释并存。</h4><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8713.png" class title="图片13">
+
+<h4 id="4、为什么java程序里要把主函数放在类中？"><a href="#4、为什么java程序里要把主函数放在类中？" class="headerlink" title="4、为什么java程序里要把主函数放在类中？"></a>4、为什么java程序里要把主函数放在类中？</h4><h4 id="方法-对应C-的函数-被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。"><a href="#方法-对应C-的函数-被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。" class="headerlink" title="方法(对应C++的函数)被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。"></a>方法(对应C++的函数)被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。</h4><h3 id="java基本语法："><a href="#java基本语法：" class="headerlink" title="java基本语法："></a>java基本语法：</h3><h4 id="源文件声明规则："><a href="#源文件声明规则：" class="headerlink" title="源文件声明规则："></a>源文件声明规则：</h4><ul>
+<li><strong>一个源文件中只能有一个 public 类</strong></li>
+<li><strong>一个源文件可以有多个非 public 类</strong></li>
+<li><strong>源文件的名称应该和 public 类的类名保持一致。例如：源文件中 public 类的类名是 Employee，那么源文件应该命名为Employee.java</strong></li>
+<li><strong>如果一个类定义在某个包中，那么 package 语句应该在源文件的首行</strong></li>
+<li><strong>如果源文件包含 import 语句，那么应该放在 package 语句和类定义之间。如果没有 package 语句，那么 import 语句应该在源文件中最前面</strong></li>
+<li><strong>import 语句和 package 语句对源文件中定义的所有类都有效。在同一源文件中，不能给不同的类不同的包声明</strong></li>
+</ul>
+<h4 id="java包"><a href="#java包" class="headerlink" title="java包"></a>java包</h4><ul>
+<li><strong>包主要用来对类和接口进行分类。当开发 Java 程序时，可能编写成百上千的类，因此很有必要对类和接口进行分类</strong></li>
+</ul>
+<h4 id="import语句"><a href="#import语句" class="headerlink" title="import语句"></a>import语句</h4><ul>
+<li><strong>在 Java 中，如果给出一个完整的限定名，包括包名、类名，那么 Java 编译器就可以很容易地定位到源代码或者类。import 语句就是用来提供一个合理的路径，使得编译器可以找到某个类</strong></li>
+</ul>
+<h3 id="java变量类型"><a href="#java变量类型" class="headerlink" title="java变量类型"></a>java变量类型</h3><h4 id="1、局部变量"><a href="#1、局部变量" class="headerlink" title="1、局部变量"></a>1、局部变量</h4><ul>
+<li><strong>局部变量声明在方法、构造方法或者语句块中</strong></li>
+<li><strong>局部变量在方法、构造方法、或者语句块被执行的时候创建，当它们执行完成后，变量将会被销毁</strong></li>
+<li><strong>访问修饰符不能用于局部变量</strong></li>
+<li><strong>局部变量只在声明它的方法、构造方法或者语句块中可见</strong></li>
+<li><strong>局部变量是在栈上分配的</strong></li>
+<li><strong>局部变量没有默认值，所以局部变量被声明后，必须经过初始化，才可以使用</strong></li>
+</ul>
+<h4 id="2、实例变量"><a href="#2、实例变量" class="headerlink" title="2、实例变量"></a>2、实例变量</h4><ul>
+<li><strong>实例变量声明在一个类中，但在方法、构造方法和语句块之外</strong></li>
+<li><strong>当一个对象被实例化之后，每个实例变量的值就跟着确定</strong></li>
+<li><strong>实例变量在对象创建的时候创建，在对象被销毁的时候销毁</strong></li>
+<li><strong>实例变量的值应该至少被一个方法、构造方法或者语句块引用，使得外部能够通过这些方式获取实例变量信息</strong></li>
+<li><strong>实例变量可以声明在使用前或者使用后</strong></li>
+<li><strong>访问修饰符可以修饰实例变量</strong></li>
+<li><strong>实例变量对于类中的方法、构造方法或者语句块是可见的。一般情况下应该把实例变量设为私有。通过使用访问修饰符可以使实例变量对子类可见</strong></li>
+<li><strong>实例变量具有默认值。数值型变量的默认值是0，布尔型变量的默认值是false，引用类型变量的默认值是null。变量的值可以在声明时指定，也可以在构造方法中指定</strong></li>
+<li><strong>实例变量可以直接通过变量名访问。但在静态方法以及其他类中，就应该使用完全限定名：ObejectReference.VariableName</strong></li>
+</ul>
+<h4 id="3、类变量"><a href="#3、类变量" class="headerlink" title="3、类变量"></a>3、类变量</h4><ul>
+<li><strong>类变量也称为静态变量，在类中以 static 关键字声明，但必须在方法之外</strong></li>
+<li><strong>无论一个类创建了多少个对象，类只拥有类变量的一份拷贝</strong></li>
+<li><strong>静态变量除了被声明为常量外很少使用。常量是指声明为public/private，final和static类型的变量。常量初始化后不可改变</strong></li>
+<li><strong>静态变量储存在静态存储区。经常被声明为常量，很少单独使用static声明变量</strong></li>
+<li><strong>静态变量在第一次被访问时创建，在程序结束时销毁</strong></li>
+<li><strong>与实例变量具有相似的可见性。但为了对类的使用者可见，大多数静态变量声明为public类型</strong></li>
+<li><strong>默认值和实例变量相似。数值型变量默认值是0，布尔型默认值是false，引用类型默认值是null。变量的值可以在声明的时候指定，也可以在构造方法中指定。此外，静态变量还可以在静态语句块中初始化</strong></li>
+<li><strong>静态变量可以通过：<em>ClassName.VariableName</em>的方式访问</strong></li>
+<li><strong>类变量被声明为public static final类型时，类变量名称一般建议使用大写字母。如果静态变量不是public和final类型，其命名方式与实例变量以及局部变量的命名方式一致</strong></li>
+</ul>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+  </entry>
+  <entry>
     <title>web note</title>
     <url>/femcn.github.io/2020/08/14/web-note/</url>
     <content><![CDATA[<h3 id="ip地址，域名，网址（url）-DNS-hosts之间的关系"><a href="#ip地址，域名，网址（url）-DNS-hosts之间的关系" class="headerlink" title="ip地址，域名，网址（url）,DNS,hosts之间的关系"></a>ip地址，域名，网址（url）,DNS,hosts之间的关系</h3><h4 id="1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。"><a href="#1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。" class="headerlink" title="1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。"></a>1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。</h4><h4 id="2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名-Domain-Name）。域名前加上传输协议信息及主机类型信息就构成了网址-URL）。"><a href="#2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名-Domain-Name）。域名前加上传输协议信息及主机类型信息就构成了网址-URL）。" class="headerlink" title="2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名(Domain Name）。域名前加上传输协议信息及主机类型信息就构成了网址(URL）。"></a>2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名(Domain Name）。域名前加上传输协议信息及主机类型信息就构成了网址(URL）。</h4><h4 id="不同域名不同后缀："><a href="#不同域名不同后缀：" class="headerlink" title="不同域名不同后缀："></a>不同域名不同后缀：</h4><ul>
@@ -105,82 +181,6 @@
       </categories>
   </entry>
   <entry>
-    <title>java note</title>
-    <url>/femcn.github.io/2020/08/12/java-note/</url>
-    <content><![CDATA[<h2 id="java的学习之路"><a href="#java的学习之路" class="headerlink" title="java的学习之路"></a>java的学习之路</h2><h3 id="java开发的集成环境IDE下载"><a href="#java开发的集成环境IDE下载" class="headerlink" title="java开发的集成环境IDE下载"></a>java开发的集成环境IDE下载</h3><h4 id="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https-blog-csdn-net-qq-38436214-article-details-105071088"><a href="#1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https-blog-csdn-net-qq-38436214-article-details-105071088" class="headerlink" title="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https://blog.csdn.net/qq_38436214/article/details/105071088"></a>1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：<a href="https://blog.csdn.net/qq_38436214/article/details/105071088" target="_blank" rel="noopener">https://blog.csdn.net/qq_38436214/article/details/105071088</a></h4><h4 id="2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）"><a href="#2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）" class="headerlink" title="2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [https://www.jetbrains.com/idea/]选择社区版（免费）"></a>2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [<a href="https://www.jetbrains.com/idea/]选择社区版（免费）" target="_blank" rel="noopener">https://www.jetbrains.com/idea/]选择社区版（免费）</a></h4><ul>
-<li><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%871.png" class title="图片1">选右边那个</li>
-<li>下载后双击下载好的程序，点next，选安装路径，选操作位数</li>
-<li><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%872.png" class title="图片2">其他不用多选</li>
-<li>继续点next，直接点安装</li>
-<li>等待安装完成</li>
-</ul>
-<h4 id="3、IDEA初次使用"><a href="#3、IDEA初次使用" class="headerlink" title="3、IDEA初次使用"></a>3、IDEA初次使用</h4><ul>
-<li>启动后点已阅读，点don’t send</li>
-<li>选择主题<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%873.png" class title="图片3">点next</li>
-<li>直接点next<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%874.png" class title="图片4"></li>
-<li>点右下start开始使用<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%875.png" class title="图片5"></li>
-<li>new project后进入主页面<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%876.png" class title="图片6"></li>
-<li>展开左边侧栏，右键src，新建一个 package<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%877.png" class title="图片7"></li>
-<li>右键刚才新建的package，新建一个class<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%878.png" class title="图片8"></li>
-<li>写下代码<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%879.png" class title="图片9"></li>
-<li>点run<img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8710.png" class title="图片10"><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8711.png" class title="图片11"></li>
-</ul>
-<h3 id="java基本概念"><a href="#java基本概念" class="headerlink" title="java基本概念"></a>java基本概念</h3><h4 id="1、JVM：Java-虚拟机（JVM）是运行-Java-字节码-JVM-可以理解的代码-的虚拟机。JVM-有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的-JVM-实现，是-Java-语言“一次编译，随处可以运行”的关键所在。"><a href="#1、JVM：Java-虚拟机（JVM）是运行-Java-字节码-JVM-可以理解的代码-的虚拟机。JVM-有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的-JVM-实现，是-Java-语言“一次编译，随处可以运行”的关键所在。" class="headerlink" title="1、JVM：Java 虚拟机（JVM）是运行 Java 字节码(JVM 可以理解的代码)的虚拟机。JVM 有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM 实现，是 Java 语言“一次编译，随处可以运行”的关键所在。"></a>1、JVM：Java 虚拟机（JVM）是运行 Java 字节码(JVM 可以理解的代码)的虚拟机。JVM 有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM 实现，是 Java 语言“一次编译，随处可以运行”的关键所在。</h4><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8712.png" class title="图片12">
-
-
-
-<h4 id="2、JDK和JRE："><a href="#2、JDK和JRE：" class="headerlink" title="2、JDK和JRE："></a>2、JDK和JRE：</h4><h4 id="JDK-Java-Development-Kit，它是功能齐全的-Java-SDK-软件开发工具包-。它拥有-JRE-所拥有的一切，还有编译器（javac）和工具（如-javadoc-和-jdb）。它能够创建和编译程序。"><a href="#JDK-Java-Development-Kit，它是功能齐全的-Java-SDK-软件开发工具包-。它拥有-JRE-所拥有的一切，还有编译器（javac）和工具（如-javadoc-和-jdb）。它能够创建和编译程序。" class="headerlink" title="JDK: Java Development Kit，它是功能齐全的 Java SDK(软件开发工具包)。它拥有 JRE 所拥有的一切，还有编译器（javac）和工具（如 javadoc 和 jdb）。它能够创建和编译程序。"></a>JDK: Java Development Kit，它是功能齐全的 Java SDK(软件开发工具包)。它拥有 JRE 所拥有的一切，还有编译器（javac）和工具（如 javadoc 和 jdb）。它能够创建和编译程序。</h4><h4 id="JRE-Java-运行时环境。它是运行已编译-Java-程序所需的所有内容的集合，包括-Java-虚拟机（JVM），Java-类库，java-命令和其他的一些基础构件。但是，它不能用于创建新程序。"><a href="#JRE-Java-运行时环境。它是运行已编译-Java-程序所需的所有内容的集合，包括-Java-虚拟机（JVM），Java-类库，java-命令和其他的一些基础构件。但是，它不能用于创建新程序。" class="headerlink" title="JRE: Java 运行时环境。它是运行已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，java 命令和其他的一些基础构件。但是，它不能用于创建新程序。"></a>JRE: Java 运行时环境。它是运行已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，java 命令和其他的一些基础构件。但是，它不能用于创建新程序。</h4><h4 id="3、为什么说java语言“编译与解释并存”？"><a href="#3、为什么说java语言“编译与解释并存”？" class="headerlink" title="3、为什么说java语言“编译与解释并存”？"></a>3、为什么说java语言“编译与解释并存”？</h4><h4 id="高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读，-有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java-程序要经过先编译，后解释两个步骤，由-Java-编写的程序需要先经过编译步骤，生成字节码（-class-文件），这种字节码必须由-Java-解释器来解释执行。因此，我们可以认为-Java-语言编译与解释并存。"><a href="#高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读，-有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java-程序要经过先编译，后解释两个步骤，由-Java-编写的程序需要先经过编译步骤，生成字节码（-class-文件），这种字节码必须由-Java-解释器来解释执行。因此，我们可以认为-Java-语言编译与解释并存。" class="headerlink" title="高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读， 有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java 程序要经过先编译，后解释两个步骤，由 Java 编写的程序需要先经过编译步骤，生成字节码（*.class 文件），这种字节码必须由 Java 解释器来解释执行。因此，我们可以认为 Java 语言编译与解释并存。"></a>高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读， 有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java 程序要经过先编译，后解释两个步骤，由 Java 编写的程序需要先经过编译步骤，生成字节码（*.class 文件），这种字节码必须由 Java 解释器来解释执行。因此，我们可以认为 Java 语言编译与解释并存。</h4><img src="/femcn.github.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8713.png" class title="图片13">
-
-<h4 id="4、为什么java程序里要把主函数放在类中？"><a href="#4、为什么java程序里要把主函数放在类中？" class="headerlink" title="4、为什么java程序里要把主函数放在类中？"></a>4、为什么java程序里要把主函数放在类中？</h4><h4 id="方法-对应C-的函数-被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。"><a href="#方法-对应C-的函数-被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。" class="headerlink" title="方法(对应C++的函数)被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。"></a>方法(对应C++的函数)被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。</h4><h3 id="java基本语法："><a href="#java基本语法：" class="headerlink" title="java基本语法："></a>java基本语法：</h3><h4 id="源文件声明规则："><a href="#源文件声明规则：" class="headerlink" title="源文件声明规则："></a>源文件声明规则：</h4><ul>
-<li><strong>一个源文件中只能有一个 public 类</strong></li>
-<li><strong>一个源文件可以有多个非 public 类</strong></li>
-<li><strong>源文件的名称应该和 public 类的类名保持一致。例如：源文件中 public 类的类名是 Employee，那么源文件应该命名为Employee.java</strong></li>
-<li><strong>如果一个类定义在某个包中，那么 package 语句应该在源文件的首行</strong></li>
-<li><strong>如果源文件包含 import 语句，那么应该放在 package 语句和类定义之间。如果没有 package 语句，那么 import 语句应该在源文件中最前面</strong></li>
-<li><strong>import 语句和 package 语句对源文件中定义的所有类都有效。在同一源文件中，不能给不同的类不同的包声明</strong></li>
-</ul>
-<h4 id="java包"><a href="#java包" class="headerlink" title="java包"></a>java包</h4><ul>
-<li><strong>包主要用来对类和接口进行分类。当开发 Java 程序时，可能编写成百上千的类，因此很有必要对类和接口进行分类</strong></li>
-</ul>
-<h4 id="import语句"><a href="#import语句" class="headerlink" title="import语句"></a>import语句</h4><ul>
-<li><strong>在 Java 中，如果给出一个完整的限定名，包括包名、类名，那么 Java 编译器就可以很容易地定位到源代码或者类。import 语句就是用来提供一个合理的路径，使得编译器可以找到某个类</strong></li>
-</ul>
-<h3 id="java变量类型"><a href="#java变量类型" class="headerlink" title="java变量类型"></a>java变量类型</h3><h4 id="1、局部变量"><a href="#1、局部变量" class="headerlink" title="1、局部变量"></a>1、局部变量</h4><ul>
-<li><strong>局部变量声明在方法、构造方法或者语句块中</strong></li>
-<li><strong>局部变量在方法、构造方法、或者语句块被执行的时候创建，当它们执行完成后，变量将会被销毁</strong></li>
-<li><strong>访问修饰符不能用于局部变量</strong></li>
-<li><strong>局部变量只在声明它的方法、构造方法或者语句块中可见</strong></li>
-<li><strong>局部变量是在栈上分配的</strong></li>
-<li><strong>局部变量没有默认值，所以局部变量被声明后，必须经过初始化，才可以使用</strong></li>
-</ul>
-<h4 id="2、实例变量"><a href="#2、实例变量" class="headerlink" title="2、实例变量"></a>2、实例变量</h4><ul>
-<li><strong>实例变量声明在一个类中，但在方法、构造方法和语句块之外</strong></li>
-<li><strong>当一个对象被实例化之后，每个实例变量的值就跟着确定</strong></li>
-<li><strong>实例变量在对象创建的时候创建，在对象被销毁的时候销毁</strong></li>
-<li><strong>实例变量的值应该至少被一个方法、构造方法或者语句块引用，使得外部能够通过这些方式获取实例变量信息</strong></li>
-<li><strong>实例变量可以声明在使用前或者使用后</strong></li>
-<li><strong>访问修饰符可以修饰实例变量</strong></li>
-<li><strong>实例变量对于类中的方法、构造方法或者语句块是可见的。一般情况下应该把实例变量设为私有。通过使用访问修饰符可以使实例变量对子类可见</strong></li>
-<li><strong>实例变量具有默认值。数值型变量的默认值是0，布尔型变量的默认值是false，引用类型变量的默认值是null。变量的值可以在声明时指定，也可以在构造方法中指定</strong></li>
-<li><strong>实例变量可以直接通过变量名访问。但在静态方法以及其他类中，就应该使用完全限定名：ObejectReference.VariableName</strong></li>
-</ul>
-<h4 id="3、类变量"><a href="#3、类变量" class="headerlink" title="3、类变量"></a>3、类变量</h4><ul>
-<li><strong>类变量也称为静态变量，在类中以 static 关键字声明，但必须在方法之外</strong></li>
-<li><strong>无论一个类创建了多少个对象，类只拥有类变量的一份拷贝</strong></li>
-<li><strong>静态变量除了被声明为常量外很少使用。常量是指声明为public/private，final和static类型的变量。常量初始化后不可改变</strong></li>
-<li><strong>静态变量储存在静态存储区。经常被声明为常量，很少单独使用static声明变量</strong></li>
-<li><strong>静态变量在第一次被访问时创建，在程序结束时销毁</strong></li>
-<li><strong>与实例变量具有相似的可见性。但为了对类的使用者可见，大多数静态变量声明为public类型</strong></li>
-<li><strong>默认值和实例变量相似。数值型变量默认值是0，布尔型默认值是false，引用类型默认值是null。变量的值可以在声明的时候指定，也可以在构造方法中指定。此外，静态变量还可以在静态语句块中初始化</strong></li>
-<li><strong>静态变量可以通过：<em>ClassName.VariableName</em>的方式访问</strong></li>
-<li><strong>类变量被声明为public static final类型时，类变量名称一般建议使用大写字母。如果静态变量不是public和final类型，其命名方式与实例变量以及局部变量的命名方式一致</strong></li>
-</ul>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-  </entry>
-  <entry>
     <title>硬盘空间分配</title>
     <url>/femcn.github.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/</url>
     <content><![CDATA[<h3 id="如何将D盘的空间分给C盘（最简单的方法）"><a href="#如何将D盘的空间分给C盘（最简单的方法）" class="headerlink" title="如何将D盘的空间分给C盘（最简单的方法）"></a>如何将D盘的空间分给C盘（最简单的方法）</h3><h4 id="1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始"><a href="#1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始" class="headerlink" title="1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始"></a>1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始</h4><h4 id="2、下载DiskGenius"><a href="#2、下载DiskGenius" class="headerlink" title="2、下载DiskGenius"></a>2、下载DiskGenius</h4><p><a href="https://www.diskgenius.cn/" target="_blank" rel="noopener">https://www.diskgenius.cn/</a></p>
@@ -243,6 +243,14 @@
       </categories>
   </entry>
   <entry>
+    <title>数据结构</title>
+    <url>/femcn.github.io/2020/09/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h3 id="1、数据结构是一门怎样的学科？"><a href="#1、数据结构是一门怎样的学科？" class="headerlink" title="1、数据结构是一门怎样的学科？"></a>1、数据结构是一门怎样的学科？</h3><h3 id="数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科"><a href="#数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科" class="headerlink" title="数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科"></a>数据结构是一门研究<em>非数值计算</em>的程序设计问题中的操作对象，以及它们之间的<em>关系</em>和<em>操作</em>等相关问题的学科</h3>]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Hexo博客添加不蒜子访客统计</title>
     <url>/femcn.github.io/2020/09/07/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%92%9C%E5%AD%90%E8%AE%BF%E5%AE%A2%E7%BB%9F%E8%AE%A1/</url>
     <content><![CDATA[<h4 id="我这里的hexo版本是4-0-0，有两种方法配置，选一种就行"><a href="#我这里的hexo版本是4-0-0，有两种方法配置，选一种就行" class="headerlink" title="我这里的hexo版本是4.0.0，有两种方法配置，选一种就行"></a>我这里的hexo版本是4.0.0，有两种方法配置，选一种就行</h4><h4 id="一、配置文件方法"><a href="#一、配置文件方法" class="headerlink" title="一、配置文件方法"></a>一、配置文件方法</h4><h4 id="打开next主题配置文件-themes-next-config-yml，搜索找到busuanzi-count，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。"><a href="#打开next主题配置文件-themes-next-config-yml，搜索找到busuanzi-count，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。" class="headerlink" title="打开next主题配置文件\themes\next_config.yml，搜索找到busuanzi_count，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。"></a>打开next主题配置文件\themes\next_config.yml，搜索找到<strong>busuanzi_count</strong>，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。</h4><p>busuanzi_count:</p>
@@ -269,14 +277,6 @@
 <h4 id="4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了"><a href="#4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了" class="headerlink" title="4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了"></a>4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了</h4><h4 id="打开themes-next-layout-third-party-analytics-busuanzi-counter，更改成以下连接：-lt-script-async-src-quot-busuanzi-ibruce-info-busuanzi-2-3-busuanzi-pure-mini-js-quot-gt-lt-script-gt"><a href="#打开themes-next-layout-third-party-analytics-busuanzi-counter，更改成以下连接：-lt-script-async-src-quot-busuanzi-ibruce-info-busuanzi-2-3-busuanzi-pure-mini-js-quot-gt-lt-script-gt" class="headerlink" title="打开themes\next\layout_third-party\analytics\busuanzi-counter，更改成以下连接：&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt; &lt;/script&gt;"></a>打开themes\next\layout_third-party\analytics\busuanzi-counter，更改成以下连接：<code>&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt; &lt;/script&gt;</code></h4><h4 id="注：在hexo-s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了"><a href="#注：在hexo-s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了" class="headerlink" title="注：在hexo s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了"></a>注：在hexo s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了</h4>]]></content>
       <categories>
         <category>blog</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>常用搜索方式</title>
-    <url>/femcn.github.io/2020/09/12/%E5%B8%B8%E7%94%A8%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h3 id="1、精确搜索：双引号"><a href="#1、精确搜索：双引号" class="headerlink" title="1、精确搜索：双引号"></a>1、精确搜索：双引号</h3><h3 id="比如“华为鸿蒙系统”"><a href="#比如“华为鸿蒙系统”" class="headerlink" title="比如“华为鸿蒙系统”"></a>比如“华为鸿蒙系统”</h3><h3 id="2、站内搜索：空格加site-加网址"><a href="#2、站内搜索：空格加site-加网址" class="headerlink" title="2、站内搜索：空格加site:加网址"></a>2、站内搜索：空格加site:加网址</h3><h3 id="比如site-http-stackoverflow-com"><a href="#比如site-http-stackoverflow-com" class="headerlink" title="比如site:http://stackoverflow.com/"></a>比如site:<a href="http://stackoverflow.com/" target="_blank" rel="noopener">http://stackoverflow.com/</a></h3><h3 id="3、模糊搜索："><a href="#3、模糊搜索：" class="headerlink" title="3、模糊搜索：*"></a>3、模糊搜索：*</h3><h3 id="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者"><a href="#比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者" class="headerlink" title="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者"></a>比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者</h3><h3 id="4、缩小范围：空格加减号加需要排除的信息"><a href="#4、缩小范围：空格加减号加需要排除的信息" class="headerlink" title="4、缩小范围：空格加减号加需要排除的信息"></a>4、缩小范围：空格加减号加需要排除的信息</h3><h3 id="比如：笔记本电脑-淘宝"><a href="#比如：笔记本电脑-淘宝" class="headerlink" title="比如：笔记本电脑 -淘宝"></a>比如：笔记本电脑 -淘宝</h3><h3 id="5、文档搜索：空格加filetype-加文档格式"><a href="#5、文档搜索：空格加filetype-加文档格式" class="headerlink" title="5、文档搜索：空格加filetype:加文档格式"></a>5、文档搜索：空格加filetype:加文档格式</h3><h3 id="比如：java教程-filetype-pdf"><a href="#比如：java教程-filetype-pdf" class="headerlink" title="比如：java教程 filetype:pdf"></a>比如：java教程 filetype:pdf</h3>]]></content>
-      <categories>
-        <category>杂</category>
       </categories>
   </entry>
   <entry>
@@ -307,6 +307,14 @@
 <h3 id><a href="#" class="headerlink" title></a></h3>]]></content>
       <categories>
         <category>blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>常用搜索方式</title>
+    <url>/femcn.github.io/2020/09/12/%E5%B8%B8%E7%94%A8%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h3 id="1、精确搜索：双引号"><a href="#1、精确搜索：双引号" class="headerlink" title="1、精确搜索：双引号"></a>1、精确搜索：双引号</h3><h3 id="比如“华为鸿蒙系统”"><a href="#比如“华为鸿蒙系统”" class="headerlink" title="比如“华为鸿蒙系统”"></a>比如“华为鸿蒙系统”</h3><h3 id="2、站内搜索：空格加site-加网址"><a href="#2、站内搜索：空格加site-加网址" class="headerlink" title="2、站内搜索：空格加site:加网址"></a>2、站内搜索：空格加site:加网址</h3><h3 id="比如site-http-stackoverflow-com"><a href="#比如site-http-stackoverflow-com" class="headerlink" title="比如site:http://stackoverflow.com/"></a>比如site:<a href="http://stackoverflow.com/" target="_blank" rel="noopener">http://stackoverflow.com/</a></h3><h3 id="3、模糊搜索："><a href="#3、模糊搜索：" class="headerlink" title="3、模糊搜索：*"></a>3、模糊搜索：*</h3><h3 id="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者"><a href="#比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者" class="headerlink" title="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者"></a>比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者</h3><h3 id="4、缩小范围：空格加减号加需要排除的信息"><a href="#4、缩小范围：空格加减号加需要排除的信息" class="headerlink" title="4、缩小范围：空格加减号加需要排除的信息"></a>4、缩小范围：空格加减号加需要排除的信息</h3><h3 id="比如：笔记本电脑-淘宝"><a href="#比如：笔记本电脑-淘宝" class="headerlink" title="比如：笔记本电脑 -淘宝"></a>比如：笔记本电脑 -淘宝</h3><h3 id="5、文档搜索：空格加filetype-加文档格式"><a href="#5、文档搜索：空格加filetype-加文档格式" class="headerlink" title="5、文档搜索：空格加filetype:加文档格式"></a>5、文档搜索：空格加filetype:加文档格式</h3><h3 id="比如：java教程-filetype-pdf"><a href="#比如：java教程-filetype-pdf" class="headerlink" title="比如：java教程 filetype:pdf"></a>比如：java教程 filetype:pdf</h3>]]></content>
+      <categories>
+        <category>杂</category>
       </categories>
   </entry>
 </search>
