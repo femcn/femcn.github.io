@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>搭建博客时遇到的问题</title>
+    <url>/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"><a href="#1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）" class="headerlink" title="1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"></a>1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）</h2><h3 id="解决办法：先清除缓存，再部署网站，建议养成此习惯"><a href="#解决办法：先清除缓存，再部署网站，建议养成此习惯" class="headerlink" title="解决办法：先清除缓存，再部署网站，建议养成此习惯"></a><strong>解决办法：先清除缓存，再部署网站，建议养成此习惯</strong></h3><h4 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="- hexo clean"></a>- hexo clean</h4><h4 id="hexo-g"><a href="#hexo-g" class="headerlink" title="- hexo g"></a>- hexo g</h4><h4 id="hexo-s"><a href="#hexo-s" class="headerlink" title="- hexo s"></a>- hexo s</h4><hr>
+<h2 id="2、搭建完在本地运行没问题，但通过域名访问时却404"><a href="#2、搭建完在本地运行没问题，但通过域名访问时却404" class="headerlink" title="2、搭建完在本地运行没问题，但通过域名访问时却404"></a>2、搭建完在本地运行没问题，但通过域名访问时却404</h2><h3 id="解决办法：修改-config-yml文件中的url地址和根目录"><a href="#解决办法：修改-config-yml文件中的url地址和根目录" class="headerlink" title="解决办法：修改_config.yml文件中的url地址和根目录"></a>解决办法：修改_config.yml文件中的url地址和根目录</h3><h4 id="url-填github-pages给我们分配的网址，setting里有个绿勾那里"><a href="#url-填github-pages给我们分配的网址，setting里有个绿勾那里" class="headerlink" title="- url: 填github pages给我们分配的网址，setting里有个绿勾那里"></a>- url: 填github pages给我们分配的网址，setting里有个绿勾那里</h4><img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<h4 id="root-填搭建博客的仓库名，setting里的repository-name"><a href="#root-填搭建博客的仓库名，setting里的repository-name" class="headerlink" title="- root: 填搭建博客的仓库名，setting里的repository name"></a>- root: 填搭建博客的仓库名，setting里的repository name</h4><img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">
+
+<hr>
+<h2 id="3、hexo-categories和tags页面不显示，网址后出现-20"><a href="#3、hexo-categories和tags页面不显示，网址后出现-20" class="headerlink" title="3、hexo categories和tags页面不显示，网址后出现/20%/"></a>3、hexo categories和tags页面不显示，网址后出现/20%/</h2><h3 id="解决办法：修改主题配置文件-config-yml中的menu"><a href="#解决办法：修改主题配置文件-config-yml中的menu" class="headerlink" title="解决办法：修改主题配置文件_config.yml中的menu"></a>解决办法：修改主题配置文件_config.yml中的menu</h3><h4 id="把-后面的空格全部去掉-就是-变成"><a href="#把-后面的空格全部去掉-就是-变成" class="headerlink" title="- 把 / 后面的空格全部去掉,就是/ ||变成/||"></a>- 把 / 后面的空格全部去掉,就是/ ||变成/||</h4><img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%873.png" class title="图片3">
+
+<hr>
+<h2 id="4、github-com-拒绝了我们的连接请求-打不开"><a href="#4、github-com-拒绝了我们的连接请求-打不开" class="headerlink" title="4、github.com 拒绝了我们的连接请求,打不开"></a>4、github.com 拒绝了我们的连接请求,打不开</h2><h3 id="解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限"><a href="#解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限" class="headerlink" title="解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限"></a>解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限</h3><h4 id="1、打开https-link-jianshu-com-t-http-3A-2F-2Ftool-chinaz-com-2Fdns"><a href="#1、打开https-link-jianshu-com-t-http-3A-2F-2Ftool-chinaz-com-2Fdns" class="headerlink" title="- 1、打开https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns"></a>- 1、打开<a href="https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns" target="_blank" rel="noopener">https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns</a></h4><h4 id="2、在检测输入栏中输入GitHub官网"><a href="#2、在检测输入栏中输入GitHub官网" class="headerlink" title="- 2、在检测输入栏中输入GitHub官网"></a>- 2、在检测输入栏中输入<a href="https://link.jianshu.com/?t=https%3A%2F%2Fgithub.com%2F" target="_blank" rel="noopener">GitHub</a>官网</h4><h4 id="3、把检测列表的某个ip输入到hosts里，并加上域名"><a href="#3、把检测列表的某个ip输入到hosts里，并加上域名" class="headerlink" title="- 3、把检测列表的某个ip输入到hosts里，并加上域名"></a>- 3、把检测列表的某个ip输入到hosts里，并加上域名</h4><h5 id="修改hosts方法：选中记事本——-gt-右键——-gt-点击“以管理员身份运行”，打开记事本——-gt-在记事本左上角点击文件-gt-打开，在搜索框输C-Windows-System32-drivers-etc，进入hosts所在目录——-gt-点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。"><a href="#修改hosts方法：选中记事本——-gt-右键——-gt-点击“以管理员身份运行”，打开记事本——-gt-在记事本左上角点击文件-gt-打开，在搜索框输C-Windows-System32-drivers-etc，进入hosts所在目录——-gt-点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。" class="headerlink" title="- 修改hosts方法：选中记事本——&gt;右键——&gt;点击“以管理员身份运行”，打开记事本——&gt;在记事本左上角点击文件-&gt;打开，在搜索框输C:\Windows\System32\drivers\etc，进入hosts所在目录——&gt;点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。"></a>- 修改hosts方法：选中记事本——&gt;右键——&gt;点击“以管理员身份运行”，打开记事本——&gt;在记事本左上角点击文件-&gt;打开，在搜索框输C:\Windows\System32\drivers\etc，进入hosts所在目录——&gt;点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。</h5><img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%874.png" class title="图片4">
+
+<hr>
+<h2 id="5、git-clone-失败-fatal-early-EOF-fatal-the-remote-end-hung-up-unexpectedly-fatal-index-pack-failed"><a href="#5、git-clone-失败-fatal-early-EOF-fatal-the-remote-end-hung-up-unexpectedly-fatal-index-pack-failed" class="headerlink" title="5、git clone 失败 fatal: early EOF fatal: the remote end hung up unexpectedly fatal: index-pack failed"></a>5、git clone 失败 fatal: early EOF fatal: the remote end hung up unexpectedly fatal: index-pack failed</h2><h3 id="解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。"><a href="#解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。" class="headerlink" title="解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。"></a>解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。</h3><img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%875.png" class title="图片5">
+
+<h3 id="下面说的是网上查的，也可以试一下"><a href="#下面说的是网上查的，也可以试一下" class="headerlink" title="下面说的是网上查的，也可以试一下"></a>下面说的是网上查的，也可以试一下</h3><h4 id="1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT-SSL-NO-VERIFY环境变量为”ture”，并同时调用正常的git-clone命令"><a href="#1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT-SSL-NO-VERIFY环境变量为”ture”，并同时调用正常的git-clone命令" class="headerlink" title="- 1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT_SSL_NO_VERIFY环境变量为”ture”，并同时调用正常的git clone命令"></a>- 1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT_SSL_NO_VERIFY环境变量为”ture”，并同时调用正常的git clone命令</h4><p>完整的命令如下：env GIT_SSL_NO_VERIFY=true git clone https://&lt;host_name/git/project.git</p>
+<h4 id="2、在克隆完毕的仓库中将http-sslVerify设置为”false”"><a href="#2、在克隆完毕的仓库中将http-sslVerify设置为”false”" class="headerlink" title="- 2、在克隆完毕的仓库中将http.sslVerify设置为”false”"></a>- 2、在克隆完毕的仓库中将http.sslVerify设置为”false”</h4><p>完整的命令如下：git config http.sslVerify “false”</p>
+<hr>
+<h2 id="6、博客文章上插入图片"><a href="#6、博客文章上插入图片" class="headerlink" title="6、博客文章上插入图片"></a>6、博客文章上插入图片</h2><h3 id="1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true"><a href="#1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true" class="headerlink" title="1、把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true"></a>1、把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></h3><h3 id="2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件"><a href="#2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件" class="headerlink" title="2、在你的hexo目录下执行这样一句话npm install https://github.com/7ym0n/hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件"></a>2、在你的hexo目录下执行这样一句话<strong>npm install <a href="https://github.com/7ym0n/hexo-asset-image" target="_blank" rel="noopener">https://github.com/7ym0n/hexo-asset-image</a> –save</strong>，这是下载安装一个可以上传本地图片的插件</h3><h3 id="3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹"><a href="#3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹" class="headerlink" title="3、等待一小段时间后，再运行hexo n &quot;xxxx&quot;来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹"></a>3、等待一小段时间后，再运行<code>hexo n &quot;xxxx&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个<strong>同名的文件夹</strong></h3><h3 id="4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"><a href="#4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是" class="headerlink" title="4、最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"></a>4、最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是<img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%876.png" class title="图片6"></h3>]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+  </entry>
+  <entry>
     <title>java note</title>
     <url>/femcn.github.io/2020/08/12/java-note/</url>
     <content><![CDATA[<h2 id="java的学习之路"><a href="#java的学习之路" class="headerlink" title="java的学习之路"></a>java的学习之路</h2><h3 id="java开发的集成环境IDE下载"><a href="#java开发的集成环境IDE下载" class="headerlink" title="java开发的集成环境IDE下载"></a>java开发的集成环境IDE下载</h3><h4 id="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https-blog-csdn-net-qq-38436214-article-details-105071088"><a href="#1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https-blog-csdn-net-qq-38436214-article-details-105071088" class="headerlink" title="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https://blog.csdn.net/qq_38436214/article/details/105071088"></a>1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：<a href="https://blog.csdn.net/qq_38436214/article/details/105071088" target="_blank" rel="noopener">https://blog.csdn.net/qq_38436214/article/details/105071088</a></h4><h4 id="2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）"><a href="#2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）" class="headerlink" title="2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [https://www.jetbrains.com/idea/]选择社区版（免费）"></a>2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [<a href="https://www.jetbrains.com/idea/]选择社区版（免费）" target="_blank" rel="noopener">https://www.jetbrains.com/idea/]选择社区版（免费）</a></h4><ul>
@@ -82,72 +107,6 @@
       </categories>
   </entry>
   <entry>
-    <title>搭建博客时遇到的问题</title>
-    <url>/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h2 id="1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"><a href="#1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）" class="headerlink" title="1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"></a>1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）</h2><h3 id="解决办法：先清除缓存，再部署网站，建议养成此习惯"><a href="#解决办法：先清除缓存，再部署网站，建议养成此习惯" class="headerlink" title="解决办法：先清除缓存，再部署网站，建议养成此习惯"></a><strong>解决办法：先清除缓存，再部署网站，建议养成此习惯</strong></h3><h4 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="- hexo clean"></a>- hexo clean</h4><h4 id="hexo-g"><a href="#hexo-g" class="headerlink" title="- hexo g"></a>- hexo g</h4><h4 id="hexo-s"><a href="#hexo-s" class="headerlink" title="- hexo s"></a>- hexo s</h4><hr>
-<h2 id="2、搭建完在本地运行没问题，但通过域名访问时却404"><a href="#2、搭建完在本地运行没问题，但通过域名访问时却404" class="headerlink" title="2、搭建完在本地运行没问题，但通过域名访问时却404"></a>2、搭建完在本地运行没问题，但通过域名访问时却404</h2><h3 id="解决办法：修改-config-yml文件中的url地址和根目录"><a href="#解决办法：修改-config-yml文件中的url地址和根目录" class="headerlink" title="解决办法：修改_config.yml文件中的url地址和根目录"></a>解决办法：修改_config.yml文件中的url地址和根目录</h3><h4 id="url-填github-pages给我们分配的网址，setting里有个绿勾那里"><a href="#url-填github-pages给我们分配的网址，setting里有个绿勾那里" class="headerlink" title="- url: 填github pages给我们分配的网址，setting里有个绿勾那里"></a>- url: 填github pages给我们分配的网址，setting里有个绿勾那里</h4><img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png" class title="图片1">
-
-<h4 id="root-填搭建博客的仓库名，setting里的repository-name"><a href="#root-填搭建博客的仓库名，setting里的repository-name" class="headerlink" title="- root: 填搭建博客的仓库名，setting里的repository name"></a>- root: 填搭建博客的仓库名，setting里的repository name</h4><img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">
-
-<hr>
-<h2 id="3、hexo-categories和tags页面不显示，网址后出现-20"><a href="#3、hexo-categories和tags页面不显示，网址后出现-20" class="headerlink" title="3、hexo categories和tags页面不显示，网址后出现/20%/"></a>3、hexo categories和tags页面不显示，网址后出现/20%/</h2><h3 id="解决办法：修改主题配置文件-config-yml中的menu"><a href="#解决办法：修改主题配置文件-config-yml中的menu" class="headerlink" title="解决办法：修改主题配置文件_config.yml中的menu"></a>解决办法：修改主题配置文件_config.yml中的menu</h3><h4 id="把-后面的空格全部去掉-就是-变成"><a href="#把-后面的空格全部去掉-就是-变成" class="headerlink" title="- 把 / 后面的空格全部去掉,就是/ ||变成/||"></a>- 把 / 后面的空格全部去掉,就是/ ||变成/||</h4><img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%873.png" class title="图片3">
-
-<hr>
-<h2 id="4、github-com-拒绝了我们的连接请求-打不开"><a href="#4、github-com-拒绝了我们的连接请求-打不开" class="headerlink" title="4、github.com 拒绝了我们的连接请求,打不开"></a>4、github.com 拒绝了我们的连接请求,打不开</h2><h3 id="解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限"><a href="#解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限" class="headerlink" title="解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限"></a>解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限</h3><h4 id="1、打开https-link-jianshu-com-t-http-3A-2F-2Ftool-chinaz-com-2Fdns"><a href="#1、打开https-link-jianshu-com-t-http-3A-2F-2Ftool-chinaz-com-2Fdns" class="headerlink" title="- 1、打开https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns"></a>- 1、打开<a href="https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns" target="_blank" rel="noopener">https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns</a></h4><h4 id="2、在检测输入栏中输入GitHub官网"><a href="#2、在检测输入栏中输入GitHub官网" class="headerlink" title="- 2、在检测输入栏中输入GitHub官网"></a>- 2、在检测输入栏中输入<a href="https://link.jianshu.com/?t=https%3A%2F%2Fgithub.com%2F" target="_blank" rel="noopener">GitHub</a>官网</h4><h4 id="3、把检测列表的某个ip输入到hosts里，并加上域名"><a href="#3、把检测列表的某个ip输入到hosts里，并加上域名" class="headerlink" title="- 3、把检测列表的某个ip输入到hosts里，并加上域名"></a>- 3、把检测列表的某个ip输入到hosts里，并加上域名</h4><h5 id="修改hosts方法：选中记事本——-gt-右键——-gt-点击“以管理员身份运行”，打开记事本——-gt-在记事本左上角点击文件-gt-打开，在搜索框输C-Windows-System32-drivers-etc，进入hosts所在目录——-gt-点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。"><a href="#修改hosts方法：选中记事本——-gt-右键——-gt-点击“以管理员身份运行”，打开记事本——-gt-在记事本左上角点击文件-gt-打开，在搜索框输C-Windows-System32-drivers-etc，进入hosts所在目录——-gt-点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。" class="headerlink" title="- 修改hosts方法：选中记事本——&gt;右键——&gt;点击“以管理员身份运行”，打开记事本——&gt;在记事本左上角点击文件-&gt;打开，在搜索框输C:\Windows\System32\drivers\etc，进入hosts所在目录——&gt;点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。"></a>- 修改hosts方法：选中记事本——&gt;右键——&gt;点击“以管理员身份运行”，打开记事本——&gt;在记事本左上角点击文件-&gt;打开，在搜索框输C:\Windows\System32\drivers\etc，进入hosts所在目录——&gt;点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。</h5><img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%874.png" class title="图片4">
-
-<hr>
-<h2 id="5、git-clone-失败-fatal-early-EOF-fatal-the-remote-end-hung-up-unexpectedly-fatal-index-pack-failed"><a href="#5、git-clone-失败-fatal-early-EOF-fatal-the-remote-end-hung-up-unexpectedly-fatal-index-pack-failed" class="headerlink" title="5、git clone 失败 fatal: early EOF fatal: the remote end hung up unexpectedly fatal: index-pack failed"></a>5、git clone 失败 fatal: early EOF fatal: the remote end hung up unexpectedly fatal: index-pack failed</h2><h3 id="解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。"><a href="#解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。" class="headerlink" title="解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。"></a>解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。</h3><img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%875.png" class title="图片5">
-
-<h3 id="下面说的是网上查的，也可以试一下"><a href="#下面说的是网上查的，也可以试一下" class="headerlink" title="下面说的是网上查的，也可以试一下"></a>下面说的是网上查的，也可以试一下</h3><h4 id="1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT-SSL-NO-VERIFY环境变量为”ture”，并同时调用正常的git-clone命令"><a href="#1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT-SSL-NO-VERIFY环境变量为”ture”，并同时调用正常的git-clone命令" class="headerlink" title="- 1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT_SSL_NO_VERIFY环境变量为”ture”，并同时调用正常的git clone命令"></a>- 1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT_SSL_NO_VERIFY环境变量为”ture”，并同时调用正常的git clone命令</h4><p>完整的命令如下：env GIT_SSL_NO_VERIFY=true git clone https://&lt;host_name/git/project.git</p>
-<h4 id="2、在克隆完毕的仓库中将http-sslVerify设置为”false”"><a href="#2、在克隆完毕的仓库中将http-sslVerify设置为”false”" class="headerlink" title="- 2、在克隆完毕的仓库中将http.sslVerify设置为”false”"></a>- 2、在克隆完毕的仓库中将http.sslVerify设置为”false”</h4><p>完整的命令如下：git config http.sslVerify “false”</p>
-<hr>
-<h2 id="6、博客文章上插入图片"><a href="#6、博客文章上插入图片" class="headerlink" title="6、博客文章上插入图片"></a>6、博客文章上插入图片</h2><h3 id="1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true"><a href="#1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true" class="headerlink" title="1、把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true"></a>1、把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></h3><h3 id="2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件"><a href="#2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件" class="headerlink" title="2、在你的hexo目录下执行这样一句话npm install https://github.com/7ym0n/hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件"></a>2、在你的hexo目录下执行这样一句话<strong>npm install <a href="https://github.com/7ym0n/hexo-asset-image" target="_blank" rel="noopener">https://github.com/7ym0n/hexo-asset-image</a> –save</strong>，这是下载安装一个可以上传本地图片的插件</h3><h3 id="3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹"><a href="#3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹" class="headerlink" title="3、等待一小段时间后，再运行hexo n &quot;xxxx&quot;来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹"></a>3、等待一小段时间后，再运行<code>hexo n &quot;xxxx&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个<strong>同名的文件夹</strong></h3><h3 id="4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"><a href="#4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是" class="headerlink" title="4、最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"></a>4、最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是<img src="/femcn.github.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%876.png" class title="图片6"></h3>]]></content>
-      <categories>
-        <category>blog</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>科学上网原理</title>
-    <url>/femcn.github.io/2020/08/16/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/</url>
-    <content><![CDATA[<h3 id="1、DNS污染"><a href="#1、DNS污染" class="headerlink" title="1、DNS污染"></a>1、DNS污染</h3><ul>
-<li>DNS 污染（DNS Spoofing）又称为<strong>域名服务器缓存污染</strong>，由于全球只有 13 个顶级域名服务器，所以为了避免单点故障、减少查询压力等等会有各级缓存。如果你使用的是国外的 DNS 服务器，比如 Google 8.8.8.8，DNS 查询需要经过国际出口。<strong>防火墙</strong>会通过技术手段伪造 DNS 的查询结果，这样你查询到的 IP 地址并非域名的真实地址，也就会访问失败。</li>
-<li>测试 DNS 是否被污染最佳工具是 <a href="http://www.chinafirewalltest.com/" target="_blank" rel="noopener">China Firewall Test</a>。</li>
-</ul>
-<h3 id="2、DNS劫持"><a href="#2、DNS劫持" class="headerlink" title="2、DNS劫持"></a>2、DNS劫持</h3><ul>
-<li>DNS 劫持和 DNS 污染是不同的，国内很多的 ISP（Internet Service Provider，中国移动、中国电信、中国联通等等）会<strong>故意修改自己 DNS 服务器上的记录</strong>，把某些敏感网站的记录修改成错误的 IP 地址。比如你使用电信、联通、移动的宽带，默认你是不需要设置任何DNS服务器的。这些DNS服务器由他们提供。一旦检测到你访问的网页是不允许的访问的，就会返回一个不存在的网页。</li>
-</ul>
-<h3 id="3、IP黑名单"><a href="#3、IP黑名单" class="headerlink" title="3、IP黑名单"></a>3、IP黑名单</h3><ul>
-<li>在你请求某个 IP 地址时，如果其恰好在 GFW 的 IP 黑名单上，GFW 会屏蔽这些报文，导致无法正常访问。</li>
-<li>测试 IP 是否被墙的最佳工具是<a href="http://ping.chinaz.com/" target="_blank" rel="noopener">站长工具 Ping 检测</a>。</li>
-</ul>
-<h3 id="4、VPN"><a href="#4、VPN" class="headerlink" title="4、VPN"></a>4、VPN</h3><ul>
-<li><strong>虚拟专用网</strong>（英语：<strong>Virtual Private Network</strong>，简称<strong>VPN</strong>），是一种常用于连接中、大型企业或团体与团体间的私人网络的通讯方法。虚拟私人网络的讯息透过公用的网络架构（例如：<a href="https://zh.wikipedia.org/wiki/互联网" target="_blank" rel="noopener">互联网</a>）来传送<a href="https://zh.wikipedia.org/wiki/内部网" target="_blank" rel="noopener">内联网</a>的网络讯息。它利用已加密的<a href="https://zh.wikipedia.org/wiki/隧道协议" target="_blank" rel="noopener">通道协议</a>（Tunneling Protocol）来达到保密、发送端认证、消息准确性等私人消息安全效果。<img src="/femcn.github.io/2020/08/16/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/%E5%9B%BE%E7%89%871.png" class title="图片1"></li>
-<li>正常网络通信时，所有网络请求都是通过我们的物理网卡直接发送出去。而VPN是客户端使用相应的VPN协议先与VPN服务器进行通信，成功连接后就在操作系统内建立一个虚拟网卡，一般来说默认PC上所有网络通信都从这虚拟网卡上进出，经过VPN服务器中转之后再到达目的地。</li>
-<li>通常VPN协议都会对数据流进行强加密处理，从而使得第三方无法知道数据内容，这样就实现了翻墙。翻墙时VPN服务器知道你干的所有事情（HTTP，对于HTTPS，它知道你去了哪）。</li>
-</ul>
-<h3 id="5、科学上网的方式"><a href="#5、科学上网的方式" class="headerlink" title="5、科学上网的方式"></a>5、科学上网的方式</h3><ul>
-<li><p>按照是否加密，代理软件可分为<strong>加密代理</strong>和<strong>不加密代理</strong>2种。为了避开<strong>防火墙</strong>敏感词过滤，必须得使用<strong>加密代理</strong>软件。按照协议类型，常见的有<strong>HTTP **代理和</strong>SOCKS** 代理。如果你纯粹用浏览器翻墙，HTTP 代理就够用了；如果你还需要让其它软件（比如MSN）翻墙，那就得用SOCKS代理。</p>
-</li>
-<li><p><strong>1、修改hosts文件</strong>：对于 DNS 污染，我们可以通过 hosts 解决，hosts 的原理是直接在本地指定域名的 IP 地址，跳过 DNS 查询。</p>
-</li>
-<li><p>不同的操作系统及其 hosts 文件目录如下：</p>
-<p>Mac OS X, iOS, Android, Linux: <code>/etc/hosts</code></p>
-<p>Windows: <code>%SystemRoot%\system32\drivers\etc\hosts</code></p>
-</li>
-</ul>
-<p>​       访问谷歌：<a href="https://github.com/googlehosts/hosts" target="_blank" rel="noopener">https://github.com/googlehosts/hosts</a></p>
-<ul>
-<li><strong>2、使用第三方工具 VPN客户端</strong></li>
-<li><strong>3、自行搭建代理</strong>：自行搭建的前提都是需要有一台『服务器』（Server），在网上搜索 VPS 可以得到很多提供商。</li>
-<li><strong>4、路由器代理</strong></li>
-</ul>
-<p>​       </p>
-]]></content>
-      <categories>
-        <category>web</category>
-      </categories>
-  </entry>
-  <entry>
     <title>web note</title>
     <url>/femcn.github.io/2020/08/14/web-note/</url>
     <content><![CDATA[<h3 id="ip地址，域名，网址（url）-DNS-hosts之间的关系"><a href="#ip地址，域名，网址（url）-DNS-hosts之间的关系" class="headerlink" title="ip地址，域名，网址（url）,DNS,hosts之间的关系"></a>ip地址，域名，网址（url）,DNS,hosts之间的关系</h3><h4 id="1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。"><a href="#1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。" class="headerlink" title="1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。"></a>1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。</h4><h4 id="2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名-Domain-Name）。域名前加上传输协议信息及主机类型信息就构成了网址-URL）。"><a href="#2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名-Domain-Name）。域名前加上传输协议信息及主机类型信息就构成了网址-URL）。" class="headerlink" title="2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名(Domain Name）。域名前加上传输协议信息及主机类型信息就构成了网址(URL）。"></a>2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名(Domain Name）。域名前加上传输协议信息及主机类型信息就构成了网址(URL）。</h4><h4 id="不同域名不同后缀："><a href="#不同域名不同后缀：" class="headerlink" title="不同域名不同后缀："></a>不同域名不同后缀：</h4><ul>
@@ -175,14 +134,6 @@
 <h4 id="3、网址（url）-我们在浏览器的地址栏里输入的网站地址叫做URL-Uniform-Resource-Locator，统一资源定位符-。就像每家每户都有一个门牌地址一样，每个网页也都有一个Internet地址。当你在浏览器的地址框中输入一个URL或是单击一个超级链接时，URL就确定了要浏览的地址。浏览器通过超文本传输协议-HTTP-，将Web服务器上站点的网页代码提取出来，并翻译成漂亮的网页。"><a href="#3、网址（url）-我们在浏览器的地址栏里输入的网站地址叫做URL-Uniform-Resource-Locator，统一资源定位符-。就像每家每户都有一个门牌地址一样，每个网页也都有一个Internet地址。当你在浏览器的地址框中输入一个URL或是单击一个超级链接时，URL就确定了要浏览的地址。浏览器通过超文本传输协议-HTTP-，将Web服务器上站点的网页代码提取出来，并翻译成漂亮的网页。" class="headerlink" title="3、网址（url）:我们在浏览器的地址栏里输入的网站地址叫做URL (Uniform Resource Locator，统一资源定位符)。就像每家每户都有一个门牌地址一样，每个网页也都有一个Internet地址。当你在浏览器的地址框中输入一个URL或是单击一个超级链接时，URL就确定了要浏览的地址。浏览器通过超文本传输协议(HTTP)，将Web服务器上站点的网页代码提取出来，并翻译成漂亮的网页。"></a>3、网址（url）:我们在浏览器的地址栏里输入的网站地址叫做URL (Uniform Resource Locator，统一资源定位符)。就像每家每户都有一个门牌地址一样，每个网页也都有一个Internet地址。当你在浏览器的地址框中输入一个URL或是单击一个超级链接时，URL就确定了要浏览的地址。浏览器通过超文本传输协议(HTTP)，将Web服务器上站点的网页代码提取出来，并翻译成漂亮的网页。</h4><h4 id="4、DNS：Domain-Name-System域名系统，人们习惯记忆域名，但机器间互相只认IP地址，域名与IP地址之间是一一对应的，它们之间的转换工作称为域名解析，完成这个工作的就是装有域名系统（DNS）的域名解析服务器-DNS-，一个是system，一个是server。"><a href="#4、DNS：Domain-Name-System域名系统，人们习惯记忆域名，但机器间互相只认IP地址，域名与IP地址之间是一一对应的，它们之间的转换工作称为域名解析，完成这个工作的就是装有域名系统（DNS）的域名解析服务器-DNS-，一个是system，一个是server。" class="headerlink" title="4、DNS：Domain Name System域名系统，人们习惯记忆域名，但机器间互相只认IP地址，域名与IP地址之间是一一对应的，它们之间的转换工作称为域名解析，完成这个工作的就是装有域名系统（DNS）的域名解析服务器(DNS)，一个是system，一个是server。"></a>4、DNS：Domain Name System域名系统，人们习惯记忆域名，但机器间互相只认IP地址，域名与IP地址之间是一一对应的，它们之间的转换工作称为域名解析，完成这个工作的就是装有域名系统（DNS）的域名解析服务器(DNS)，一个是system，一个是server。</h4><h4 id="5、hosts-这个文件相当于一个本地的小型DNS服务器，电脑会优先在本地的hosts文件中查找网址对应的IP，如果没有找到，才向DNS请求。就像是先在自己的qq好友列表里找，找不到再去用号码搜索一样。"><a href="#5、hosts-这个文件相当于一个本地的小型DNS服务器，电脑会优先在本地的hosts文件中查找网址对应的IP，如果没有找到，才向DNS请求。就像是先在自己的qq好友列表里找，找不到再去用号码搜索一样。" class="headerlink" title="5、hosts:这个文件相当于一个本地的小型DNS服务器，电脑会优先在本地的hosts文件中查找网址对应的IP，如果没有找到，才向DNS请求。就像是先在自己的qq好友列表里找，找不到再去用号码搜索一样。"></a>5、hosts:这个文件相当于一个本地的小型DNS服务器，电脑会优先在本地的hosts文件中查找网址对应的IP，如果没有找到，才向DNS请求。就像是先在自己的qq好友列表里找，找不到再去用号码搜索一样。</h4><h4 id="例如：https-www-runoob-com-java-java-basic-syntax-html，就是网址（URL）"><a href="#例如：https-www-runoob-com-java-java-basic-syntax-html，就是网址（URL）" class="headerlink" title="例如：https://www.runoob.com/java/java-basic-syntax.html，就是网址（URL）"></a>例如：<a href="https://www.runoob.com/java/java-basic-syntax.html，就是网址（URL）" target="_blank" rel="noopener">https://www.runoob.com/java/java-basic-syntax.html，就是网址（URL）</a></h4><h4 id="runoob-com就是域名"><a href="#runoob-com就是域名" class="headerlink" title="runoob.com就是域名"></a>runoob.com就是域名</h4><h4 id="221-233-60-202就是ip地址"><a href="#221-233-60-202就是ip地址" class="headerlink" title="221.233.60.202就是ip地址"></a>221.233.60.202就是ip地址</h4><h4 id="http：-就是协议名称"><a href="#http：-就是协议名称" class="headerlink" title="http：//就是协议名称"></a>http：//就是协议名称</h4><h4 id="www代表一个web服务器"><a href="#www代表一个web服务器" class="headerlink" title="www代表一个web服务器"></a>www代表一个web服务器</h4><h4 id="java就是存放目录"><a href="#java就是存放目录" class="headerlink" title="java就是存放目录"></a>java就是存放目录</h4><h4 id="java-html就是文件名称"><a href="#java-html就是文件名称" class="headerlink" title="java.html就是文件名称"></a>java.html就是文件名称</h4><h4 id="你通过录入URL-https-www-runoob-com-java-java-basic-syntax-html让浏览器知道你要访问runoob-com（域名）电脑就会把runoob-com（域名）解析成221-233-60-202（ip地址）然后和221-233-60-202建立连接告诉221-233-60-202-我要看-https-www-runoob-com-java-java-basic-syntax-html（URL）"><a href="#你通过录入URL-https-www-runoob-com-java-java-basic-syntax-html让浏览器知道你要访问runoob-com（域名）电脑就会把runoob-com（域名）解析成221-233-60-202（ip地址）然后和221-233-60-202建立连接告诉221-233-60-202-我要看-https-www-runoob-com-java-java-basic-syntax-html（URL）" class="headerlink" title="你通过录入URL https://www.runoob.com/java/java-basic-syntax.html让浏览器知道你要访问runoob.com（域名）电脑就会把runoob.com（域名）解析成221.233.60.202（ip地址）然后和221.233.60.202建立连接告诉221.233.60.202 我要看 https://www.runoob.com/java/java-basic-syntax.html（URL）"></a>你通过录入URL <a href="https://www.runoob.com/java/java-basic-syntax.html让浏览器知道你要访问runoob.com（域名）电脑就会把runoob.com（域名）解析成221.233.60.202（ip地址）然后和221.233.60.202建立连接告诉221.233.60.202" target="_blank" rel="noopener">https://www.runoob.com/java/java-basic-syntax.html让浏览器知道你要访问runoob.com（域名）电脑就会把runoob.com（域名）解析成221.233.60.202（ip地址）然后和221.233.60.202建立连接告诉221.233.60.202</a> 我要看 <a href="https://www.runoob.com/java/java-basic-syntax.html（URL）" target="_blank" rel="noopener">https://www.runoob.com/java/java-basic-syntax.html（URL）</a></h4>]]></content>
       <categories>
         <category>web</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>sing</title>
-    <url>/femcn.github.io/2020/08/23/sing/</url>
-    <content><![CDATA[<h3 id="转载自知乎Chester写的文章，下面是经过我整理的，方便看一些"><a href="#转载自知乎Chester写的文章，下面是经过我整理的，方便看一些" class="headerlink" title="转载自知乎Chester写的文章，下面是经过我整理的，方便看一些"></a>转载自知乎Chester写的文章，下面是经过我整理的，方便看一些</h3><h3 id="简单易懂的唱歌原理"><a href="#简单易懂的唱歌原理" class="headerlink" title="简单易懂的唱歌原理"></a>简单易懂的唱歌原理</h3><h3 id="1、什么是“哼”"><a href="#1、什么是“哼”" class="headerlink" title="1、什么是“哼”"></a>1、什么是“哼”</h3><h4 id="其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。"><a href="#其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。" class="headerlink" title="其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。"></a>其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。</h4><h4 id="电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。"><a href="#电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。" class="headerlink" title="电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。"></a>电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。</h4><h4 id="当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。"><a href="#当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。" class="headerlink" title="当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。"></a>当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。</h4><h3 id="2、如何打开"><a href="#2、如何打开" class="headerlink" title="2、如何打开"></a>2、如何打开</h3><h4 id="1、微笑着（找开心兴奋的感受）"><a href="#1、微笑着（找开心兴奋的感受）" class="headerlink" title="1、微笑着（找开心兴奋的感受）"></a><strong>1、微笑着</strong>（<strong>找开心兴奋的感受</strong>）</h4><h4 id="2、打哈欠-前期（打哈欠前期吸气的这个扩张感，时刻保持）"><a href="#2、打哈欠-前期（打哈欠前期吸气的这个扩张感，时刻保持）" class="headerlink" title="2、打哈欠 前期（打哈欠前期吸气的这个扩张感，时刻保持）"></a><strong>2、打哈欠 前期</strong>（打哈欠前期<strong>吸气</strong>的这个<strong>扩张感</strong>，时刻保持）</h4><h4 id="3、口腔内部（不是让你张大外嘴，外边笑，内部扩，发-MA（妈）-音体会，在发声时要时刻保证喉位稳定在相对低的位置上）"><a href="#3、口腔内部（不是让你张大外嘴，外边笑，内部扩，发-MA（妈）-音体会，在发声时要时刻保证喉位稳定在相对低的位置上）" class="headerlink" title="3、口腔内部（不是让你张大外嘴，外边笑，内部扩，发 MA（妈） 音体会，在发声时要时刻保证喉位稳定在相对低的位置上）"></a><strong>3、口腔内部</strong>（不是让你<strong>张大外嘴</strong>，<strong>外边笑，内部扩，发 MA（妈） 音体会</strong>，<strong>在发声时要时刻保证喉位稳定在相对低的位置上</strong>）</h4><h4 id="4、扩张状态-就是打开喉咙（口腔内部的扩张感就是通的感觉，有空间的感觉）"><a href="#4、扩张状态-就是打开喉咙（口腔内部的扩张感就是通的感觉，有空间的感觉）" class="headerlink" title="4、扩张状态 就是打开喉咙（口腔内部的扩张感就是通的感觉，有空间的感觉）"></a><strong>4、扩张状态 就是打开喉咙</strong>（<strong>口腔内部的扩张感就是通的感觉，有空间的感觉</strong>）</h4><h4 id="5、发声时要-时刻保持，换气也一样（去发元音“啊”-，可以体会保持和锻炼这个状态）"><a href="#5、发声时要-时刻保持，换气也一样（去发元音“啊”-，可以体会保持和锻炼这个状态）" class="headerlink" title="5、发声时要 时刻保持，换气也一样（去发元音“啊” ，可以体会保持和锻炼这个状态）"></a><strong>5、发声时要 时刻保持，换气也一样</strong>（去发元音“啊” ，可以体会保持和锻炼这个状态）</h4><h4 id="看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程"><a href="#看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程" class="headerlink" title="看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程"></a>看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程</h4><h3 id="3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）"><a href="#3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）" class="headerlink" title="3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）"></a>3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）</h3><h4 id="在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。"><a href="#在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。" class="headerlink" title="在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。"></a>在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。</h4><h4 id="注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！-）"><a href="#注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！-）" class="headerlink" title="注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！ ）"></a>注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！ ）</h4><h4 id="注意注意注意！每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）"><a href="#注意注意注意！每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）" class="headerlink" title="注意注意注意！每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）"></a>注意注意注意！<strong>每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。</strong>有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）</h4><h4 id="简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌"><a href="#简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌" class="headerlink" title="简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌"></a><strong>简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌</strong></h4><h4 id="胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）"><a href="#胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）" class="headerlink" title="胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）"></a><strong>胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）</strong></h4>]]></content>
-      <categories>
-        <category>杂</category>
       </categories>
   </entry>
   <entry>
@@ -227,6 +178,47 @@
       </categories>
   </entry>
   <entry>
+    <title>科学上网原理</title>
+    <url>/femcn.github.io/2020/08/16/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h3 id="1、DNS污染"><a href="#1、DNS污染" class="headerlink" title="1、DNS污染"></a>1、DNS污染</h3><ul>
+<li>DNS 污染（DNS Spoofing）又称为<strong>域名服务器缓存污染</strong>，由于全球只有 13 个顶级域名服务器，所以为了避免单点故障、减少查询压力等等会有各级缓存。如果你使用的是国外的 DNS 服务器，比如 Google 8.8.8.8，DNS 查询需要经过国际出口。<strong>防火墙</strong>会通过技术手段伪造 DNS 的查询结果，这样你查询到的 IP 地址并非域名的真实地址，也就会访问失败。</li>
+<li>测试 DNS 是否被污染最佳工具是 <a href="http://www.chinafirewalltest.com/" target="_blank" rel="noopener">China Firewall Test</a>。</li>
+</ul>
+<h3 id="2、DNS劫持"><a href="#2、DNS劫持" class="headerlink" title="2、DNS劫持"></a>2、DNS劫持</h3><ul>
+<li>DNS 劫持和 DNS 污染是不同的，国内很多的 ISP（Internet Service Provider，中国移动、中国电信、中国联通等等）会<strong>故意修改自己 DNS 服务器上的记录</strong>，把某些敏感网站的记录修改成错误的 IP 地址。比如你使用电信、联通、移动的宽带，默认你是不需要设置任何DNS服务器的。这些DNS服务器由他们提供。一旦检测到你访问的网页是不允许的访问的，就会返回一个不存在的网页。</li>
+</ul>
+<h3 id="3、IP黑名单"><a href="#3、IP黑名单" class="headerlink" title="3、IP黑名单"></a>3、IP黑名单</h3><ul>
+<li>在你请求某个 IP 地址时，如果其恰好在 GFW 的 IP 黑名单上，GFW 会屏蔽这些报文，导致无法正常访问。</li>
+<li>测试 IP 是否被墙的最佳工具是<a href="http://ping.chinaz.com/" target="_blank" rel="noopener">站长工具 Ping 检测</a>。</li>
+</ul>
+<h3 id="4、VPN"><a href="#4、VPN" class="headerlink" title="4、VPN"></a>4、VPN</h3><ul>
+<li><strong>虚拟专用网</strong>（英语：<strong>Virtual Private Network</strong>，简称<strong>VPN</strong>），是一种常用于连接中、大型企业或团体与团体间的私人网络的通讯方法。虚拟私人网络的讯息透过公用的网络架构（例如：<a href="https://zh.wikipedia.org/wiki/互联网" target="_blank" rel="noopener">互联网</a>）来传送<a href="https://zh.wikipedia.org/wiki/内部网" target="_blank" rel="noopener">内联网</a>的网络讯息。它利用已加密的<a href="https://zh.wikipedia.org/wiki/隧道协议" target="_blank" rel="noopener">通道协议</a>（Tunneling Protocol）来达到保密、发送端认证、消息准确性等私人消息安全效果。<img src="/femcn.github.io/2020/08/16/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/%E5%9B%BE%E7%89%871.png" class title="图片1"></li>
+<li>正常网络通信时，所有网络请求都是通过我们的物理网卡直接发送出去。而VPN是客户端使用相应的VPN协议先与VPN服务器进行通信，成功连接后就在操作系统内建立一个虚拟网卡，一般来说默认PC上所有网络通信都从这虚拟网卡上进出，经过VPN服务器中转之后再到达目的地。</li>
+<li>通常VPN协议都会对数据流进行强加密处理，从而使得第三方无法知道数据内容，这样就实现了翻墙。翻墙时VPN服务器知道你干的所有事情（HTTP，对于HTTPS，它知道你去了哪）。</li>
+</ul>
+<h3 id="5、科学上网的方式"><a href="#5、科学上网的方式" class="headerlink" title="5、科学上网的方式"></a>5、科学上网的方式</h3><ul>
+<li><p>按照是否加密，代理软件可分为<strong>加密代理</strong>和<strong>不加密代理</strong>2种。为了避开<strong>防火墙</strong>敏感词过滤，必须得使用<strong>加密代理</strong>软件。按照协议类型，常见的有<strong>HTTP **代理和</strong>SOCKS** 代理。如果你纯粹用浏览器翻墙，HTTP 代理就够用了；如果你还需要让其它软件（比如MSN）翻墙，那就得用SOCKS代理。</p>
+</li>
+<li><p><strong>1、修改hosts文件</strong>：对于 DNS 污染，我们可以通过 hosts 解决，hosts 的原理是直接在本地指定域名的 IP 地址，跳过 DNS 查询。</p>
+</li>
+<li><p>不同的操作系统及其 hosts 文件目录如下：</p>
+<p>Mac OS X, iOS, Android, Linux: <code>/etc/hosts</code></p>
+<p>Windows: <code>%SystemRoot%\system32\drivers\etc\hosts</code></p>
+</li>
+</ul>
+<p>​       访问谷歌：<a href="https://github.com/googlehosts/hosts" target="_blank" rel="noopener">https://github.com/googlehosts/hosts</a></p>
+<ul>
+<li><strong>2、使用第三方工具 VPN客户端</strong></li>
+<li><strong>3、自行搭建代理</strong>：自行搭建的前提都是需要有一台『服务器』（Server），在网上搜索 VPS 可以得到很多提供商。</li>
+<li><strong>4、路由器代理</strong></li>
+</ul>
+<p>​       </p>
+]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+  </entry>
+  <entry>
     <title>硬盘空间分配</title>
     <url>/femcn.github.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/</url>
     <content><![CDATA[<h3 id="如何将D盘的空间分给C盘（最简单的方法）"><a href="#如何将D盘的空间分给C盘（最简单的方法）" class="headerlink" title="如何将D盘的空间分给C盘（最简单的方法）"></a>如何将D盘的空间分给C盘（最简单的方法）</h3><h4 id="1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始"><a href="#1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始" class="headerlink" title="1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始"></a>1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始</h4><h4 id="2、下载DiskGenius"><a href="#2、下载DiskGenius" class="headerlink" title="2、下载DiskGenius"></a>2、下载DiskGenius</h4><p><a href="https://www.diskgenius.cn/" target="_blank" rel="noopener">https://www.diskgenius.cn/</a></p>
@@ -243,6 +235,22 @@
 <img src="/femcn.github.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/%E5%9B%BE%E7%89%876.png" class title="图片6">
 
 <h4 id="6、然后这里可以调整你要分多少，调完之后点开始就行了"><a href="#6、然后这里可以调整你要分多少，调完之后点开始就行了" class="headerlink" title="6、然后这里可以调整你要分多少，调完之后点开始就行了"></a>6、然后这里可以调整你要分多少，调完之后点开始就行了</h4><img src="/femcn.github.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/%E5%9B%BE%E7%89%877.png" class title="图片7">]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>sing</title>
+    <url>/femcn.github.io/2020/08/23/sing/</url>
+    <content><![CDATA[<h3 id="转载自知乎Chester写的文章，下面是经过我整理的，方便看一些"><a href="#转载自知乎Chester写的文章，下面是经过我整理的，方便看一些" class="headerlink" title="转载自知乎Chester写的文章，下面是经过我整理的，方便看一些"></a>转载自知乎Chester写的文章，下面是经过我整理的，方便看一些</h3><h3 id="简单易懂的唱歌原理"><a href="#简单易懂的唱歌原理" class="headerlink" title="简单易懂的唱歌原理"></a>简单易懂的唱歌原理</h3><h3 id="1、什么是“哼”"><a href="#1、什么是“哼”" class="headerlink" title="1、什么是“哼”"></a>1、什么是“哼”</h3><h4 id="其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。"><a href="#其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。" class="headerlink" title="其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。"></a>其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。</h4><h4 id="电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。"><a href="#电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。" class="headerlink" title="电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。"></a>电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。</h4><h4 id="当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。"><a href="#当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。" class="headerlink" title="当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。"></a>当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。</h4><h3 id="2、如何打开"><a href="#2、如何打开" class="headerlink" title="2、如何打开"></a>2、如何打开</h3><h4 id="1、微笑着（找开心兴奋的感受）"><a href="#1、微笑着（找开心兴奋的感受）" class="headerlink" title="1、微笑着（找开心兴奋的感受）"></a><strong>1、微笑着</strong>（<strong>找开心兴奋的感受</strong>）</h4><h4 id="2、打哈欠-前期（打哈欠前期吸气的这个扩张感，时刻保持）"><a href="#2、打哈欠-前期（打哈欠前期吸气的这个扩张感，时刻保持）" class="headerlink" title="2、打哈欠 前期（打哈欠前期吸气的这个扩张感，时刻保持）"></a><strong>2、打哈欠 前期</strong>（打哈欠前期<strong>吸气</strong>的这个<strong>扩张感</strong>，时刻保持）</h4><h4 id="3、口腔内部（不是让你张大外嘴，外边笑，内部扩，发-MA（妈）-音体会，在发声时要时刻保证喉位稳定在相对低的位置上）"><a href="#3、口腔内部（不是让你张大外嘴，外边笑，内部扩，发-MA（妈）-音体会，在发声时要时刻保证喉位稳定在相对低的位置上）" class="headerlink" title="3、口腔内部（不是让你张大外嘴，外边笑，内部扩，发 MA（妈） 音体会，在发声时要时刻保证喉位稳定在相对低的位置上）"></a><strong>3、口腔内部</strong>（不是让你<strong>张大外嘴</strong>，<strong>外边笑，内部扩，发 MA（妈） 音体会</strong>，<strong>在发声时要时刻保证喉位稳定在相对低的位置上</strong>）</h4><h4 id="4、扩张状态-就是打开喉咙（口腔内部的扩张感就是通的感觉，有空间的感觉）"><a href="#4、扩张状态-就是打开喉咙（口腔内部的扩张感就是通的感觉，有空间的感觉）" class="headerlink" title="4、扩张状态 就是打开喉咙（口腔内部的扩张感就是通的感觉，有空间的感觉）"></a><strong>4、扩张状态 就是打开喉咙</strong>（<strong>口腔内部的扩张感就是通的感觉，有空间的感觉</strong>）</h4><h4 id="5、发声时要-时刻保持，换气也一样（去发元音“啊”-，可以体会保持和锻炼这个状态）"><a href="#5、发声时要-时刻保持，换气也一样（去发元音“啊”-，可以体会保持和锻炼这个状态）" class="headerlink" title="5、发声时要 时刻保持，换气也一样（去发元音“啊” ，可以体会保持和锻炼这个状态）"></a><strong>5、发声时要 时刻保持，换气也一样</strong>（去发元音“啊” ，可以体会保持和锻炼这个状态）</h4><h4 id="看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程"><a href="#看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程" class="headerlink" title="看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程"></a>看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程</h4><h3 id="3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）"><a href="#3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）" class="headerlink" title="3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）"></a>3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）</h3><h4 id="在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。"><a href="#在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。" class="headerlink" title="在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。"></a>在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。</h4><h4 id="注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！-）"><a href="#注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！-）" class="headerlink" title="注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！ ）"></a>注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！ ）</h4><h4 id="注意注意注意！每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）"><a href="#注意注意注意！每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）" class="headerlink" title="注意注意注意！每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）"></a>注意注意注意！<strong>每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。</strong>有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）</h4><h4 id="简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌"><a href="#简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌" class="headerlink" title="简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌"></a><strong>简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌</strong></h4><h4 id="胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）"><a href="#胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）" class="headerlink" title="胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）"></a><strong>胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）</strong></h4>]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>常用搜索方式</title>
+    <url>/femcn.github.io/2020/09/12/%E5%B8%B8%E7%94%A8%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h3 id="1、精确搜索：双引号"><a href="#1、精确搜索：双引号" class="headerlink" title="1、精确搜索：双引号"></a>1、精确搜索：双引号</h3><h3 id="比如“华为鸿蒙系统”"><a href="#比如“华为鸿蒙系统”" class="headerlink" title="比如“华为鸿蒙系统”"></a>比如“华为鸿蒙系统”</h3><h3 id="2、站内搜索：空格加site-加网址"><a href="#2、站内搜索：空格加site-加网址" class="headerlink" title="2、站内搜索：空格加site:加网址"></a>2、站内搜索：空格加site:加网址</h3><h3 id="比如site-http-stackoverflow-com"><a href="#比如site-http-stackoverflow-com" class="headerlink" title="比如site:http://stackoverflow.com/"></a>比如site:<a href="http://stackoverflow.com/" target="_blank" rel="noopener">http://stackoverflow.com/</a></h3><h3 id="3、模糊搜索："><a href="#3、模糊搜索：" class="headerlink" title="3、模糊搜索：*"></a>3、模糊搜索：*</h3><h3 id="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者"><a href="#比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者" class="headerlink" title="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者"></a>比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者</h3><h3 id="4、缩小范围：空格加减号加需要排除的信息"><a href="#4、缩小范围：空格加减号加需要排除的信息" class="headerlink" title="4、缩小范围：空格加减号加需要排除的信息"></a>4、缩小范围：空格加减号加需要排除的信息</h3><h3 id="比如：笔记本电脑-淘宝"><a href="#比如：笔记本电脑-淘宝" class="headerlink" title="比如：笔记本电脑 -淘宝"></a>比如：笔记本电脑 -淘宝</h3><h3 id="5、文档搜索：空格加filetype-加文档格式"><a href="#5、文档搜索：空格加filetype-加文档格式" class="headerlink" title="5、文档搜索：空格加filetype:加文档格式"></a>5、文档搜索：空格加filetype:加文档格式</h3><h3 id="比如：java教程-filetype-pdf"><a href="#比如：java教程-filetype-pdf" class="headerlink" title="比如：java教程 filetype:pdf"></a>比如：java教程 filetype:pdf</h3>]]></content>
       <categories>
         <category>杂</category>
       </categories>
@@ -278,14 +286,6 @@
       </categories>
   </entry>
   <entry>
-    <title>常用搜索方式</title>
-    <url>/femcn.github.io/2020/09/12/%E5%B8%B8%E7%94%A8%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/</url>
-    <content><![CDATA[<h3 id="1、精确搜索：双引号"><a href="#1、精确搜索：双引号" class="headerlink" title="1、精确搜索：双引号"></a>1、精确搜索：双引号</h3><h3 id="比如“华为鸿蒙系统”"><a href="#比如“华为鸿蒙系统”" class="headerlink" title="比如“华为鸿蒙系统”"></a>比如“华为鸿蒙系统”</h3><h3 id="2、站内搜索：空格加site-加网址"><a href="#2、站内搜索：空格加site-加网址" class="headerlink" title="2、站内搜索：空格加site:加网址"></a>2、站内搜索：空格加site:加网址</h3><h3 id="比如site-http-stackoverflow-com"><a href="#比如site-http-stackoverflow-com" class="headerlink" title="比如site:http://stackoverflow.com/"></a>比如site:<a href="http://stackoverflow.com/" target="_blank" rel="noopener">http://stackoverflow.com/</a></h3><h3 id="3、模糊搜索："><a href="#3、模糊搜索：" class="headerlink" title="3、模糊搜索：*"></a>3、模糊搜索：*</h3><h3 id="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者"><a href="#比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者" class="headerlink" title="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者"></a>比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者</h3><h3 id="4、缩小范围：空格加减号加需要排除的信息"><a href="#4、缩小范围：空格加减号加需要排除的信息" class="headerlink" title="4、缩小范围：空格加减号加需要排除的信息"></a>4、缩小范围：空格加减号加需要排除的信息</h3><h3 id="比如：笔记本电脑-淘宝"><a href="#比如：笔记本电脑-淘宝" class="headerlink" title="比如：笔记本电脑 -淘宝"></a>比如：笔记本电脑 -淘宝</h3><h3 id="5、文档搜索：空格加filetype-加文档格式"><a href="#5、文档搜索：空格加filetype-加文档格式" class="headerlink" title="5、文档搜索：空格加filetype:加文档格式"></a>5、文档搜索：空格加filetype:加文档格式</h3><h3 id="比如：java教程-filetype-pdf"><a href="#比如：java教程-filetype-pdf" class="headerlink" title="比如：java教程 filetype:pdf"></a>比如：java教程 filetype:pdf</h3>]]></content>
-      <categories>
-        <category>杂</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Hexo博客添加不蒜子访客统计</title>
     <url>/femcn.github.io/2020/09/07/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%92%9C%E5%AD%90%E8%AE%BF%E5%AE%A2%E7%BB%9F%E8%AE%A1/</url>
     <content><![CDATA[<h4 id="我这里的hexo版本是4-0-0，有两种方法配置，选一种就行"><a href="#我这里的hexo版本是4-0-0，有两种方法配置，选一种就行" class="headerlink" title="我这里的hexo版本是4.0.0，有两种方法配置，选一种就行"></a>我这里的hexo版本是4.0.0，有两种方法配置，选一种就行</h4><h4 id="一、配置文件方法"><a href="#一、配置文件方法" class="headerlink" title="一、配置文件方法"></a>一、配置文件方法</h4><h4 id="打开next主题配置文件-themes-next-config-yml，搜索找到busuanzi-count，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。"><a href="#打开next主题配置文件-themes-next-config-yml，搜索找到busuanzi-count，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。" class="headerlink" title="打开next主题配置文件\themes\next_config.yml，搜索找到busuanzi_count，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。"></a>打开next主题配置文件\themes\next_config.yml，搜索找到<strong>busuanzi_count</strong>，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。</h4><p>busuanzi_count:</p>
@@ -312,47 +312,6 @@
 <h4 id="4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了"><a href="#4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了" class="headerlink" title="4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了"></a>4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了</h4><h4 id="打开themes-next-layout-third-party-analytics-busuanzi-counter，更改成以下连接：-lt-script-async-src-quot-busuanzi-ibruce-info-busuanzi-2-3-busuanzi-pure-mini-js-quot-gt-lt-script-gt"><a href="#打开themes-next-layout-third-party-analytics-busuanzi-counter，更改成以下连接：-lt-script-async-src-quot-busuanzi-ibruce-info-busuanzi-2-3-busuanzi-pure-mini-js-quot-gt-lt-script-gt" class="headerlink" title="打开themes\next\layout_third-party\analytics\busuanzi-counter，更改成以下连接：&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt; &lt;/script&gt;"></a>打开themes\next\layout_third-party\analytics\busuanzi-counter，更改成以下连接：<code>&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt; &lt;/script&gt;</code></h4><h4 id="注：在hexo-s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了"><a href="#注：在hexo-s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了" class="headerlink" title="注：在hexo s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了"></a>注：在hexo s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了</h4>]]></content>
       <categories>
         <category>blog</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>数据结构</title>
-    <url>/femcn.github.io/2020/09/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
-    <content><![CDATA[<h3 id="1、数据结构是一门怎样的学科？"><a href="#1、数据结构是一门怎样的学科？" class="headerlink" title="1、数据结构是一门怎样的学科？"></a>1、数据结构是一门怎样的学科？</h3><h3 id="一、数据结构是一门怎样的学科？"><a href="#一、数据结构是一门怎样的学科？" class="headerlink" title="一、数据结构是一门怎样的学科？"></a>一、数据结构是一门怎样的学科？</h3><h3 id="数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科。"><a href="#数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科。" class="headerlink" title="数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科。"></a>数据结构是一门研究<em>非数值计算</em>的程序设计问题中的操作对象，以及它们之间的<em>关系</em>和<em>操作</em>等相关问题的学科。</h3><h3 id="二、基本概念"><a href="#二、基本概念" class="headerlink" title="二、基本概念"></a>二、基本概念</h3><h3 id="1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。"><a href="#1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。" class="headerlink" title="1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。"></a>1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。</h3><h3 id="例：畜类"><a href="#例：畜类" class="headerlink" title="例：畜类"></a>例：畜类</h3><h3 id="2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。"><a href="#2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。" class="headerlink" title="2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。"></a>2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。</h3><h3 id="例：牛，羊，鸡，猪"><a href="#例：牛，羊，鸡，猪" class="headerlink" title="例：牛，羊，鸡，猪"></a>例：牛，羊，鸡，猪</h3><h3 id="3、数据对象：是性质相同的数据元素的集合，是数据的子集"><a href="#3、数据对象：是性质相同的数据元素的集合，是数据的子集" class="headerlink" title="3、数据对象：是性质相同的数据元素的集合，是数据的子集"></a>3、数据对象：是性质相同的数据元素的集合，是数据的子集</h3><h3 id="例：鸡都有翅膀，鸡爪等相同的数据项"><a href="#例：鸡都有翅膀，鸡爪等相同的数据项" class="headerlink" title="例：鸡都有翅膀，鸡爪等相同的数据项"></a>例：鸡都有翅膀，鸡爪等相同的数据项</h3><h3 id="4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位"><a href="#4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位" class="headerlink" title="4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位"></a>4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位</h3><h3 id="例：眼，耳，口，鼻"><a href="#例：眼，耳，口，鼻" class="headerlink" title="例：眼，耳，口，鼻"></a>例：眼，耳，口，鼻</h3><h3 id="5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。"><a href="#5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。" class="headerlink" title="5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。"></a>5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。</h3><h3 id="三、逻辑结构与物理结构"><a href="#三、逻辑结构与物理结构" class="headerlink" title="三、逻辑结构与物理结构"></a>三、逻辑结构与物理结构</h3><h3 id="1、逻辑结构：指数据对象中数据元素之间的互相关系。"><a href="#1、逻辑结构：指数据对象中数据元素之间的互相关系。" class="headerlink" title="1、逻辑结构：指数据对象中数据元素之间的互相关系。"></a>1、逻辑结构：指数据对象中数据元素之间的互相关系。</h3><ul>
-<li><strong>集合结构：数据元素同属一个集合</strong></li>
-<li><strong>线性结构：数据元素之间是一对一的关系</strong></li>
-<li><strong>树形结构：数据结构之间存在一种一对多的层次关系</strong></li>
-<li><strong>图形结构：数据元素是多对多的关系</strong></li>
-</ul>
-<h3 id="2、物理结构：指数据的逻辑结构在计算机中的存储形式。"><a href="#2、物理结构：指数据的逻辑结构在计算机中的存储形式。" class="headerlink" title="2、物理结构：指数据的逻辑结构在计算机中的存储形式。"></a>2、物理结构：指数据的逻辑结构在计算机中的存储形式。</h3><ul>
-<li><strong>顺序存储结构：是把数据元素放在地址连续的存储单元里，其数据间的逻辑关系和物理关系是一致的。</strong></li>
-<li><strong>链式存储结构：是把数据元素存放在任意的储存单元里，这组储存单元可以是连续的，也可以是不连续的。</strong></li>
-</ul>
-<h3 id="四、抽象数据类型"><a href="#四、抽象数据类型" class="headerlink" title="四、抽象数据类型"></a>四、抽象数据类型</h3><h3 id="抽象是指抽取出事物具有的普遍性的本质"><a href="#抽象是指抽取出事物具有的普遍性的本质" class="headerlink" title="抽象是指抽取出事物具有的普遍性的本质"></a>抽象是指抽取出事物具有的普遍性的本质</h3><h3 id="ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。"><a href="#ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。" class="headerlink" title="ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。"></a>ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。</h3><h3 id="五、如何区分数据结构，数据类型，抽象数据类型"><a href="#五、如何区分数据结构，数据类型，抽象数据类型" class="headerlink" title="五、如何区分数据结构，数据类型，抽象数据类型"></a>五、如何区分数据结构，数据类型，抽象数据类型</h3><img src="/femcn.github.io/2020/09/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%9B%BE%E7%89%871.png" class title="图片1">
-
-<h3 id="一种数据结构＋定义在此种数据结构上的一组操作＝结构类型"><a href="#一种数据结构＋定义在此种数据结构上的一组操作＝结构类型" class="headerlink" title="一种数据结构＋定义在此种数据结构上的一组操作＝结构类型"></a>一种数据结构＋定义在此种数据结构上的一组操作＝结构类型</h3><h3 id="一种值的集合＋定义在此种值的集合上的一组操作＝原子类型"><a href="#一种值的集合＋定义在此种值的集合上的一组操作＝原子类型" class="headerlink" title="一种值的集合＋定义在此种值的集合上的一组操作＝原子类型"></a>一种值的集合＋定义在此种值的集合上的一组操作＝原子类型</h3><h3 id="结构类型＋原子类型＝数据类型"><a href="#结构类型＋原子类型＝数据类型" class="headerlink" title="结构类型＋原子类型＝数据类型"></a>结构类型＋原子类型＝数据类型</h3><h3 id="数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。"><a href="#数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。" class="headerlink" title="数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。"></a>数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。</h3>]]></content>
-      <categories>
-        <category>数据结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>run</title>
-    <url>/femcn.github.io/2020/10/03/run/</url>
-    <content><![CDATA[<h3 id="一、跑步姿势"><a href="#一、跑步姿势" class="headerlink" title="一、跑步姿势"></a>一、跑步姿势</h3><h3 id="1-跑步的时候眼睛要目视前方"><a href="#1-跑步的时候眼睛要目视前方" class="headerlink" title="1.跑步的时候眼睛要目视前方"></a>1.跑步的时候眼睛要目视前方</h3><p>2.上腹部的区域收紧<br>3.手腕在摆臂的时候尽可能贴近腰<br>4.把重心踩在脚下，注意落地点不要离重心太远<br>5.小动作可能会毁掉你的跑姿，手握手机会使得重心左右偏移</p>
-<h3 id="二、跑步呼吸方式"><a href="#二、跑步呼吸方式" class="headerlink" title="二、跑步呼吸方式"></a>二、跑步呼吸方式</h3><h3 id="●对称节奏呼吸"><a href="#●对称节奏呼吸" class="headerlink" title="●对称节奏呼吸:"></a>●对称节奏呼吸:</h3><h3 id="①如两-三-四步一呼-吸。其中三步一呼-吸适合在不听音乐时使用（因为容易被音乐拍子打乱）。"><a href="#①如两-三-四步一呼-吸。其中三步一呼-吸适合在不听音乐时使用（因为容易被音乐拍子打乱）。" class="headerlink" title="①如两/三/四步一呼/吸。其中三步一呼/吸适合在不听音乐时使用（因为容易被音乐拍子打乱）。"></a>①如两/三/四步一呼/吸。其中三步一呼/吸适合在不听音乐时使用（因为容易被音乐拍子打乱）。</h3><h3 id="②缺点-（对初级跑者可忽略不计，对半-全马选手）每次呼-吸都落在同一只脚，造成左右力量不均衡，影响跑姿、跑步功能，甚至导致受伤。"><a href="#②缺点-（对初级跑者可忽略不计，对半-全马选手）每次呼-吸都落在同一只脚，造成左右力量不均衡，影响跑姿、跑步功能，甚至导致受伤。" class="headerlink" title="②缺点:（对初级跑者可忽略不计，对半/全马选手）每次呼/吸都落在同一只脚，造成左右力量不均衡，影响跑姿、跑步功能，甚至导致受伤。"></a>②缺点:（对初级跑者可忽略不计，对半/全马选手）每次呼/吸都落在同一只脚，造成左右力量不均衡，影响跑姿、跑步功能，甚至导致受伤。</h3><h3 id="●非对称节奏呼吸"><a href="#●非对称节奏呼吸" class="headerlink" title="●非对称节奏呼吸"></a>●非对称节奏呼吸</h3><h3 id="①如-两步一呼，三步一吸；三步一呼，两步一吸。"><a href="#①如-两步一呼，三步一吸；三步一呼，两步一吸。" class="headerlink" title="①如:两步一呼，三步一吸；三步一呼，两步一吸。"></a>①如:两步一呼，三步一吸；三步一呼，两步一吸。</h3><h3 id="②优点-呼吸和脚步会不停循环，帮助减少力学上的不均衡。"><a href="#②优点-呼吸和脚步会不停循环，帮助减少力学上的不均衡。" class="headerlink" title="②优点:呼吸和脚步会不停循环，帮助减少力学上的不均衡。"></a>②优点:呼吸和脚步会不停循环，帮助减少力学上的不均衡。</h3><h3 id="●进阶跑者必学呼吸方式"><a href="#●进阶跑者必学呼吸方式" class="headerlink" title="●进阶跑者必学呼吸方式"></a>●进阶跑者必学呼吸方式</h3><h3 id="①鼻吸口呼，口吸口呼"><a href="#①鼻吸口呼，口吸口呼" class="headerlink" title="①鼻吸口呼，口吸口呼"></a>①鼻吸口呼，口吸口呼</h3><h3 id="②（重点）口呼吸时，用舌头抵住上牙，帮助湿润空气。"><a href="#②（重点）口呼吸时，用舌头抵住上牙，帮助湿润空气。" class="headerlink" title="②（重点）口呼吸时，用舌头抵住上牙，帮助湿润空气。"></a>②（重点）口呼吸时，用舌头抵住上牙，帮助湿润空气。</h3><h3 id="●非常快的冲刺跑呼吸方式"><a href="#●非常快的冲刺跑呼吸方式" class="headerlink" title="●非常快的冲刺跑呼吸方式"></a>●非常快的冲刺跑呼吸方式</h3><h3 id="一步呼-吸；一步呼，两步吸"><a href="#一步呼-吸；一步呼，两步吸" class="headerlink" title="一步呼/吸；一步呼，两步吸"></a>一步呼/吸；一步呼，两步吸</h3>]]></content>
-      <categories>
-        <category>杂</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>java常见问题</title>
-    <url>/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h3 id="java导入的文件灰色，左下角橙色“J”"><a href="#java导入的文件灰色，左下角橙色“J”" class="headerlink" title="java导入的文件灰色，左下角橙色“J”"></a>java导入的文件灰色，左下角橙色“J”</h3><img src="/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png" class title="图片1">
-
-<h3 id="解决办法：重新配置根目录"><a href="#解决办法：重新配置根目录" class="headerlink" title="解决办法：重新配置根目录"></a>解决办法：重新配置根目录</h3><h3 id="1、点击图标"><a href="#1、点击图标" class="headerlink" title="1、点击图标"></a>1、点击图标</h3><img src="/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">
-
-<h3 id="2、重新更改根目录"><a href="#2、重新更改根目录" class="headerlink" title="2、重新更改根目录"></a>2、重新更改根目录</h3><img src="/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">]]></content>
-      <categories>
-        <category>java</category>
       </categories>
   </entry>
   <entry>
@@ -497,9 +456,108 @@
 
  <img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8757.png" class title="图片57">
 
- <img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8758.png" class title="图片58">]]></content>
+ <img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8758.png" class title="图片58">
+
+
+
+<h3 id="十三、向量组"><a href="#十三、向量组" class="headerlink" title="十三、向量组"></a>十三、向量组</h3><h3 id="向量："><a href="#向量：" class="headerlink" title="向量："></a>向量：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8759.png" class title="图片59">
+
+<h3 id="线性组合："><a href="#线性组合：" class="headerlink" title="线性组合："></a>线性组合：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8760.png" class title="图片60">
+
+<h3 id="向量组等价："><a href="#向量组等价：" class="headerlink" title="向量组等价："></a>向量组等价：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8761.png" class title="图片61">
+
+<h3 id="线性相关："><a href="#线性相关：" class="headerlink" title="线性相关："></a>线性相关：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8762.png" class title="图片62">
+
+<h3 id="极大线性无关组："><a href="#极大线性无关组：" class="headerlink" title="极大线性无关组："></a>极大线性无关组：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8763.png" class title="图片63">
+
+<h3 id="向量组的秩："><a href="#向量组的秩：" class="headerlink" title="向量组的秩："></a>向量组的秩：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8764.png" class title="图片64">
+
+<img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8765.png" class title="图片65">
+
+
+
+<h3 id="十四、正交化"><a href="#十四、正交化" class="headerlink" title="十四、正交化"></a>十四、正交化</h3><h3 id="施密特正交化："><a href="#施密特正交化：" class="headerlink" title="施密特正交化："></a>施密特正交化：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8766.png" class title="图片66">
+
+<img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8767.png" class title="图片67">
+
+<img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8768.png" class title="图片68">
+
+<h3 id="正交阵："><a href="#正交阵：" class="headerlink" title="正交阵："></a>正交阵：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8769.png" class title="图片69">
+
+
+
+<h3 id="十五、齐次线性方程组"><a href="#十五、齐次线性方程组" class="headerlink" title="十五、齐次线性方程组"></a>十五、齐次线性方程组</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8770.png" class title="图片70">
+
+<h3 id="解向量、基础解系、零解："><a href="#解向量、基础解系、零解：" class="headerlink" title="解向量、基础解系、零解："></a>解向量、基础解系、零解：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8771.png" class title="图片71">
+
+<h3 id="基础解系向量个数与r-A-的关系："><a href="#基础解系向量个数与r-A-的关系：" class="headerlink" title="基础解系向量个数与r(A)的关系："></a>基础解系向量个数与r(A)的关系：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8772.png" class title="图片72">
+
+<h3 id="通解："><a href="#通解：" class="headerlink" title="通解："></a>通解：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8773.png" class title="图片73">
+
+<h3 id="最简行阶梯阵"><a href="#最简行阶梯阵" class="headerlink" title="最简行阶梯阵"></a>最简行阶梯阵</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8774.png" class title="图片74">
+
+<h3 id="如何解齐次线性方程组："><a href="#如何解齐次线性方程组：" class="headerlink" title="如何解齐次线性方程组："></a>如何解齐次线性方程组：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8775.png" class title="图片75">
+
+<img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8776.png" class title="图片76">
+
+<img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8777.png" class title="图片77">
+
+
+
+<h3 id="十六、非齐次线性方程组"><a href="#十六、非齐次线性方程组" class="headerlink" title="十六、非齐次线性方程组"></a>十六、非齐次线性方程组</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8778.png" class title="图片78">
+
+<h3 id="通解：-1"><a href="#通解：-1" class="headerlink" title="通解："></a>通解：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8779.png" class title="图片79">
+
+<h3 id="增广矩阵："><a href="#增广矩阵：" class="headerlink" title="增广矩阵："></a>增广矩阵：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8780.png" class title="图片80">
+
+<img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8781.png" class title="图片81">
+
+<h3 id="解的条件："><a href="#解的条件：" class="headerlink" title="解的条件："></a>解的条件：</h3><img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8782.png" class title="图片82">
+
+<img src="/femcn.github.io/2020/10/06/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/%E5%9B%BE%E7%89%8783.png" class title="图片83">]]></content>
       <categories>
         <category>线性代数</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>数据结构</title>
+    <url>/femcn.github.io/2020/09/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h3 id="1、数据结构是一门怎样的学科？"><a href="#1、数据结构是一门怎样的学科？" class="headerlink" title="1、数据结构是一门怎样的学科？"></a>1、数据结构是一门怎样的学科？</h3><h3 id="一、数据结构是一门怎样的学科？"><a href="#一、数据结构是一门怎样的学科？" class="headerlink" title="一、数据结构是一门怎样的学科？"></a>一、数据结构是一门怎样的学科？</h3><h3 id="数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科。"><a href="#数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科。" class="headerlink" title="数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科。"></a>数据结构是一门研究<em>非数值计算</em>的程序设计问题中的操作对象，以及它们之间的<em>关系</em>和<em>操作</em>等相关问题的学科。</h3><h3 id="二、基本概念"><a href="#二、基本概念" class="headerlink" title="二、基本概念"></a>二、基本概念</h3><h3 id="1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。"><a href="#1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。" class="headerlink" title="1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。"></a>1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。</h3><h3 id="例：畜类"><a href="#例：畜类" class="headerlink" title="例：畜类"></a>例：畜类</h3><h3 id="2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。"><a href="#2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。" class="headerlink" title="2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。"></a>2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。</h3><h3 id="例：牛，羊，鸡，猪"><a href="#例：牛，羊，鸡，猪" class="headerlink" title="例：牛，羊，鸡，猪"></a>例：牛，羊，鸡，猪</h3><h3 id="3、数据对象：是性质相同的数据元素的集合，是数据的子集"><a href="#3、数据对象：是性质相同的数据元素的集合，是数据的子集" class="headerlink" title="3、数据对象：是性质相同的数据元素的集合，是数据的子集"></a>3、数据对象：是性质相同的数据元素的集合，是数据的子集</h3><h3 id="例：鸡都有翅膀，鸡爪等相同的数据项"><a href="#例：鸡都有翅膀，鸡爪等相同的数据项" class="headerlink" title="例：鸡都有翅膀，鸡爪等相同的数据项"></a>例：鸡都有翅膀，鸡爪等相同的数据项</h3><h3 id="4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位"><a href="#4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位" class="headerlink" title="4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位"></a>4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位</h3><h3 id="例：眼，耳，口，鼻"><a href="#例：眼，耳，口，鼻" class="headerlink" title="例：眼，耳，口，鼻"></a>例：眼，耳，口，鼻</h3><h3 id="5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。"><a href="#5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。" class="headerlink" title="5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。"></a>5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。</h3><h3 id="三、逻辑结构与物理结构"><a href="#三、逻辑结构与物理结构" class="headerlink" title="三、逻辑结构与物理结构"></a>三、逻辑结构与物理结构</h3><h3 id="1、逻辑结构：指数据对象中数据元素之间的互相关系。"><a href="#1、逻辑结构：指数据对象中数据元素之间的互相关系。" class="headerlink" title="1、逻辑结构：指数据对象中数据元素之间的互相关系。"></a>1、逻辑结构：指数据对象中数据元素之间的互相关系。</h3><ul>
+<li><strong>集合结构：数据元素同属一个集合</strong></li>
+<li><strong>线性结构：数据元素之间是一对一的关系</strong></li>
+<li><strong>树形结构：数据结构之间存在一种一对多的层次关系</strong></li>
+<li><strong>图形结构：数据元素是多对多的关系</strong></li>
+</ul>
+<h3 id="2、物理结构：指数据的逻辑结构在计算机中的存储形式。"><a href="#2、物理结构：指数据的逻辑结构在计算机中的存储形式。" class="headerlink" title="2、物理结构：指数据的逻辑结构在计算机中的存储形式。"></a>2、物理结构：指数据的逻辑结构在计算机中的存储形式。</h3><ul>
+<li><strong>顺序存储结构：是把数据元素放在地址连续的存储单元里，其数据间的逻辑关系和物理关系是一致的。</strong></li>
+<li><strong>链式存储结构：是把数据元素存放在任意的储存单元里，这组储存单元可以是连续的，也可以是不连续的。</strong></li>
+</ul>
+<h3 id="四、抽象数据类型"><a href="#四、抽象数据类型" class="headerlink" title="四、抽象数据类型"></a>四、抽象数据类型</h3><h3 id="抽象是指抽取出事物具有的普遍性的本质"><a href="#抽象是指抽取出事物具有的普遍性的本质" class="headerlink" title="抽象是指抽取出事物具有的普遍性的本质"></a>抽象是指抽取出事物具有的普遍性的本质</h3><h3 id="ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。"><a href="#ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。" class="headerlink" title="ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。"></a>ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。</h3><h3 id="五、如何区分数据结构，数据类型，抽象数据类型"><a href="#五、如何区分数据结构，数据类型，抽象数据类型" class="headerlink" title="五、如何区分数据结构，数据类型，抽象数据类型"></a>五、如何区分数据结构，数据类型，抽象数据类型</h3><img src="/femcn.github.io/2020/09/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<h3 id="一种数据结构＋定义在此种数据结构上的一组操作＝结构类型"><a href="#一种数据结构＋定义在此种数据结构上的一组操作＝结构类型" class="headerlink" title="一种数据结构＋定义在此种数据结构上的一组操作＝结构类型"></a>一种数据结构＋定义在此种数据结构上的一组操作＝结构类型</h3><h3 id="一种值的集合＋定义在此种值的集合上的一组操作＝原子类型"><a href="#一种值的集合＋定义在此种值的集合上的一组操作＝原子类型" class="headerlink" title="一种值的集合＋定义在此种值的集合上的一组操作＝原子类型"></a>一种值的集合＋定义在此种值的集合上的一组操作＝原子类型</h3><h3 id="结构类型＋原子类型＝数据类型"><a href="#结构类型＋原子类型＝数据类型" class="headerlink" title="结构类型＋原子类型＝数据类型"></a>结构类型＋原子类型＝数据类型</h3><h3 id="数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。"><a href="#数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。" class="headerlink" title="数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。"></a>数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。</h3>]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>run</title>
+    <url>/femcn.github.io/2020/10/03/run/</url>
+    <content><![CDATA[<h3 id="一、跑步姿势"><a href="#一、跑步姿势" class="headerlink" title="一、跑步姿势"></a>一、跑步姿势</h3><h3 id="1-跑步的时候眼睛要目视前方"><a href="#1-跑步的时候眼睛要目视前方" class="headerlink" title="1.跑步的时候眼睛要目视前方"></a>1.跑步的时候眼睛要目视前方</h3><p>2.上腹部的区域收紧<br>3.手腕在摆臂的时候尽可能贴近腰<br>4.把重心踩在脚下，注意落地点不要离重心太远<br>5.小动作可能会毁掉你的跑姿，手握手机会使得重心左右偏移</p>
+<h3 id="二、跑步呼吸方式"><a href="#二、跑步呼吸方式" class="headerlink" title="二、跑步呼吸方式"></a>二、跑步呼吸方式</h3><h3 id="●对称节奏呼吸"><a href="#●对称节奏呼吸" class="headerlink" title="●对称节奏呼吸:"></a>●对称节奏呼吸:</h3><h3 id="①如两-三-四步一呼-吸。其中三步一呼-吸适合在不听音乐时使用（因为容易被音乐拍子打乱）。"><a href="#①如两-三-四步一呼-吸。其中三步一呼-吸适合在不听音乐时使用（因为容易被音乐拍子打乱）。" class="headerlink" title="①如两/三/四步一呼/吸。其中三步一呼/吸适合在不听音乐时使用（因为容易被音乐拍子打乱）。"></a>①如两/三/四步一呼/吸。其中三步一呼/吸适合在不听音乐时使用（因为容易被音乐拍子打乱）。</h3><h3 id="②缺点-（对初级跑者可忽略不计，对半-全马选手）每次呼-吸都落在同一只脚，造成左右力量不均衡，影响跑姿、跑步功能，甚至导致受伤。"><a href="#②缺点-（对初级跑者可忽略不计，对半-全马选手）每次呼-吸都落在同一只脚，造成左右力量不均衡，影响跑姿、跑步功能，甚至导致受伤。" class="headerlink" title="②缺点:（对初级跑者可忽略不计，对半/全马选手）每次呼/吸都落在同一只脚，造成左右力量不均衡，影响跑姿、跑步功能，甚至导致受伤。"></a>②缺点:（对初级跑者可忽略不计，对半/全马选手）每次呼/吸都落在同一只脚，造成左右力量不均衡，影响跑姿、跑步功能，甚至导致受伤。</h3><h3 id="●非对称节奏呼吸"><a href="#●非对称节奏呼吸" class="headerlink" title="●非对称节奏呼吸"></a>●非对称节奏呼吸</h3><h3 id="①如-两步一呼，三步一吸；三步一呼，两步一吸。"><a href="#①如-两步一呼，三步一吸；三步一呼，两步一吸。" class="headerlink" title="①如:两步一呼，三步一吸；三步一呼，两步一吸。"></a>①如:两步一呼，三步一吸；三步一呼，两步一吸。</h3><h3 id="②优点-呼吸和脚步会不停循环，帮助减少力学上的不均衡。"><a href="#②优点-呼吸和脚步会不停循环，帮助减少力学上的不均衡。" class="headerlink" title="②优点:呼吸和脚步会不停循环，帮助减少力学上的不均衡。"></a>②优点:呼吸和脚步会不停循环，帮助减少力学上的不均衡。</h3><h3 id="●进阶跑者必学呼吸方式"><a href="#●进阶跑者必学呼吸方式" class="headerlink" title="●进阶跑者必学呼吸方式"></a>●进阶跑者必学呼吸方式</h3><h3 id="①鼻吸口呼，口吸口呼"><a href="#①鼻吸口呼，口吸口呼" class="headerlink" title="①鼻吸口呼，口吸口呼"></a>①鼻吸口呼，口吸口呼</h3><h3 id="②（重点）口呼吸时，用舌头抵住上牙，帮助湿润空气。"><a href="#②（重点）口呼吸时，用舌头抵住上牙，帮助湿润空气。" class="headerlink" title="②（重点）口呼吸时，用舌头抵住上牙，帮助湿润空气。"></a>②（重点）口呼吸时，用舌头抵住上牙，帮助湿润空气。</h3><h3 id="●非常快的冲刺跑呼吸方式"><a href="#●非常快的冲刺跑呼吸方式" class="headerlink" title="●非常快的冲刺跑呼吸方式"></a>●非常快的冲刺跑呼吸方式</h3><h3 id="一步呼-吸；一步呼，两步吸"><a href="#一步呼-吸；一步呼，两步吸" class="headerlink" title="一步呼/吸；一步呼，两步吸"></a>一步呼/吸；一步呼，两步吸</h3>]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>java常见问题</title>
+    <url>/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h3 id="java导入的文件灰色，左下角橙色“J”"><a href="#java导入的文件灰色，左下角橙色“J”" class="headerlink" title="java导入的文件灰色，左下角橙色“J”"></a>java导入的文件灰色，左下角橙色“J”</h3><img src="/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<h3 id="解决办法：重新配置根目录"><a href="#解决办法：重新配置根目录" class="headerlink" title="解决办法：重新配置根目录"></a>解决办法：重新配置根目录</h3><h3 id="1、点击图标"><a href="#1、点击图标" class="headerlink" title="1、点击图标"></a>1、点击图标</h3><img src="/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">
+
+<h3 id="2、重新更改根目录"><a href="#2、重新更改根目录" class="headerlink" title="2、重新更改根目录"></a>2、重新更改根目录</h3><img src="/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">]]></content>
+      <categories>
+        <category>java</category>
       </categories>
   </entry>
   <entry>
