@@ -307,24 +307,6 @@
       </categories>
   </entry>
   <entry>
-    <title>java常见问题</title>
-    <url>/femcn/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h3 id="java导入的文件灰色，左下角橙色“J”"><a href="#java导入的文件灰色，左下角橙色“J”" class="headerlink" title="java导入的文件灰色，左下角橙色“J”"></a>java导入的文件灰色，左下角橙色“J”</h3><img src="/femcn/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png" class title="图片1">
-
-<h3 id="解决办法：重新配置根目录"><a href="#解决办法：重新配置根目录" class="headerlink" title="解决办法：重新配置根目录"></a>解决办法：重新配置根目录</h3><h3 id="1、点击图标"><a href="#1、点击图标" class="headerlink" title="1、点击图标"></a>1、点击图标</h3><img src="/femcn/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">
-
-<h3 id="2、重新更改根目录"><a href="#2、重新更改根目录" class="headerlink" title="2、重新更改根目录"></a>2、重新更改根目录</h3><img src="/femcn/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>test</title>
-    <url>/femcn/femcn.github.io/2021/06/12/test/</url>
-    <content><![CDATA[<p>test</p>
-]]></content>
-  </entry>
-  <entry>
     <title>常用搜索方式</title>
     <url>/femcn/femcn.github.io/2020/09/12/%E5%B8%B8%E7%94%A8%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/</url>
     <content><![CDATA[<h3 id="1、精确搜索：双引号"><a href="#1、精确搜索：双引号" class="headerlink" title="1、精确搜索：双引号"></a>1、精确搜索：双引号</h3><h3 id="比如“华为鸿蒙系统”"><a href="#比如“华为鸿蒙系统”" class="headerlink" title="比如“华为鸿蒙系统”"></a>比如“华为鸿蒙系统”</h3><h3 id="2、站内搜索：空格加site-加网址"><a href="#2、站内搜索：空格加site-加网址" class="headerlink" title="2、站内搜索：空格加site:加网址"></a>2、站内搜索：空格加site:加网址</h3><h3 id="比如site-http-stackoverflow-com"><a href="#比如site-http-stackoverflow-com" class="headerlink" title="比如site:http://stackoverflow.com/"></a>比如site:<a href="http://stackoverflow.com/" target="_blank" rel="noopener">http://stackoverflow.com/</a></h3><h3 id="3、模糊搜索："><a href="#3、模糊搜索：" class="headerlink" title="3、模糊搜索：*"></a>3、模糊搜索：*</h3><h3 id="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者"><a href="#比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者" class="headerlink" title="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者"></a>比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者</h3><h3 id="4、缩小范围：空格加减号加需要排除的信息"><a href="#4、缩小范围：空格加减号加需要排除的信息" class="headerlink" title="4、缩小范围：空格加减号加需要排除的信息"></a>4、缩小范围：空格加减号加需要排除的信息</h3><h3 id="比如：笔记本电脑-淘宝"><a href="#比如：笔记本电脑-淘宝" class="headerlink" title="比如：笔记本电脑 -淘宝"></a>比如：笔记本电脑 -淘宝</h3><h3 id="5、文档搜索：空格加filetype-加文档格式"><a href="#5、文档搜索：空格加filetype-加文档格式" class="headerlink" title="5、文档搜索：空格加filetype:加文档格式"></a>5、文档搜索：空格加filetype:加文档格式</h3><h3 id="比如：java教程-filetype-pdf"><a href="#比如：java教程-filetype-pdf" class="headerlink" title="比如：java教程 filetype:pdf"></a>比如：java教程 filetype:pdf</h3>]]></content>
@@ -350,6 +332,24 @@
 <h3 id="一种数据结构＋定义在此种数据结构上的一组操作＝结构类型"><a href="#一种数据结构＋定义在此种数据结构上的一组操作＝结构类型" class="headerlink" title="一种数据结构＋定义在此种数据结构上的一组操作＝结构类型"></a>一种数据结构＋定义在此种数据结构上的一组操作＝结构类型</h3><h3 id="一种值的集合＋定义在此种值的集合上的一组操作＝原子类型"><a href="#一种值的集合＋定义在此种值的集合上的一组操作＝原子类型" class="headerlink" title="一种值的集合＋定义在此种值的集合上的一组操作＝原子类型"></a>一种值的集合＋定义在此种值的集合上的一组操作＝原子类型</h3><h3 id="结构类型＋原子类型＝数据类型"><a href="#结构类型＋原子类型＝数据类型" class="headerlink" title="结构类型＋原子类型＝数据类型"></a>结构类型＋原子类型＝数据类型</h3><h3 id="数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。"><a href="#数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。" class="headerlink" title="数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。"></a>数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。</h3>]]></content>
       <categories>
         <category>数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/femcn/femcn.github.io/2021/06/12/test/</url>
+    <content><![CDATA[<p>test</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>java常见问题</title>
+    <url>/femcn/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h3 id="java导入的文件灰色，左下角橙色“J”"><a href="#java导入的文件灰色，左下角橙色“J”" class="headerlink" title="java导入的文件灰色，左下角橙色“J”"></a>java导入的文件灰色，左下角橙色“J”</h3><img src="/femcn/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<h3 id="解决办法：重新配置根目录"><a href="#解决办法：重新配置根目录" class="headerlink" title="解决办法：重新配置根目录"></a>解决办法：重新配置根目录</h3><h3 id="1、点击图标"><a href="#1、点击图标" class="headerlink" title="1、点击图标"></a>1、点击图标</h3><img src="/femcn/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">
+
+<h3 id="2、重新更改根目录"><a href="#2、重新更改根目录" class="headerlink" title="2、重新更改根目录"></a>2、重新更改根目录</h3><img src="/femcn/femcn.github.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">]]></content>
+      <categories>
+        <category>java</category>
       </categories>
   </entry>
   <entry>
