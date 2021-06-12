@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>搭建博客时遇到的问题</title>
+    <url>/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h2 id="1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"><a href="#1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）" class="headerlink" title="1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"></a>1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）</h2><h3 id="解决办法：先清除缓存，再部署网站，建议养成此习惯"><a href="#解决办法：先清除缓存，再部署网站，建议养成此习惯" class="headerlink" title="解决办法：先清除缓存，再部署网站，建议养成此习惯"></a><strong>解决办法：先清除缓存，再部署网站，建议养成此习惯</strong></h3><h4 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="- hexo clean"></a>- hexo clean</h4><h4 id="hexo-g"><a href="#hexo-g" class="headerlink" title="- hexo g"></a>- hexo g</h4><h4 id="hexo-s"><a href="#hexo-s" class="headerlink" title="- hexo s"></a>- hexo s</h4><hr>
+<h2 id="2、搭建完在本地运行没问题，但通过域名访问时却404"><a href="#2、搭建完在本地运行没问题，但通过域名访问时却404" class="headerlink" title="2、搭建完在本地运行没问题，但通过域名访问时却404"></a>2、搭建完在本地运行没问题，但通过域名访问时却404</h2><h3 id="解决办法：修改-config-yml文件中的url地址和根目录"><a href="#解决办法：修改-config-yml文件中的url地址和根目录" class="headerlink" title="解决办法：修改_config.yml文件中的url地址和根目录"></a>解决办法：修改_config.yml文件中的url地址和根目录</h3><h4 id="url-填github-pages给我们分配的网址，setting里有个绿勾那里"><a href="#url-填github-pages给我们分配的网址，setting里有个绿勾那里" class="headerlink" title="- url: 填github pages给我们分配的网址，setting里有个绿勾那里"></a>- url: 填github pages给我们分配的网址，setting里有个绿勾那里</h4><img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<h4 id="root-填搭建博客的仓库名，setting里的repository-name"><a href="#root-填搭建博客的仓库名，setting里的repository-name" class="headerlink" title="- root: 填搭建博客的仓库名，setting里的repository name"></a>- root: 填搭建博客的仓库名，setting里的repository name</h4><img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">
+
+<hr>
+<h2 id="3、hexo-categories和tags页面不显示，网址后出现-20"><a href="#3、hexo-categories和tags页面不显示，网址后出现-20" class="headerlink" title="3、hexo categories和tags页面不显示，网址后出现/20%/"></a>3、hexo categories和tags页面不显示，网址后出现/20%/</h2><h3 id="解决办法：修改主题配置文件-config-yml中的menu"><a href="#解决办法：修改主题配置文件-config-yml中的menu" class="headerlink" title="解决办法：修改主题配置文件_config.yml中的menu"></a>解决办法：修改主题配置文件_config.yml中的menu</h3><h4 id="把-后面的空格全部去掉-就是-变成"><a href="#把-后面的空格全部去掉-就是-变成" class="headerlink" title="- 把 / 后面的空格全部去掉,就是/ ||变成/||"></a>- 把 / 后面的空格全部去掉,就是/ ||变成/||</h4><img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%873.png" class title="图片3">
+
+<hr>
+<h2 id="4、github-com-拒绝了我们的连接请求-打不开"><a href="#4、github-com-拒绝了我们的连接请求-打不开" class="headerlink" title="4、github.com 拒绝了我们的连接请求,打不开"></a>4、github.com 拒绝了我们的连接请求,打不开</h2><h3 id="解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限"><a href="#解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限" class="headerlink" title="解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限"></a>解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限</h3><h4 id="1、打开https-link-jianshu-com-t-http-3A-2F-2Ftool-chinaz-com-2Fdns"><a href="#1、打开https-link-jianshu-com-t-http-3A-2F-2Ftool-chinaz-com-2Fdns" class="headerlink" title="- 1、打开https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns"></a>- 1、打开<a href="https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns" target="_blank" rel="noopener">https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns</a></h4><h4 id="2、在检测输入栏中输入GitHub官网"><a href="#2、在检测输入栏中输入GitHub官网" class="headerlink" title="- 2、在检测输入栏中输入GitHub官网"></a>- 2、在检测输入栏中输入<a href="https://link.jianshu.com/?t=https%3A%2F%2Fgithub.com%2F" target="_blank" rel="noopener">GitHub</a>官网</h4><h4 id="3、把检测列表的某个ip输入到hosts里，并加上域名"><a href="#3、把检测列表的某个ip输入到hosts里，并加上域名" class="headerlink" title="- 3、把检测列表的某个ip输入到hosts里，并加上域名"></a>- 3、把检测列表的某个ip输入到hosts里，并加上域名</h4><h5 id="修改hosts方法：选中记事本——-gt-右键——-gt-点击“以管理员身份运行”，打开记事本——-gt-在记事本左上角点击文件-gt-打开，在搜索框输C-Windows-System32-drivers-etc，进入hosts所在目录——-gt-点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。"><a href="#修改hosts方法：选中记事本——-gt-右键——-gt-点击“以管理员身份运行”，打开记事本——-gt-在记事本左上角点击文件-gt-打开，在搜索框输C-Windows-System32-drivers-etc，进入hosts所在目录——-gt-点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。" class="headerlink" title="- 修改hosts方法：选中记事本——&gt;右键——&gt;点击“以管理员身份运行”，打开记事本——&gt;在记事本左上角点击文件-&gt;打开，在搜索框输C:\Windows\System32\drivers\etc，进入hosts所在目录——&gt;点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。"></a>- 修改hosts方法：选中记事本——&gt;右键——&gt;点击“以管理员身份运行”，打开记事本——&gt;在记事本左上角点击文件-&gt;打开，在搜索框输C:\Windows\System32\drivers\etc，进入hosts所在目录——&gt;点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。</h5><img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%874.png" class title="图片4">
+
+<hr>
+<h2 id="5、git-clone-失败-fatal-early-EOF-fatal-the-remote-end-hung-up-unexpectedly-fatal-index-pack-failed"><a href="#5、git-clone-失败-fatal-early-EOF-fatal-the-remote-end-hung-up-unexpectedly-fatal-index-pack-failed" class="headerlink" title="5、git clone 失败 fatal: early EOF fatal: the remote end hung up unexpectedly fatal: index-pack failed"></a>5、git clone 失败 fatal: early EOF fatal: the remote end hung up unexpectedly fatal: index-pack failed</h2><h3 id="解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。"><a href="#解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。" class="headerlink" title="解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。"></a>解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。</h3><img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%875.png" class title="图片5">
+
+<h3 id="下面说的是网上查的，也可以试一下"><a href="#下面说的是网上查的，也可以试一下" class="headerlink" title="下面说的是网上查的，也可以试一下"></a>下面说的是网上查的，也可以试一下</h3><h4 id="1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT-SSL-NO-VERIFY环境变量为”ture”，并同时调用正常的git-clone命令"><a href="#1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT-SSL-NO-VERIFY环境变量为”ture”，并同时调用正常的git-clone命令" class="headerlink" title="- 1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT_SSL_NO_VERIFY环境变量为”ture”，并同时调用正常的git clone命令"></a>- 1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT_SSL_NO_VERIFY环境变量为”ture”，并同时调用正常的git clone命令</h4><p>完整的命令如下：env GIT_SSL_NO_VERIFY=true git clone https://&lt;host_name/git/project.git</p>
+<h4 id="2、在克隆完毕的仓库中将http-sslVerify设置为”false”"><a href="#2、在克隆完毕的仓库中将http-sslVerify设置为”false”" class="headerlink" title="- 2、在克隆完毕的仓库中将http.sslVerify设置为”false”"></a>- 2、在克隆完毕的仓库中将http.sslVerify设置为”false”</h4><p>完整的命令如下：git config http.sslVerify “false”</p>
+<hr>
+<h2 id="6、博客文章上插入图片"><a href="#6、博客文章上插入图片" class="headerlink" title="6、博客文章上插入图片"></a>6、博客文章上插入图片</h2><h3 id="1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true"><a href="#1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true" class="headerlink" title="1、把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true"></a>1、把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></h3><h3 id="2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件"><a href="#2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件" class="headerlink" title="2、在你的hexo目录下执行这样一句话npm install https://github.com/7ym0n/hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件"></a>2、在你的hexo目录下执行这样一句话<strong>npm install <a href="https://github.com/7ym0n/hexo-asset-image" target="_blank" rel="noopener">https://github.com/7ym0n/hexo-asset-image</a> –save</strong>，这是下载安装一个可以上传本地图片的插件</h3><h3 id="3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹"><a href="#3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹" class="headerlink" title="3、等待一小段时间后，再运行hexo n &quot;xxxx&quot;来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹"></a>3、等待一小段时间后，再运行<code>hexo n &quot;xxxx&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个<strong>同名的文件夹</strong></h3><h3 id="4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"><a href="#4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是" class="headerlink" title="4、最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"></a>4、最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是<img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%876.png" class title="图片6"></h3>]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>java note</title>
+    <url>/femcn.gitee.io/2020/08/12/java-note/</url>
+    <content><![CDATA[<h2 id="java的学习之路"><a href="#java的学习之路" class="headerlink" title="java的学习之路"></a>java的学习之路</h2><h3 id="java开发的集成环境IDE下载"><a href="#java开发的集成环境IDE下载" class="headerlink" title="java开发的集成环境IDE下载"></a>java开发的集成环境IDE下载</h3><h4 id="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https-blog-csdn-net-qq-38436214-article-details-105071088"><a href="#1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https-blog-csdn-net-qq-38436214-article-details-105071088" class="headerlink" title="1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：https://blog.csdn.net/qq_38436214/article/details/105071088"></a>1、先准备好jdk的安装，安装好之后进行环境配置（简单来说这是运行java的前提，相当于准备工作，就像玩扑克牌得先洗好牌，发好牌一样）教程直接看这篇博客，讲的很清楚了：<a href="https://blog.csdn.net/qq_38436214/article/details/105071088" target="_blank" rel="noopener">https://blog.csdn.net/qq_38436214/article/details/105071088</a></h4><h4 id="2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）"><a href="#2、下载安装程序：IntelliJ-IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）-https-www-jetbrains-com-idea-选择社区版（免费）" class="headerlink" title="2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [https://www.jetbrains.com/idea/]选择社区版（免费）"></a>2、下载安装程序：IntelliJ IDEA（其实就是一个集合了各种各样的功能的软件，包括编辑编译等等）  [<a href="https://www.jetbrains.com/idea/]选择社区版（免费）" target="_blank" rel="noopener">https://www.jetbrains.com/idea/]选择社区版（免费）</a></h4><ul>
+<li><img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%871.png" class title="图片1">选右边那个</li>
+<li>下载后双击下载好的程序，点next，选安装路径，选操作位数</li>
+<li><img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%872.png" class title="图片2">其他不用多选</li>
+<li>继续点next，直接点安装</li>
+<li>等待安装完成</li>
+</ul>
+<h4 id="3、IDEA初次使用"><a href="#3、IDEA初次使用" class="headerlink" title="3、IDEA初次使用"></a>3、IDEA初次使用</h4><ul>
+<li>启动后点已阅读，点don’t send</li>
+<li>选择主题<img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%873.png" class title="图片3">点next</li>
+<li>直接点next<img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%874.png" class title="图片4"></li>
+<li>点右下start开始使用<img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%875.png" class title="图片5"></li>
+<li>new project后进入主页面<img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%876.png" class title="图片6"></li>
+<li>展开左边侧栏，右键src，新建一个 package<img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%877.png" class title="图片7"></li>
+<li>右键刚才新建的package，新建一个class<img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%878.png" class title="图片8"></li>
+<li>写下代码<img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%879.png" class title="图片9"></li>
+<li>点run<img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8710.png" class title="图片10"><img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8711.png" class title="图片11"></li>
+</ul>
+<h3 id="java基本概念"><a href="#java基本概念" class="headerlink" title="java基本概念"></a>java基本概念</h3><h4 id="1、JVM：Java-虚拟机（JVM）是运行-Java-字节码-JVM-可以理解的代码-的虚拟机。JVM-有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的-JVM-实现，是-Java-语言“一次编译，随处可以运行”的关键所在。"><a href="#1、JVM：Java-虚拟机（JVM）是运行-Java-字节码-JVM-可以理解的代码-的虚拟机。JVM-有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的-JVM-实现，是-Java-语言“一次编译，随处可以运行”的关键所在。" class="headerlink" title="1、JVM：Java 虚拟机（JVM）是运行 Java 字节码(JVM 可以理解的代码)的虚拟机。JVM 有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM 实现，是 Java 语言“一次编译，随处可以运行”的关键所在。"></a>1、JVM：Java 虚拟机（JVM）是运行 Java 字节码(JVM 可以理解的代码)的虚拟机。JVM 有针对不同系统的特定实现（Windows，Linux，macOS），目的是使用相同的字节码，它们都会给出相同的结果。字节码和不同系统的 JVM 实现，是 Java 语言“一次编译，随处可以运行”的关键所在。</h4><img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8712.png" class title="图片12">
+
+
+
+<h4 id="2、JDK和JRE："><a href="#2、JDK和JRE：" class="headerlink" title="2、JDK和JRE："></a>2、JDK和JRE：</h4><h4 id="JDK-Java-Development-Kit，它是功能齐全的-Java-SDK-软件开发工具包-。它拥有-JRE-所拥有的一切，还有编译器（javac）和工具（如-javadoc-和-jdb）。它能够创建和编译程序。"><a href="#JDK-Java-Development-Kit，它是功能齐全的-Java-SDK-软件开发工具包-。它拥有-JRE-所拥有的一切，还有编译器（javac）和工具（如-javadoc-和-jdb）。它能够创建和编译程序。" class="headerlink" title="JDK: Java Development Kit，它是功能齐全的 Java SDK(软件开发工具包)。它拥有 JRE 所拥有的一切，还有编译器（javac）和工具（如 javadoc 和 jdb）。它能够创建和编译程序。"></a>JDK: Java Development Kit，它是功能齐全的 Java SDK(软件开发工具包)。它拥有 JRE 所拥有的一切，还有编译器（javac）和工具（如 javadoc 和 jdb）。它能够创建和编译程序。</h4><h4 id="JRE-Java-运行时环境。它是运行已编译-Java-程序所需的所有内容的集合，包括-Java-虚拟机（JVM），Java-类库，java-命令和其他的一些基础构件。但是，它不能用于创建新程序。"><a href="#JRE-Java-运行时环境。它是运行已编译-Java-程序所需的所有内容的集合，包括-Java-虚拟机（JVM），Java-类库，java-命令和其他的一些基础构件。但是，它不能用于创建新程序。" class="headerlink" title="JRE: Java 运行时环境。它是运行已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，java 命令和其他的一些基础构件。但是，它不能用于创建新程序。"></a>JRE: Java 运行时环境。它是运行已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，java 命令和其他的一些基础构件。但是，它不能用于创建新程序。</h4><h4 id="3、为什么说java语言“编译与解释并存”？"><a href="#3、为什么说java语言“编译与解释并存”？" class="headerlink" title="3、为什么说java语言“编译与解释并存”？"></a>3、为什么说java语言“编译与解释并存”？</h4><h4 id="高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读，-有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java-程序要经过先编译，后解释两个步骤，由-Java-编写的程序需要先经过编译步骤，生成字节码（-class-文件），这种字节码必须由-Java-解释器来解释执行。因此，我们可以认为-Java-语言编译与解释并存。"><a href="#高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读，-有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java-程序要经过先编译，后解释两个步骤，由-Java-编写的程序需要先经过编译步骤，生成字节码（-class-文件），这种字节码必须由-Java-解释器来解释执行。因此，我们可以认为-Java-语言编译与解释并存。" class="headerlink" title="高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读， 有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java 程序要经过先编译，后解释两个步骤，由 Java 编写的程序需要先经过编译步骤，生成字节码（*.class 文件），这种字节码必须由 Java 解释器来解释执行。因此，我们可以认为 Java 语言编译与解释并存。"></a>高级编程语言按照程序的执行方式分为编译型和解释型两种。简单来说，编译型语言是指编译器针对特定的操作系统将源代码一次性翻译成可被该平台执行的机器码；解释型语言是指解释器对源程序逐行解释成特定平台的机器码并立即执行。比如，你想阅读一本英文名著，你可以找一个英文翻译人员帮助你阅读， 有两种选择方式，你可以先等翻译人员将全本的英文名著（也就是源码）都翻译成汉语，再去阅读，也可以让翻译人员翻译一段，你在旁边阅读一段，慢慢把书读完。Java 程序要经过先编译，后解释两个步骤，由 Java 编写的程序需要先经过编译步骤，生成字节码（*.class 文件），这种字节码必须由 Java 解释器来解释执行。因此，我们可以认为 Java 语言编译与解释并存。</h4><img src="/femcn.gitee.io/2020/08/12/java-note/%E5%9B%BE%E7%89%8713.png" class title="图片13">
+
+<h4 id="4、为什么java程序里要把主函数放在类中？"><a href="#4、为什么java程序里要把主函数放在类中？" class="headerlink" title="4、为什么java程序里要把主函数放在类中？"></a>4、为什么java程序里要把主函数放在类中？</h4><h4 id="方法-对应C-的函数-被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。"><a href="#方法-对应C-的函数-被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。" class="headerlink" title="方法(对应C++的函数)被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。"></a>方法(对应C++的函数)被认为只能隶属于类，任何JAVA执行任何程序都是从主函数开始出发的，主函数也算是一个静态方法，可以由这个类中的主函数调用其他类中的方法。</h4><h3 id="5、什么是接口？"><a href="#5、什么是接口？" class="headerlink" title="5、什么是接口？"></a>5、什么是接口？</h3><h3 id="接口和抽象类是抽取自具体实现类的一种结构化表示，定义一个接口意味着：“所有实现我的类都得长我这个样子，任何实现该接口的类都会具有该接口所定义的方法，接口只是为其实现定义了一个协议，任何实现类都得遵守。”"><a href="#接口和抽象类是抽取自具体实现类的一种结构化表示，定义一个接口意味着：“所有实现我的类都得长我这个样子，任何实现该接口的类都会具有该接口所定义的方法，接口只是为其实现定义了一个协议，任何实现类都得遵守。”" class="headerlink" title="接口和抽象类是抽取自具体实现类的一种结构化表示，定义一个接口意味着：“所有实现我的类都得长我这个样子，任何实现该接口的类都会具有该接口所定义的方法，接口只是为其实现定义了一个协议，任何实现类都得遵守。”"></a>接口和抽象类是抽取自具体实现类的一种结构化表示，定义一个接口意味着：“所有实现我的类都得长我这个样子，任何实现该接口的类都会具有该接口所定义的方法，<u>接口只是为其实现定义了一个协议，任何实现类都得遵守。</u>”</h3><h3 id="java基本语法："><a href="#java基本语法：" class="headerlink" title="java基本语法："></a>java基本语法：</h3><h4 id="源文件声明规则："><a href="#源文件声明规则：" class="headerlink" title="源文件声明规则："></a>源文件声明规则：</h4><ul>
+<li><strong>一个源文件中只能有一个 public 类</strong></li>
+<li><strong>一个源文件可以有多个非 public 类</strong></li>
+<li><strong>源文件的名称应该和 public 类的类名保持一致。例如：源文件中 public 类的类名是 Employee，那么源文件应该命名为Employee.java</strong></li>
+<li><strong>如果一个类定义在某个包中，那么 package 语句应该在源文件的首行</strong></li>
+<li><strong>如果源文件包含 import 语句，那么应该放在 package 语句和类定义之间。如果没有 package 语句，那么 import 语句应该在源文件中最前面</strong></li>
+<li><strong>import 语句和 package 语句对源文件中定义的所有类都有效。在同一源文件中，不能给不同的类不同的包声明</strong></li>
+</ul>
+<h4 id="java包"><a href="#java包" class="headerlink" title="java包"></a>java包</h4><ul>
+<li><strong>包主要用来对类和接口进行分类。当开发 Java 程序时，可能编写成百上千的类，因此很有必要对类和接口进行分类</strong></li>
+</ul>
+<h4 id="import语句"><a href="#import语句" class="headerlink" title="import语句"></a>import语句</h4><ul>
+<li><strong>在 Java 中，如果给出一个完整的限定名，包括包名、类名，那么 Java 编译器就可以很容易地定位到源代码或者类。import 语句就是用来提供一个合理的路径，使得编译器可以找到某个类</strong></li>
+</ul>
+<h3 id="java变量类型"><a href="#java变量类型" class="headerlink" title="java变量类型"></a>java变量类型</h3><h4 id="1、局部变量"><a href="#1、局部变量" class="headerlink" title="1、局部变量"></a>1、局部变量</h4><ul>
+<li><strong>局部变量声明在方法、构造方法或者语句块中</strong></li>
+<li><strong>局部变量在方法、构造方法、或者语句块被执行的时候创建，当它们执行完成后，变量将会被销毁</strong></li>
+<li><strong>访问修饰符不能用于局部变量</strong></li>
+<li><strong>局部变量只在声明它的方法、构造方法或者语句块中可见</strong></li>
+<li><strong>局部变量是在栈上分配的</strong></li>
+<li><strong>局部变量没有默认值，所以局部变量被声明后，必须经过初始化，才可以使用</strong></li>
+</ul>
+<h4 id="2、实例变量"><a href="#2、实例变量" class="headerlink" title="2、实例变量"></a>2、实例变量</h4><ul>
+<li><strong>实例变量声明在一个类中，但在方法、构造方法和语句块之外</strong></li>
+<li><strong>当一个对象被实例化之后，每个实例变量的值就跟着确定</strong></li>
+<li><strong>实例变量在对象创建的时候创建，在对象被销毁的时候销毁</strong></li>
+<li><strong>实例变量的值应该至少被一个方法、构造方法或者语句块引用，使得外部能够通过这些方式获取实例变量信息</strong></li>
+<li><strong>实例变量可以声明在使用前或者使用后</strong></li>
+<li><strong>访问修饰符可以修饰实例变量</strong></li>
+<li><strong>实例变量对于类中的方法、构造方法或者语句块是可见的。一般情况下应该把实例变量设为私有。通过使用访问修饰符可以使实例变量对子类可见</strong></li>
+<li><strong>实例变量具有默认值。数值型变量的默认值是0，布尔型变量的默认值是false，引用类型变量的默认值是null。变量的值可以在声明时指定，也可以在构造方法中指定</strong></li>
+<li><strong>实例变量可以直接通过变量名访问。但在静态方法以及其他类中，就应该使用完全限定名：ObejectReference.VariableName</strong></li>
+</ul>
+<h4 id="3、类变量"><a href="#3、类变量" class="headerlink" title="3、类变量"></a>3、类变量</h4><ul>
+<li><strong>类变量也称为静态变量，在类中以 static 关键字声明，但必须在方法之外</strong></li>
+<li><strong>无论一个类创建了多少个对象，类只拥有类变量的一份拷贝</strong></li>
+<li><strong>静态变量除了被声明为常量外很少使用。常量是指声明为public/private，final和static类型的变量。常量初始化后不可改变</strong></li>
+<li><strong>静态变量储存在静态存储区。经常被声明为常量，很少单独使用static声明变量</strong></li>
+<li><strong>静态变量在第一次被访问时创建，在程序结束时销毁</strong></li>
+<li><strong>与实例变量具有相似的可见性。但为了对类的使用者可见，大多数静态变量声明为public类型</strong></li>
+<li><strong>默认值和实例变量相似。数值型变量默认值是0，布尔型默认值是false，引用类型默认值是null。变量的值可以在声明的时候指定，也可以在构造方法中指定。此外，静态变量还可以在静态语句块中初始化</strong></li>
+<li><strong>静态变量可以通过：<em>ClassName.VariableName</em>的方式访问</strong></li>
+<li><strong>类变量被声明为public static final类型时，类变量名称一般建议使用大写字母。如果静态变量不是public和final类型，其命名方式与实例变量以及局部变量的命名方式一致</strong></li>
+</ul>
+<hr>
+<h3 id="引用与“-”"><a href="#引用与“-”" class="headerlink" title="引用与“=”"></a>引用与“=”</h3><p><strong>如果一个变量是基本类型，比如 int hp = 50;</strong><br><strong>我们就直接管hp叫变量</strong><br><strong>=表示赋值的意思</strong>。</p>
+<p><strong>如果一个变量是类类型，比如 Hero h = new Hero();</strong><br><strong>我们就管h叫做引用。</strong><br><strong>=不再是赋值的意思</strong><br><strong>=表示指向的意思</strong></p>
+<p><strong>比如 Hero h = new Hero();</strong><br><strong>这句话的意思是</strong><br><strong>引用h，指向一个Hero对象</strong></p>
+<hr>
+<h3 id="什么情况该用什么修饰符呢？"><a href="#什么情况该用什么修饰符呢？" class="headerlink" title="什么情况该用什么修饰符呢？"></a>什么情况该用什么修饰符呢？</h3><h3 id="1、属性通常使用private封装起来"><a href="#1、属性通常使用private封装起来" class="headerlink" title="1、属性通常使用private封装起来"></a>1、属性通常使用private封装起来</h3><h3 id="2、方法一般使用public用于被调用"><a href="#2、方法一般使用public用于被调用" class="headerlink" title="2、方法一般使用public用于被调用"></a>2、方法一般使用public用于被调用</h3><h3 id="3、会被子类继承的方法，通常使用protected"><a href="#3、会被子类继承的方法，通常使用protected" class="headerlink" title="3、会被子类继承的方法，通常使用protected"></a>3、会被子类继承的方法，通常使用protected</h3><h3 id="简单说，能用private就用private，不行就放大一级，用package-再不行就用protected，最后用public。-这样就能把数据尽量的封装起来，没有必要露出来的，就不用露出来了"><a href="#简单说，能用private就用private，不行就放大一级，用package-再不行就用protected，最后用public。-这样就能把数据尽量的封装起来，没有必要露出来的，就不用露出来了" class="headerlink" title="简单说，能用private就用private，不行就放大一级，用package,再不行就用protected，最后用public。 这样就能把数据尽量的封装起来，没有必要露出来的，就不用露出来了"></a>简单说，能用private就用private，不行就放大一级，用package,再不行就用protected，最后用public。 这样就能把数据尽量的封装起来，没有必要<strong>露出来的</strong>，就不用<strong>露出来</strong>了</h3>]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>web note</title>
+    <url>/femcn.gitee.io/2020/08/14/web-note/</url>
+    <content><![CDATA[<h3 id="ip地址，域名，网址（url）-DNS-hosts之间的关系"><a href="#ip地址，域名，网址（url）-DNS-hosts之间的关系" class="headerlink" title="ip地址，域名，网址（url）,DNS,hosts之间的关系"></a>ip地址，域名，网址（url）,DNS,hosts之间的关系</h3><h4 id="1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。"><a href="#1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。" class="headerlink" title="1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。"></a>1、ip地址：在Internet上有千百万台主机，为了区分这些主机，人们给每台主机都分配了一个专门的地址，称为IP地址，通过IP地址就可以访问到每一台主机。简单来说，IP地址是计算机在网络中的门牌号。</h4><h4 id="2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名-Domain-Name）。域名前加上传输协议信息及主机类型信息就构成了网址-URL）。"><a href="#2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名-Domain-Name）。域名前加上传输协议信息及主机类型信息就构成了网址-URL）。" class="headerlink" title="2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名(Domain Name）。域名前加上传输协议信息及主机类型信息就构成了网址(URL）。"></a>2、域名：虽然可以通过IP地址来访问每一台主机，但是要记住那么多枯糙的数字串显然是非常困难的，为此，Internet提供了域名(Domain Name）。域名前加上传输协议信息及主机类型信息就构成了网址(URL）。</h4><h4 id="不同域名不同后缀："><a href="#不同域名不同后缀：" class="headerlink" title="不同域名不同后缀："></a>不同域名不同后缀：</h4><ul>
+<li><p>.com 用于商业公司 </p>
+</li>
+<li><p>.org 用于组织、协会等</p>
+</li>
+<li><p>.net 用于网络服务</p>
+</li>
+<li><p>.edu 用于教育机构</p>
+</li>
+<li><p>.gov. 用于政府部门</p>
+</li>
+<li><p>.mil 用于军事领域</p>
+</li>
+</ul>
+<h4 id="由于国际域名资源有限，各个国家、地区在域名最后加上了国家标识段，由此形成了各个国家、地区自己的国内域名，如："><a href="#由于国际域名资源有限，各个国家、地区在域名最后加上了国家标识段，由此形成了各个国家、地区自己的国内域名，如：" class="headerlink" title="由于国际域名资源有限，各个国家、地区在域名最后加上了国家标识段，由此形成了各个国家、地区自己的国内域名，如："></a>由于国际域名资源有限，各个国家、地区在域名最后加上了国家标识段，由此形成了各个国家、地区自己的国内域名，如：</h4><ul>
+<li><p>.com.cn 中国的商业</p>
+</li>
+<li><p>.org.hk 香港的组织</p>
+</li>
+<li><p>.net.jp 日本的网络</p>
+</li>
+</ul>
+<h4 id="3、网址（url）-我们在浏览器的地址栏里输入的网站地址叫做URL-Uniform-Resource-Locator，统一资源定位符-。就像每家每户都有一个门牌地址一样，每个网页也都有一个Internet地址。当你在浏览器的地址框中输入一个URL或是单击一个超级链接时，URL就确定了要浏览的地址。浏览器通过超文本传输协议-HTTP-，将Web服务器上站点的网页代码提取出来，并翻译成漂亮的网页。"><a href="#3、网址（url）-我们在浏览器的地址栏里输入的网站地址叫做URL-Uniform-Resource-Locator，统一资源定位符-。就像每家每户都有一个门牌地址一样，每个网页也都有一个Internet地址。当你在浏览器的地址框中输入一个URL或是单击一个超级链接时，URL就确定了要浏览的地址。浏览器通过超文本传输协议-HTTP-，将Web服务器上站点的网页代码提取出来，并翻译成漂亮的网页。" class="headerlink" title="3、网址（url）:我们在浏览器的地址栏里输入的网站地址叫做URL (Uniform Resource Locator，统一资源定位符)。就像每家每户都有一个门牌地址一样，每个网页也都有一个Internet地址。当你在浏览器的地址框中输入一个URL或是单击一个超级链接时，URL就确定了要浏览的地址。浏览器通过超文本传输协议(HTTP)，将Web服务器上站点的网页代码提取出来，并翻译成漂亮的网页。"></a>3、网址（url）:我们在浏览器的地址栏里输入的网站地址叫做URL (Uniform Resource Locator，统一资源定位符)。就像每家每户都有一个门牌地址一样，每个网页也都有一个Internet地址。当你在浏览器的地址框中输入一个URL或是单击一个超级链接时，URL就确定了要浏览的地址。浏览器通过超文本传输协议(HTTP)，将Web服务器上站点的网页代码提取出来，并翻译成漂亮的网页。</h4><h4 id="4、DNS：Domain-Name-System域名系统，人们习惯记忆域名，但机器间互相只认IP地址，域名与IP地址之间是一一对应的，它们之间的转换工作称为域名解析，完成这个工作的就是装有域名系统（DNS）的域名解析服务器-DNS-，一个是system，一个是server。"><a href="#4、DNS：Domain-Name-System域名系统，人们习惯记忆域名，但机器间互相只认IP地址，域名与IP地址之间是一一对应的，它们之间的转换工作称为域名解析，完成这个工作的就是装有域名系统（DNS）的域名解析服务器-DNS-，一个是system，一个是server。" class="headerlink" title="4、DNS：Domain Name System域名系统，人们习惯记忆域名，但机器间互相只认IP地址，域名与IP地址之间是一一对应的，它们之间的转换工作称为域名解析，完成这个工作的就是装有域名系统（DNS）的域名解析服务器(DNS)，一个是system，一个是server。"></a>4、DNS：Domain Name System域名系统，人们习惯记忆域名，但机器间互相只认IP地址，域名与IP地址之间是一一对应的，它们之间的转换工作称为域名解析，完成这个工作的就是装有域名系统（DNS）的域名解析服务器(DNS)，一个是system，一个是server。</h4><h4 id="5、hosts-这个文件相当于一个本地的小型DNS服务器，电脑会优先在本地的hosts文件中查找网址对应的IP，如果没有找到，才向DNS请求。就像是先在自己的qq好友列表里找，找不到再去用号码搜索一样。"><a href="#5、hosts-这个文件相当于一个本地的小型DNS服务器，电脑会优先在本地的hosts文件中查找网址对应的IP，如果没有找到，才向DNS请求。就像是先在自己的qq好友列表里找，找不到再去用号码搜索一样。" class="headerlink" title="5、hosts:这个文件相当于一个本地的小型DNS服务器，电脑会优先在本地的hosts文件中查找网址对应的IP，如果没有找到，才向DNS请求。就像是先在自己的qq好友列表里找，找不到再去用号码搜索一样。"></a>5、hosts:这个文件相当于一个本地的小型DNS服务器，电脑会优先在本地的hosts文件中查找网址对应的IP，如果没有找到，才向DNS请求。就像是先在自己的qq好友列表里找，找不到再去用号码搜索一样。</h4><h4 id="例如：https-www-runoob-com-java-java-basic-syntax-html，就是网址（URL）"><a href="#例如：https-www-runoob-com-java-java-basic-syntax-html，就是网址（URL）" class="headerlink" title="例如：https://www.runoob.com/java/java-basic-syntax.html，就是网址（URL）"></a>例如：<a href="https://www.runoob.com/java/java-basic-syntax.html，就是网址（URL）" target="_blank" rel="noopener">https://www.runoob.com/java/java-basic-syntax.html，就是网址（URL）</a></h4><h4 id="runoob-com就是域名"><a href="#runoob-com就是域名" class="headerlink" title="runoob.com就是域名"></a>runoob.com就是域名</h4><h4 id="221-233-60-202就是ip地址"><a href="#221-233-60-202就是ip地址" class="headerlink" title="221.233.60.202就是ip地址"></a>221.233.60.202就是ip地址</h4><h4 id="http：-就是协议名称"><a href="#http：-就是协议名称" class="headerlink" title="http：//就是协议名称"></a>http：//就是协议名称</h4><h4 id="www代表一个web服务器"><a href="#www代表一个web服务器" class="headerlink" title="www代表一个web服务器"></a>www代表一个web服务器</h4><h4 id="java就是存放目录"><a href="#java就是存放目录" class="headerlink" title="java就是存放目录"></a>java就是存放目录</h4><h4 id="java-html就是文件名称"><a href="#java-html就是文件名称" class="headerlink" title="java.html就是文件名称"></a>java.html就是文件名称</h4><h4 id="你通过录入URL-https-www-runoob-com-java-java-basic-syntax-html让浏览器知道你要访问runoob-com（域名）电脑就会把runoob-com（域名）解析成221-233-60-202（ip地址）然后和221-233-60-202建立连接告诉221-233-60-202-我要看-https-www-runoob-com-java-java-basic-syntax-html（URL）"><a href="#你通过录入URL-https-www-runoob-com-java-java-basic-syntax-html让浏览器知道你要访问runoob-com（域名）电脑就会把runoob-com（域名）解析成221-233-60-202（ip地址）然后和221-233-60-202建立连接告诉221-233-60-202-我要看-https-www-runoob-com-java-java-basic-syntax-html（URL）" class="headerlink" title="你通过录入URL https://www.runoob.com/java/java-basic-syntax.html让浏览器知道你要访问runoob.com（域名）电脑就会把runoob.com（域名）解析成221.233.60.202（ip地址）然后和221.233.60.202建立连接告诉221.233.60.202 我要看 https://www.runoob.com/java/java-basic-syntax.html（URL）"></a>你通过录入URL <a href="https://www.runoob.com/java/java-basic-syntax.html让浏览器知道你要访问runoob.com（域名）电脑就会把runoob.com（域名）解析成221.233.60.202（ip地址）然后和221.233.60.202建立连接告诉221.233.60.202" target="_blank" rel="noopener">https://www.runoob.com/java/java-basic-syntax.html让浏览器知道你要访问runoob.com（域名）电脑就会把runoob.com（域名）解析成221.233.60.202（ip地址）然后和221.233.60.202建立连接告诉221.233.60.202</a> 我要看 <a href="https://www.runoob.com/java/java-basic-syntax.html（URL）" target="_blank" rel="noopener">https://www.runoob.com/java/java-basic-syntax.html（URL）</a></h4>]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>sing</title>
+    <url>/femcn.gitee.io/2020/08/23/sing/</url>
+    <content><![CDATA[<h3 id="转载自知乎Chester写的文章，下面是经过我整理的，方便看一些"><a href="#转载自知乎Chester写的文章，下面是经过我整理的，方便看一些" class="headerlink" title="转载自知乎Chester写的文章，下面是经过我整理的，方便看一些"></a>转载自知乎Chester写的文章，下面是经过我整理的，方便看一些</h3><h3 id="简单易懂的唱歌原理"><a href="#简单易懂的唱歌原理" class="headerlink" title="简单易懂的唱歌原理"></a>简单易懂的唱歌原理</h3><h3 id="1、什么是“哼”"><a href="#1、什么是“哼”" class="headerlink" title="1、什么是“哼”"></a>1、什么是“哼”</h3><h4 id="其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。"><a href="#其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。" class="headerlink" title="其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。"></a>其实很多人无法解开高音与共鸣的大门，就是一直卡在一个地方，就是不懂的如何轻松的让声带达到高频振动，且用最小的力得到最好的高位置共鸣，还不懂如何保持统一的音色。</h4><h4 id="电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。"><a href="#电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。" class="headerlink" title="电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。"></a>电视剧里经常说的一句台词：“哼！有什么了不起！”，自然的哼一个找找那个不服气的感觉，模仿下试试。是不是胸口先有挡气感然后力量向下延伸去了，然后肚子有微微膨胀（如果漏气就没膨胀感了），然后头腔有明显的震动感？而且感觉完全没有很用力，轻轻一下就OK。</h4><h4 id="当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。"><a href="#当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。" class="headerlink" title="当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。"></a>当你熟悉这个感觉之后，我们在练习的时候，就要稍微注意下“打开”和发声位置，以及不要主动挤压腰腹，学会熟悉这个之后慢慢加，别着急。</h4><h3 id="2、如何打开"><a href="#2、如何打开" class="headerlink" title="2、如何打开"></a>2、如何打开</h3><h4 id="1、微笑着（找开心兴奋的感受）"><a href="#1、微笑着（找开心兴奋的感受）" class="headerlink" title="1、微笑着（找开心兴奋的感受）"></a><strong>1、微笑着</strong>（<strong>找开心兴奋的感受</strong>）</h4><h4 id="2、打哈欠-前期（打哈欠前期吸气的这个扩张感，时刻保持）"><a href="#2、打哈欠-前期（打哈欠前期吸气的这个扩张感，时刻保持）" class="headerlink" title="2、打哈欠 前期（打哈欠前期吸气的这个扩张感，时刻保持）"></a><strong>2、打哈欠 前期</strong>（打哈欠前期<strong>吸气</strong>的这个<strong>扩张感</strong>，时刻保持）</h4><h4 id="3、口腔内部（不是让你张大外嘴，外边笑，内部扩，发-MA（妈）-音体会，在发声时要时刻保证喉位稳定在相对低的位置上）"><a href="#3、口腔内部（不是让你张大外嘴，外边笑，内部扩，发-MA（妈）-音体会，在发声时要时刻保证喉位稳定在相对低的位置上）" class="headerlink" title="3、口腔内部（不是让你张大外嘴，外边笑，内部扩，发 MA（妈） 音体会，在发声时要时刻保证喉位稳定在相对低的位置上）"></a><strong>3、口腔内部</strong>（不是让你<strong>张大外嘴</strong>，<strong>外边笑，内部扩，发 MA（妈） 音体会</strong>，<strong>在发声时要时刻保证喉位稳定在相对低的位置上</strong>）</h4><h4 id="4、扩张状态-就是打开喉咙（口腔内部的扩张感就是通的感觉，有空间的感觉）"><a href="#4、扩张状态-就是打开喉咙（口腔内部的扩张感就是通的感觉，有空间的感觉）" class="headerlink" title="4、扩张状态 就是打开喉咙（口腔内部的扩张感就是通的感觉，有空间的感觉）"></a><strong>4、扩张状态 就是打开喉咙</strong>（<strong>口腔内部的扩张感就是通的感觉，有空间的感觉</strong>）</h4><h4 id="5、发声时要-时刻保持，换气也一样（去发元音“啊”-，可以体会保持和锻炼这个状态）"><a href="#5、发声时要-时刻保持，换气也一样（去发元音“啊”-，可以体会保持和锻炼这个状态）" class="headerlink" title="5、发声时要 时刻保持，换气也一样（去发元音“啊” ，可以体会保持和锻炼这个状态）"></a><strong>5、发声时要 时刻保持，换气也一样</strong>（去发元音“啊” ，可以体会保持和锻炼这个状态）</h4><h4 id="看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程"><a href="#看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程" class="headerlink" title="看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程"></a>看不懂的同学，发U（呜）感受口腔深处的扩张感，这就是打开！还有各位可以练习“气泡音”，网上很多教程</h4><h3 id="3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）"><a href="#3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）" class="headerlink" title="3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）"></a>3、锁骨下压和胸口支点（本文重点！！！这里个人觉得有点难理解，多试试吧）</h3><h4 id="在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。"><a href="#在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。" class="headerlink" title="在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。"></a>在我们唱歌前吸气打开喉位下放好后，可以让喉位的降低与胸口支点关联起来，不然增加气压，喉位会上挤，从而影响喉头稳定和声带的闭合与震动频率改变。</h4><h4 id="注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！-）"><a href="#注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！-）" class="headerlink" title="注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！ ）"></a>注意以胸口为支点脖子不要过分紧张，除了支点憋气似的用力，支点以上要放松，包括下巴，在前面提到的不屑的哼里体会，稳住胸口发声位置，发声力量向下延伸（这个垂直向下的力就是主力！体会叹气时的用力方式！ ）</h4><h4 id="注意注意注意！每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）"><a href="#注意注意注意！每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）" class="headerlink" title="注意注意注意！每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）"></a>注意注意注意！<strong>每一次发声都要有丹田与后腰的底座感，声音滑落到底座一般。</strong>有了这个感受，声带就能很好的闭合发声了，腰腹气息支撑才能用到，腰腹不要故意挤压哦！）</h4><h4 id="简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌"><a href="#简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌" class="headerlink" title="简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌"></a><strong>简单理解为先稳住胸口支点闭合，且不断的持续像叹气一样向下的力去挡气唱歌</strong></h4><h4 id="胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）"><a href="#胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）" class="headerlink" title="胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）"></a><strong>胸口支点是喉位下放，发声时喉位稳定与声带闭合良好的开关（只要我们胸口支点一受力（憋气感）（叹气一样持续向下的力），喉位就会持续下放稳定，声带会自动闭合）</strong></h4>]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>科学上网原理</title>
+    <url>/femcn.gitee.io/2020/08/16/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/</url>
+    <content><![CDATA[<h3 id="1、DNS污染"><a href="#1、DNS污染" class="headerlink" title="1、DNS污染"></a>1、DNS污染</h3><ul>
+<li>DNS 污染（DNS Spoofing）又称为<strong>域名服务器缓存污染</strong>，由于全球只有 13 个顶级域名服务器，所以为了避免单点故障、减少查询压力等等会有各级缓存。如果你使用的是国外的 DNS 服务器，比如 Google 8.8.8.8，DNS 查询需要经过国际出口。<strong>防火墙</strong>会通过技术手段伪造 DNS 的查询结果，这样你查询到的 IP 地址并非域名的真实地址，也就会访问失败。</li>
+<li>测试 DNS 是否被污染最佳工具是 <a href="http://www.chinafirewalltest.com/" target="_blank" rel="noopener">China Firewall Test</a>。</li>
+</ul>
+<h3 id="2、DNS劫持"><a href="#2、DNS劫持" class="headerlink" title="2、DNS劫持"></a>2、DNS劫持</h3><ul>
+<li>DNS 劫持和 DNS 污染是不同的，国内很多的 ISP（Internet Service Provider，中国移动、中国电信、中国联通等等）会<strong>故意修改自己 DNS 服务器上的记录</strong>，把某些敏感网站的记录修改成错误的 IP 地址。比如你使用电信、联通、移动的宽带，默认你是不需要设置任何DNS服务器的。这些DNS服务器由他们提供。一旦检测到你访问的网页是不允许的访问的，就会返回一个不存在的网页。</li>
+</ul>
+<h3 id="3、IP黑名单"><a href="#3、IP黑名单" class="headerlink" title="3、IP黑名单"></a>3、IP黑名单</h3><ul>
+<li>在你请求某个 IP 地址时，如果其恰好在 GFW 的 IP 黑名单上，GFW 会屏蔽这些报文，导致无法正常访问。</li>
+<li>测试 IP 是否被墙的最佳工具是<a href="http://ping.chinaz.com/" target="_blank" rel="noopener">站长工具 Ping 检测</a>。</li>
+</ul>
+<h3 id="4、VPN"><a href="#4、VPN" class="headerlink" title="4、VPN"></a>4、VPN</h3><ul>
+<li><strong>虚拟专用网</strong>（英语：<strong>Virtual Private Network</strong>，简称<strong>VPN</strong>），是一种常用于连接中、大型企业或团体与团体间的私人网络的通讯方法。虚拟私人网络的讯息透过公用的网络架构（例如：<a href="https://zh.wikipedia.org/wiki/互联网" target="_blank" rel="noopener">互联网</a>）来传送<a href="https://zh.wikipedia.org/wiki/内部网" target="_blank" rel="noopener">内联网</a>的网络讯息。它利用已加密的<a href="https://zh.wikipedia.org/wiki/隧道协议" target="_blank" rel="noopener">通道协议</a>（Tunneling Protocol）来达到保密、发送端认证、消息准确性等私人消息安全效果。<img src="/femcn.gitee.io/2020/08/16/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86/%E5%9B%BE%E7%89%871.png" class title="图片1"></li>
+<li>正常网络通信时，所有网络请求都是通过我们的物理网卡直接发送出去。而VPN是客户端使用相应的VPN协议先与VPN服务器进行通信，成功连接后就在操作系统内建立一个虚拟网卡，一般来说默认PC上所有网络通信都从这虚拟网卡上进出，经过VPN服务器中转之后再到达目的地。</li>
+<li>通常VPN协议都会对数据流进行强加密处理，从而使得第三方无法知道数据内容，这样就实现了翻墙。翻墙时VPN服务器知道你干的所有事情（HTTP，对于HTTPS，它知道你去了哪）。</li>
+</ul>
+<h3 id="5、科学上网的方式"><a href="#5、科学上网的方式" class="headerlink" title="5、科学上网的方式"></a>5、科学上网的方式</h3><ul>
+<li><p>按照是否加密，代理软件可分为<strong>加密代理</strong>和<strong>不加密代理</strong>2种。为了避开<strong>防火墙</strong>敏感词过滤，必须得使用<strong>加密代理</strong>软件。按照协议类型，常见的有<strong>HTTP **代理和</strong>SOCKS** 代理。如果你纯粹用浏览器翻墙，HTTP 代理就够用了；如果你还需要让其它软件（比如MSN）翻墙，那就得用SOCKS代理。</p>
+</li>
+<li><p><strong>1、修改hosts文件</strong>：对于 DNS 污染，我们可以通过 hosts 解决，hosts 的原理是直接在本地指定域名的 IP 地址，跳过 DNS 查询。</p>
+</li>
+<li><p>不同的操作系统及其 hosts 文件目录如下：</p>
+<p>Mac OS X, iOS, Android, Linux: <code>/etc/hosts</code></p>
+<p>Windows: <code>%SystemRoot%\system32\drivers\etc\hosts</code></p>
+</li>
+</ul>
+<p>​       访问谷歌：<a href="https://github.com/googlehosts/hosts" target="_blank" rel="noopener">https://github.com/googlehosts/hosts</a></p>
+<ul>
+<li><strong>2、使用第三方工具 VPN客户端</strong></li>
+<li><strong>3、自行搭建代理</strong>：自行搭建的前提都是需要有一台『服务器』（Server），在网上搜索 VPS 可以得到很多提供商。</li>
+<li><strong>4、路由器代理</strong></li>
+</ul>
+<p>​       </p>
+]]></content>
+      <categories>
+        <category>web</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>硬盘空间分配</title>
+    <url>/femcn.gitee.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/</url>
+    <content><![CDATA[<h3 id="如何将D盘的空间分给C盘（最简单的方法）"><a href="#如何将D盘的空间分给C盘（最简单的方法）" class="headerlink" title="如何将D盘的空间分给C盘（最简单的方法）"></a>如何将D盘的空间分给C盘（最简单的方法）</h3><h4 id="1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始"><a href="#1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始" class="headerlink" title="1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始"></a>1、保险起见先备份，我用的傲梅备份助手，其他应该都可以，提醒一下，以下操作保持不要断电，留好充足时间再开始</h4><h4 id="2、下载DiskGenius"><a href="#2、下载DiskGenius" class="headerlink" title="2、下载DiskGenius"></a>2、下载DiskGenius</h4><p><a href="https://www.diskgenius.cn/" target="_blank" rel="noopener">https://www.diskgenius.cn/</a></p>
+<img src="/femcn.gitee.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<h4 id="3、解压后点进去，找到这个"><a href="#3、解压后点进去，找到这个" class="headerlink" title="3、解压后点进去，找到这个"></a>3、解压后点进去，找到这个</h4><img src="/femcn.gitee.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/%E5%9B%BE%E7%89%872.png" class title="图片2">
+
+<img src="/femcn.gitee.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/%E5%9B%BE%E7%89%873.png" class title="图片3">
+
+<h4 id="4、双击打开后，看到以下界面"><a href="#4、双击打开后，看到以下界面" class="headerlink" title="4、双击打开后，看到以下界面"></a>4、双击打开后，看到以下界面</h4><img src="/femcn.gitee.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/%E5%9B%BE%E7%89%874.png" class title="图片4">
+
+<h4 id="5、右键单击C盘，点扩容分区，然后选择你要从哪个盘分空间出来（这里示例是D盘）"><a href="#5、右键单击C盘，点扩容分区，然后选择你要从哪个盘分空间出来（这里示例是D盘）" class="headerlink" title="5、右键单击C盘，点扩容分区，然后选择你要从哪个盘分空间出来（这里示例是D盘）"></a>5、右键单击C盘，点扩容分区，然后选择你要从哪个盘分空间出来（这里示例是D盘）</h4><img src="/femcn.gitee.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/%E5%9B%BE%E7%89%875.png" class title="图片5">
+
+<img src="/femcn.gitee.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/%E5%9B%BE%E7%89%876.png" class title="图片6">
+
+<h4 id="6、然后这里可以调整你要分多少，调完之后点开始就行了"><a href="#6、然后这里可以调整你要分多少，调完之后点开始就行了" class="headerlink" title="6、然后这里可以调整你要分多少，调完之后点开始就行了"></a>6、然后这里可以调整你要分多少，调完之后点开始就行了</h4><img src="/femcn.gitee.io/2020/09/06/%E7%A1%AC%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D/%E5%9B%BE%E7%89%877.png" class title="图片7">]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hexo博客添加不蒜子访客统计</title>
+    <url>/femcn.gitee.io/2020/09/07/Hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E4%B8%8D%E8%92%9C%E5%AD%90%E8%AE%BF%E5%AE%A2%E7%BB%9F%E8%AE%A1/</url>
+    <content><![CDATA[<h4 id="我这里的hexo版本是4-0-0，有两种方法配置，选一种就行"><a href="#我这里的hexo版本是4-0-0，有两种方法配置，选一种就行" class="headerlink" title="我这里的hexo版本是4.0.0，有两种方法配置，选一种就行"></a>我这里的hexo版本是4.0.0，有两种方法配置，选一种就行</h4><h4 id="一、配置文件方法"><a href="#一、配置文件方法" class="headerlink" title="一、配置文件方法"></a>一、配置文件方法</h4><h4 id="打开next主题配置文件-themes-next-config-yml，搜索找到busuanzi-count，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。"><a href="#打开next主题配置文件-themes-next-config-yml，搜索找到busuanzi-count，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。" class="headerlink" title="打开next主题配置文件\themes\next_config.yml，搜索找到busuanzi_count，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。"></a>打开next主题配置文件\themes\next_config.yml，搜索找到<strong>busuanzi_count</strong>，把enable全部设置为true，header看下面照写就行（注意冒号后面要有空格），你也可以根据需要修改，比如header写访客数，footer写人，就是前后缀的关系而已。</h4><p>busuanzi_count:</p>
+<p>  enable: true</p>
+<p>  site_uv: true<br>  site_uv_header: <code>&lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt;</code><br>  site_uv_footer: </p>
+<p>  site_pv: true<br>  site_pv_header: <code>&lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt;</code><br>  site_pv_footer: </p>
+<p>  page_pv: true<br>  page_pv_header: <code>&lt;i class=&quot;fa fa-file-o&quot;&gt;&lt;/i&gt;</code><br>  page_pv_footer: </p>
+<h4 id="二、脚本方法（转载自简书幽小鬼）"><a href="#二、脚本方法（转载自简书幽小鬼）" class="headerlink" title="二、脚本方法（转载自简书幽小鬼）"></a>二、脚本方法（转载自简书幽小鬼）</h4><h4 id="1、安装脚本"><a href="#1、安装脚本" class="headerlink" title="1、安装脚本"></a>1、安装脚本</h4><p><strong>在<code>themes/next/layout/_partial/footer.swig</code>中添加下述脚本，也可以把脚本添加在header中，如果使用的是其他主题，大致也是一样的，不过可能后缀是ejs，没有影响。</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">async</span> <span class="attr">src</span>=<span class="string">"//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="2、设置标签"><a href="#2、设置标签" class="headerlink" title="2、设置标签"></a>2、设置标签</h4><p><strong>要显示站点总访问量，复制以下代码添加到你需要显示的位置。有两种算法可选：</strong></p>
+<p><strong>算法a：pv的方式，单个用户连续点击n篇文章，记录n次访问量。</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_container_site_pv"</span>&gt;</span></span><br><span class="line">    本站总访问量<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_pv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>次</span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>算法b：uv的方式，单个用户连续点击n篇文章，只记录1次访客数。</strong></p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_container_site_uv"</span>&gt;</span></span><br><span class="line">  本站访客数<span class="tag">&lt;<span class="name">span</span> <span class="attr">id</span>=<span class="string">"busuanzi_value_site_uv"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span>人次</span><br><span class="line"><span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="3、设置统计"><a href="#3、设置统计" class="headerlink" title="3、设置统计"></a>3、设置统计</h4><p><strong>一般显示站点访问量在页脚，所以我们选择在<code>footer.swig</code>中添加标签，同时我们还可以通过修改主题配置来方便选择是否显示访问量，步骤如下：首先，我们在next主题下的<code>_config.yml</code>中加入以下配置：</strong></p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># visitors count</span></span><br><span class="line">  <span class="attr">counter:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>然后，我们在<code>themes/next/layout/_partial/footer.swig</code>中添加以下代码：</strong></p>
+<figure class="highlight jsp"><table><tr><td class="code"><pre><span class="line">&#123;% <span class="keyword">if</span> theme.footer.counter %&#125;</span><br><span class="line">    &lt;script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"&gt;&lt;/script&gt;</span><br><span class="line">    &lt;span id="busuanzi_container_site_pv"&gt;本站总访问量&lt;span id="busuanzi_value_site_pv"&gt;&lt;/span&gt;次&lt;/span&gt;</span><br><span class="line">    &lt;span class="post-meta-divider"&gt;|&lt;/span&gt;</span><br><span class="line">    &lt;span id="busuanzi_container_site_uv"&gt;本站访客数&lt;span id="busuanzi_value_site_uv"&gt;&lt;/span&gt;人&lt;/span&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了"><a href="#4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了" class="headerlink" title="4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了"></a>4、注意，不蒜子域名可能会有更新，如果没效果，是因为那个js链接失效了</h4><h4 id="打开themes-next-layout-third-party-analytics-busuanzi-counter，更改成以下连接：-lt-script-async-src-quot-busuanzi-ibruce-info-busuanzi-2-3-busuanzi-pure-mini-js-quot-gt-lt-script-gt"><a href="#打开themes-next-layout-third-party-analytics-busuanzi-counter，更改成以下连接：-lt-script-async-src-quot-busuanzi-ibruce-info-busuanzi-2-3-busuanzi-pure-mini-js-quot-gt-lt-script-gt" class="headerlink" title="打开themes\next\layout_third-party\analytics\busuanzi-counter，更改成以下连接：&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt; &lt;/script&gt;"></a>打开themes\next\layout_third-party\analytics\busuanzi-counter，更改成以下连接：<code>&lt;script async src=&quot;//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;&gt; &lt;/script&gt;</code></h4><h4 id="注：在hexo-s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了"><a href="#注：在hexo-s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了" class="headerlink" title="注：在hexo s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了"></a>注：在hexo s本地预览的时候可能会统计数不正常，部署到云端就可以恢复正常了</h4>]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>PE重装系统</title>
+    <url>/femcn.gitee.io/2020/09/06/PE%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/</url>
+    <content><![CDATA[<h3 id="所需工具："><a href="#所需工具：" class="headerlink" title="所需工具："></a>所需工具：</h3><h4 id="大小为8G以上的U盘"><a href="#大小为8G以上的U盘" class="headerlink" title="大小为8G以上的U盘"></a>大小为8G以上的U盘</h4><h3 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h3><h4 id="1、将U盘制作成启动盘："><a href="#1、将U盘制作成启动盘：" class="headerlink" title="1、将U盘制作成启动盘："></a>1、将U盘制作成启动盘：</h4><ul>
+<li><strong>选择微PE工具箱的64位版本（看自己电脑是多少位，右键属性可以看）进行下载。</strong></li>
+<li><a href="http://www.wepe.com.cn/download.html" target="_blank" rel="noopener">http://www.wepe.com.cn/download.html</a></li>
+<li><img src="/femcn.gitee.io/2020/09/06/PE%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/%E5%9B%BE%E7%89%871.png" class title="图片1"></li>
+<li><strong>插入U盘，运行名为wepe_64.exe的下载文件。在点击右下方U盘图标。</strong></li>
+<li><img src="/femcn.gitee.io/2020/09/06/PE%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/%E5%9B%BE%E7%89%872.png" class title="图片2"></li>
+<li><strong>选择 U 盘格式为 exFAT。如果为老机器（Win7、XP系统）装机，则选择 FAT32 格式。</strong></li>
+<li><img src="/femcn.gitee.io/2020/09/06/PE%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/%E5%9B%BE%E7%89%873.jpg" class title="图片3"></li>
+<li><strong>点击立即安装进U盘，一会就能装好</strong></li>
+</ul>
+<h4 id="2、下载win10镜像文件："><a href="#2、下载win10镜像文件：" class="headerlink" title="2、下载win10镜像文件："></a>2、下载win10镜像文件：</h4><ul>
+<li><p><strong>打开网址<a href="https://msdn.itellyou.cn/，点击操作系统，选择要下载的系统，右边勾第三个（第四个是32位的，第一二个是企业版，三四是专业版）" target="_blank" rel="noopener">https://msdn.itellyou.cn/，点击操作系统，选择要下载的系统，右边勾第三个（第四个是32位的，第一二个是企业版，三四是专业版）</a></strong></p>
+<img src="/femcn.gitee.io/2020/09/06/PE%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/%E5%9B%BE%E7%89%874.png" class title="图片4">
+</li>
+<li><p><strong>下载之后再复制进U盘里（制作好的启动U盘会分成两个，放进空间大的那个盘）</strong></p>
+</li>
+</ul>
+<p>​        <img src="/femcn.gitee.io/2020/09/06/PE%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/%E5%9B%BE%E7%89%875.png" class title="图片5"></p>
+<h4 id="3、开始安装："><a href="#3、开始安装：" class="headerlink" title="3、开始安装："></a>3、开始安装：</h4><ul>
+<li><strong>重装系统前，最重要是想清楚数据是否要提前备份。</strong></li>
+<li><strong>关机。插入U盘，按电源键开机，在开机动画时，根据电脑品牌不同，按相应键进入BIOS界面，一般是F12键。</strong></li>
+</ul>
+<p>​       <img src="/femcn.gitee.io/2020/09/06/PE%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/%E5%9B%BE%E7%89%876.jpg" class title="图片6"></p>
+<ul>
+<li><p><strong>设置为USB启动(这里不同品牌设置方法不同，百度一下就有了)。</strong></p>
+</li>
+<li><p><strong>此后电脑重启进入PE系统，在PE系统环境中打下载的ISO镜像文件，选择setup进行安装。当提示系统安装完成需要重启时，拔掉U盘，等待安装完成。</strong></p>
+</li>
+<li><p><strong>如果出现以下问题，使用pe系统中Windows安装器安装。</strong></p>
+<img src="/femcn.gitee.io/2020/09/06/PE%E9%87%8D%E8%A3%85%E7%B3%BB%E7%BB%9F/%E5%9B%BE%E7%89%877.png" class title="图片7">
+
+</li>
+</ul>
+<h4 id="4、最后激活系统（淘宝几块钱可以买到激活码），激活之后下载驱动精灵补齐驱动就行了"><a href="#4、最后激活系统（淘宝几块钱可以买到激活码），激活之后下载驱动精灵补齐驱动就行了" class="headerlink" title="4、最后激活系统（淘宝几块钱可以买到激活码），激活之后下载驱动精灵补齐驱动就行了"></a>4、最后激活系统（淘宝几块钱可以买到激活码），激活之后下载驱动精灵补齐驱动就行了</h4>]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>hexo博客添加评论功能</title>
+    <url>/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/</url>
+    <content><![CDATA[<h3 id="注：我这里的Next主题版本是5-1-4，如果不行可能版本不同，可以去Next官网看教程"><a href="#注：我这里的Next主题版本是5-1-4，如果不行可能版本不同，可以去Next官网看教程" class="headerlink" title="注：我这里的Next主题版本是5.1.4，如果不行可能版本不同，可以去Next官网看教程"></a>注：我这里的Next主题版本是5.1.4，如果不行可能版本不同，可以去Next官网看教程</h3><h3 id="评论系统选择-Valine"><a href="#评论系统选择-Valine" class="headerlink" title="评论系统选择:Valine"></a>评论系统选择:Valine</h3><h3 id="配置步骤："><a href="#配置步骤：" class="headerlink" title="配置步骤："></a>配置步骤：</h3><h3 id="1、注册LeanCloud：https-leancloud-cn-dashboard-login-html-signup，然后在账号设置那里实名认证"><a href="#1、注册LeanCloud：https-leancloud-cn-dashboard-login-html-signup，然后在账号设置那里实名认证" class="headerlink" title="1、注册LeanCloud：https://leancloud.cn/dashboard/login.html#/signup，然后在账号设置那里实名认证"></a>1、注册LeanCloud：<a href="https://leancloud.cn/dashboard/login.html#/signup，然后在账号设置那里实名认证" target="_blank" rel="noopener">https://leancloud.cn/dashboard/login.html#/signup，然后在账号设置那里实名认证</a></h3><img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%872.png" class title="图片2">
+
+<h3 id="2、创建应用"><a href="#2、创建应用" class="headerlink" title="2、创建应用"></a>2、创建应用</h3><img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%873.png" class title="图片3">
+
+<h3 id="名称自己起，选开发版"><a href="#名称自己起，选开发版" class="headerlink" title="名称自己起，选开发版"></a>名称自己起，选开发版</h3><img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%874.png" class title="图片4">
+
+<h3 id="点这里的齿轮图标进入设置"><a href="#点这里的齿轮图标进入设置" class="headerlink" title="点这里的齿轮图标进入设置"></a>点这里的齿轮图标进入设置</h3><img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%875.png" class title="图片5">
+
+<h3 id="点安全中心，服务开关留下数据存储就行，其他可以关掉，下面的web安全域名把你的博客网址粘贴进去"><a href="#点安全中心，服务开关留下数据存储就行，其他可以关掉，下面的web安全域名把你的博客网址粘贴进去" class="headerlink" title="点安全中心，服务开关留下数据存储就行，其他可以关掉，下面的web安全域名把你的博客网址粘贴进去"></a>点安全中心，服务开关留下数据存储就行，其他可以关掉，下面的web安全域名把你的博客网址粘贴进去</h3><img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%876.png" class title="图片6">
+
+<h3 id="点应用Keys-准备复制id和key"><a href="#点应用Keys-准备复制id和key" class="headerlink" title="点应用Keys,准备复制id和key"></a>点应用Keys,准备复制id和key</h3><img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%877.png" class title="图片7">
+
+<h3 id="3、修改配置文件"><a href="#3、修改配置文件" class="headerlink" title="3、修改配置文件"></a>3、修改配置文件</h3><h3 id="进入主题配置文件-themes-next-config-yml-ctrl加F找到valine-enable后面改成true-然后粘贴id和key"><a href="#进入主题配置文件-themes-next-config-yml-ctrl加F找到valine-enable后面改成true-然后粘贴id和key" class="headerlink" title="进入主题配置文件\themes\next\_config.yml,ctrl加F找到valine,enable后面改成true,然后粘贴id和key"></a>进入主题配置文件<code>\themes\next\_config.yml</code>,ctrl加F找到valine,enable后面改成true,然后粘贴id和key</h3><img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%878.png" class title="图片8">
+
+<h3 id="4、注意一下，主题配置文件下的leancloud-visitors的enable要设置成false，不然会有冲突"><a href="#4、注意一下，主题配置文件下的leancloud-visitors的enable要设置成false，不然会有冲突" class="headerlink" title="4、注意一下，主题配置文件下的leancloud_visitors的enable要设置成false，不然会有冲突"></a>4、注意一下，主题配置文件下的leancloud_visitors的enable要设置成false，不然会有冲突</h3><img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%8711.png" class title="图片11">
+
+<h3 id="保存再部署上传，评论设置到这里就完成了"><a href="#保存再部署上传，评论设置到这里就完成了" class="headerlink" title="保存再部署上传，评论设置到这里就完成了"></a>保存再部署上传，评论设置到这里就完成了</h3><h3 id="下面是阅读次数功能设置，自带的不蒜子统计也有，选一个来用就行，但建议别用这个，因为和评论会有冲突（都是基于leancloud），所以才有上面的第四点"><a href="#下面是阅读次数功能设置，自带的不蒜子统计也有，选一个来用就行，但建议别用这个，因为和评论会有冲突（都是基于leancloud），所以才有上面的第四点" class="headerlink" title="下面是阅读次数功能设置，自带的不蒜子统计也有，选一个来用就行，但建议别用这个，因为和评论会有冲突（都是基于leancloud），所以才有上面的第四点"></a>下面是阅读次数功能设置，自带的不蒜子统计也有，选一个来用就行，但建议别用这个，因为和评论会有冲突（都是基于leancloud），所以才有上面的第四点</h3><h3 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h3><h3 id="1、回到刚才的leancloud网站，点击存储，创建一个class，名字必须是counter"><a href="#1、回到刚才的leancloud网站，点击存储，创建一个class，名字必须是counter" class="headerlink" title="1、回到刚才的leancloud网站，点击存储，创建一个class，名字必须是counter"></a>1、回到刚才的leancloud网站，点击存储，创建一个class，名字必须是counter</h3><img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%879.png" class title="图片9">
+
+<h3 id="2、回到主题配置文件，找到leancloud-visitors，同样enable设置成true-粘贴id和key"><a href="#2、回到主题配置文件，找到leancloud-visitors，同样enable设置成true-粘贴id和key" class="headerlink" title="2、回到主题配置文件，找到leancloud_visitors，同样enable设置成true,粘贴id和key"></a>2、回到主题配置文件，找到leancloud_visitors，同样enable设置成true,粘贴id和key</h3><img src="/femcn.gitee.io/2020/09/08/hexo%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD/%E5%9B%BE%E7%89%8710.png" class title="图片10">
+
+<h3 id><a href="#" class="headerlink" title></a></h3>]]></content>
+      <categories>
+        <category>blog</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>常用搜索方式</title>
+    <url>/femcn.gitee.io/2020/09/12/%E5%B8%B8%E7%94%A8%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/</url>
+    <content><![CDATA[<h3 id="1、精确搜索：双引号"><a href="#1、精确搜索：双引号" class="headerlink" title="1、精确搜索：双引号"></a>1、精确搜索：双引号</h3><h3 id="比如“华为鸿蒙系统”"><a href="#比如“华为鸿蒙系统”" class="headerlink" title="比如“华为鸿蒙系统”"></a>比如“华为鸿蒙系统”</h3><h3 id="2、站内搜索：空格加site-加网址"><a href="#2、站内搜索：空格加site-加网址" class="headerlink" title="2、站内搜索：空格加site:加网址"></a>2、站内搜索：空格加site:加网址</h3><h3 id="比如site-http-stackoverflow-com"><a href="#比如site-http-stackoverflow-com" class="headerlink" title="比如site:http://stackoverflow.com/"></a>比如site:<a href="http://stackoverflow.com/" target="_blank" rel="noopener">http://stackoverflow.com/</a></h3><h3 id="3、模糊搜索："><a href="#3、模糊搜索：" class="headerlink" title="3、模糊搜索：*"></a>3、模糊搜索：*</h3><h3 id="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者"><a href="#比如想搜索“黑之契约者”，但是不记得前面两个字了，可以-契约者" class="headerlink" title="比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者"></a>比如想搜索“黑之契约者”，但是不记得前面两个字了，可以**契约者</h3><h3 id="4、缩小范围：空格加减号加需要排除的信息"><a href="#4、缩小范围：空格加减号加需要排除的信息" class="headerlink" title="4、缩小范围：空格加减号加需要排除的信息"></a>4、缩小范围：空格加减号加需要排除的信息</h3><h3 id="比如：笔记本电脑-淘宝"><a href="#比如：笔记本电脑-淘宝" class="headerlink" title="比如：笔记本电脑 -淘宝"></a>比如：笔记本电脑 -淘宝</h3><h3 id="5、文档搜索：空格加filetype-加文档格式"><a href="#5、文档搜索：空格加filetype-加文档格式" class="headerlink" title="5、文档搜索：空格加filetype:加文档格式"></a>5、文档搜索：空格加filetype:加文档格式</h3><h3 id="比如：java教程-filetype-pdf"><a href="#比如：java教程-filetype-pdf" class="headerlink" title="比如：java教程 filetype:pdf"></a>比如：java教程 filetype:pdf</h3>]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>java常见问题</title>
+    <url>/femcn.gitee.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h3 id="java导入的文件灰色，左下角橙色“J”"><a href="#java导入的文件灰色，左下角橙色“J”" class="headerlink" title="java导入的文件灰色，左下角橙色“J”"></a>java导入的文件灰色，左下角橙色“J”</h3><img src="/femcn.gitee.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<h3 id="解决办法：重新配置根目录"><a href="#解决办法：重新配置根目录" class="headerlink" title="解决办法：重新配置根目录"></a>解决办法：重新配置根目录</h3><h3 id="1、点击图标"><a href="#1、点击图标" class="headerlink" title="1、点击图标"></a>1、点击图标</h3><img src="/femcn.gitee.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">
+
+<h3 id="2、重新更改根目录"><a href="#2、重新更改根目录" class="headerlink" title="2、重新更改根目录"></a>2、重新更改根目录</h3><img src="/femcn.gitee.io/2020/10/22/java%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>数据结构</title>
+    <url>/femcn.gitee.io/2020/09/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</url>
+    <content><![CDATA[<h3 id="1、数据结构是一门怎样的学科？"><a href="#1、数据结构是一门怎样的学科？" class="headerlink" title="1、数据结构是一门怎样的学科？"></a>1、数据结构是一门怎样的学科？</h3><h3 id="一、数据结构是一门怎样的学科？"><a href="#一、数据结构是一门怎样的学科？" class="headerlink" title="一、数据结构是一门怎样的学科？"></a>一、数据结构是一门怎样的学科？</h3><h3 id="数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科。"><a href="#数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科。" class="headerlink" title="数据结构是一门研究非数值计算的程序设计问题中的操作对象，以及它们之间的关系和操作等相关问题的学科。"></a>数据结构是一门研究<em>非数值计算</em>的程序设计问题中的操作对象，以及它们之间的<em>关系</em>和<em>操作</em>等相关问题的学科。</h3><h3 id="二、基本概念"><a href="#二、基本概念" class="headerlink" title="二、基本概念"></a>二、基本概念</h3><h3 id="1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。"><a href="#1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。" class="headerlink" title="1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。"></a>1、数据：是描述客观事物的符号，是计算机中可以操作的对象，是能被计算机识别，并输入给计算机处理的符号集合。</h3><h3 id="例：畜类"><a href="#例：畜类" class="headerlink" title="例：畜类"></a>例：畜类</h3><h3 id="2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。"><a href="#2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。" class="headerlink" title="2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。"></a>2、数据元素：是组成数据的、有一定意义的基本单位，在计算机中通常作为整体处理。也被称为记录。</h3><h3 id="例：牛，羊，鸡，猪"><a href="#例：牛，羊，鸡，猪" class="headerlink" title="例：牛，羊，鸡，猪"></a>例：牛，羊，鸡，猪</h3><h3 id="3、数据对象：是性质相同的数据元素的集合，是数据的子集"><a href="#3、数据对象：是性质相同的数据元素的集合，是数据的子集" class="headerlink" title="3、数据对象：是性质相同的数据元素的集合，是数据的子集"></a>3、数据对象：是性质相同的数据元素的集合，是数据的子集</h3><h3 id="例：鸡都有翅膀，鸡爪等相同的数据项"><a href="#例：鸡都有翅膀，鸡爪等相同的数据项" class="headerlink" title="例：鸡都有翅膀，鸡爪等相同的数据项"></a>例：鸡都有翅膀，鸡爪等相同的数据项</h3><h3 id="4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位"><a href="#4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位" class="headerlink" title="4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位"></a>4、数据项：一个数据元素可以由若干个数据项组成，是数据不可分割的最小单位</h3><h3 id="例：眼，耳，口，鼻"><a href="#例：眼，耳，口，鼻" class="headerlink" title="例：眼，耳，口，鼻"></a>例：眼，耳，口，鼻</h3><h3 id="5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。"><a href="#5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。" class="headerlink" title="5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。"></a>5、数据结构：是互相之间存在一种或多种特定关系的数据元素的集合。</h3><h3 id="三、逻辑结构与物理结构"><a href="#三、逻辑结构与物理结构" class="headerlink" title="三、逻辑结构与物理结构"></a>三、逻辑结构与物理结构</h3><h3 id="1、逻辑结构：指数据对象中数据元素之间的互相关系。"><a href="#1、逻辑结构：指数据对象中数据元素之间的互相关系。" class="headerlink" title="1、逻辑结构：指数据对象中数据元素之间的互相关系。"></a>1、逻辑结构：指数据对象中数据元素之间的互相关系。</h3><ul>
+<li><strong>集合结构：数据元素同属一个集合</strong></li>
+<li><strong>线性结构：数据元素之间是一对一的关系</strong></li>
+<li><strong>树形结构：数据结构之间存在一种一对多的层次关系</strong></li>
+<li><strong>图形结构：数据元素是多对多的关系</strong></li>
+</ul>
+<h3 id="2、物理结构：指数据的逻辑结构在计算机中的存储形式。"><a href="#2、物理结构：指数据的逻辑结构在计算机中的存储形式。" class="headerlink" title="2、物理结构：指数据的逻辑结构在计算机中的存储形式。"></a>2、物理结构：指数据的逻辑结构在计算机中的存储形式。</h3><ul>
+<li><strong>顺序存储结构：是把数据元素放在地址连续的存储单元里，其数据间的逻辑关系和物理关系是一致的。</strong></li>
+<li><strong>链式存储结构：是把数据元素存放在任意的储存单元里，这组储存单元可以是连续的，也可以是不连续的。</strong></li>
+</ul>
+<h3 id="四、抽象数据类型"><a href="#四、抽象数据类型" class="headerlink" title="四、抽象数据类型"></a>四、抽象数据类型</h3><h3 id="抽象是指抽取出事物具有的普遍性的本质"><a href="#抽象是指抽取出事物具有的普遍性的本质" class="headerlink" title="抽象是指抽取出事物具有的普遍性的本质"></a>抽象是指抽取出事物具有的普遍性的本质</h3><h3 id="ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。"><a href="#ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。" class="headerlink" title="ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。"></a>ADT（抽象数据类型）：指一个数学模型及定义在该模型上的一组操作，意义在于数学抽象特性。</h3><h3 id="五、如何区分数据结构，数据类型，抽象数据类型"><a href="#五、如何区分数据结构，数据类型，抽象数据类型" class="headerlink" title="五、如何区分数据结构，数据类型，抽象数据类型"></a>五、如何区分数据结构，数据类型，抽象数据类型</h3><img src="/femcn.gitee.io/2020/09/27/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<h3 id="一种数据结构＋定义在此种数据结构上的一组操作＝结构类型"><a href="#一种数据结构＋定义在此种数据结构上的一组操作＝结构类型" class="headerlink" title="一种数据结构＋定义在此种数据结构上的一组操作＝结构类型"></a>一种数据结构＋定义在此种数据结构上的一组操作＝结构类型</h3><h3 id="一种值的集合＋定义在此种值的集合上的一组操作＝原子类型"><a href="#一种值的集合＋定义在此种值的集合上的一组操作＝原子类型" class="headerlink" title="一种值的集合＋定义在此种值的集合上的一组操作＝原子类型"></a>一种值的集合＋定义在此种值的集合上的一组操作＝原子类型</h3><h3 id="结构类型＋原子类型＝数据类型"><a href="#结构类型＋原子类型＝数据类型" class="headerlink" title="结构类型＋原子类型＝数据类型"></a>结构类型＋原子类型＝数据类型</h3><h3 id="数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。"><a href="#数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。" class="headerlink" title="数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。"></a>数据类型的两种类型是按照定义中两种“值的集合”来区分的。结构类型就是“值的集合”是一种数据结构，例如线性表、树和图；而原子类型就是“值的集合”是原子类型，例如C语言中的基本类型（整型、实型、字符型和枚举类型）、指针类型和空类型。</h3>]]></content>
+      <categories>
+        <category>数据结构</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/femcn.gitee.io/2021/06/12/test/</url>
+    <content><![CDATA[<p>test</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>五十音</title>
+    <url>/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/</url>
+    <content><![CDATA[<h2 id="五十音图"><a href="#五十音图" class="headerlink" title="五十音图"></a>五十音图</h2><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%87.png" class title="图片">
+
+<h2 id="平假名-片假名：（转自知乎-战导，仅用作学习）"><a href="#平假名-片假名：（转自知乎-战导，仅用作学习）" class="headerlink" title="平假名+片假名：（转自知乎@战导，仅用作学习）"></a>平假名+片假名：（转自知乎@战导，仅用作学习）</h2><h3 id="1、あ，罗马音a，来自汉字安（an）的草书，发音接近"><a href="#1、あ，罗马音a，来自汉字安（an）的草书，发音接近" class="headerlink" title="1、あ，罗马音a，来自汉字安（an）的草书，发音接近"></a>1、あ，罗马音a，来自汉字<strong>安</strong>（<strong>a</strong>n）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<h3 id="ア，可以把它看作阿的左耳旁"><a href="#ア，可以把它看作阿的左耳旁" class="headerlink" title="ア，可以把它看作阿的左耳旁"></a>ア，可以把它看作<strong>阿</strong>的左耳旁</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8747.png" class title="图片47">
+
+<hr>
+<h3 id="2、い，罗马音i，来自汉字以（yi）的草书，发音接近"><a href="#2、い，罗马音i，来自汉字以（yi）的草书，发音接近" class="headerlink" title="2、い，罗马音i，来自汉字以（yi）的草书，发音接近"></a>2、い，罗马音i，来自汉字<strong>以</strong>（y<strong>i</strong>）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%872.png" class title="图片2">
+
+<h3 id="イ，伊的单人旁"><a href="#イ，伊的单人旁" class="headerlink" title="イ，伊的单人旁"></a>イ，<strong>伊</strong>的单人旁</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8748.png" class title="图片48">
+
+<hr>
+<h3 id="3、う，罗马音u，字形与乌（wu）的部分相近，发音接近"><a href="#3、う，罗马音u，字形与乌（wu）的部分相近，发音接近" class="headerlink" title="3、う，罗马音u，字形与乌（wu）的部分相近，发音接近"></a>3、う，罗马音u，字形与<strong>乌</strong>（w<strong>u</strong>）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%873.png" class title="图片3">
+
+<h3 id="ウ，乌的一部分"><a href="#ウ，乌的一部分" class="headerlink" title="ウ，乌的一部分"></a>ウ，<strong>乌</strong>的一部分</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8749.png" class title="图片49">
+
+<hr>
+<h3 id="4、え，罗马音e，字形与诶（ei）的部分相近，发音接近"><a href="#4、え，罗马音e，字形与诶（ei）的部分相近，发音接近" class="headerlink" title="4、え，罗马音e，字形与诶（ei）的部分相近，发音接近"></a>4、え，罗马音e，字形与<strong>诶</strong>（<strong>ei</strong>）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%874.png" class title="图片4">
+
+<h3 id="エ，写法和汉字-工-一致，可以看作诶的一部分"><a href="#エ，写法和汉字-工-一致，可以看作诶的一部分" class="headerlink" title="エ，写法和汉字 工 一致，可以看作诶的一部分"></a>エ，写法和汉字 工 一致，可以看作<strong>诶</strong>的一部分</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8750.png" class title="图片50">
+
+<h3 id="5、お，罗马音o，字形与我、哦（o）的部分相近，发音接近"><a href="#5、お，罗马音o，字形与我、哦（o）的部分相近，发音接近" class="headerlink" title="5、お，罗马音o，字形与我、哦（o）的部分相近，发音接近"></a>5、お，罗马音o，字形与<strong>我、哦</strong>（<strong>o</strong>）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%875.png" class title="图片5">
+
+<h3 id="オ，写法和汉字-才-一致，可以看作我的一部分"><a href="#オ，写法和汉字-才-一致，可以看作我的一部分" class="headerlink" title="オ，写法和汉字 才 一致，可以看作我的一部分"></a>オ，写法和汉字 才 一致，可以看作<strong>我</strong>的一部分</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8751.png" class title="图片51">
+
+<hr>
+<h3 id="6、か，罗马音ka，字形与咖（ka）的部分相近，发音接近"><a href="#6、か，罗马音ka，字形与咖（ka）的部分相近，发音接近" class="headerlink" title="6、か，罗马音ka，字形与咖（ka）的部分相近，发音接近"></a>6、か，罗马音ka，字形与<strong>咖</strong>（<strong>ka</strong>）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%876.png" class title="图片6">
+
+<h3 id="7、き，罗马音ki，字形与起（qi）的部分相近，发音接近"><a href="#7、き，罗马音ki，字形与起（qi）的部分相近，发音接近" class="headerlink" title="7、き，罗马音ki，字形与起（qi）的部分相近，发音接近"></a>7、き，罗马音ki，字形与<strong>起</strong>（q<strong>i</strong>）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%877.png" class title="图片7">
+
+<h3 id="8、く，罗马音ku，字形与哭（ku）的部分相近，发音接近"><a href="#8、く，罗马音ku，字形与哭（ku）的部分相近，发音接近" class="headerlink" title="8、く，罗马音ku，字形与哭（ku）的部分相近，发音接近"></a>8、く，罗马音ku，字形与<strong>哭</strong>（<strong>ku</strong>）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%878.png" class title="图片8">
+
+<h3 id="9、け，罗马音ke，来自汉字计的草书，可以和汉字“开”做字形联想"><a href="#9、け，罗马音ke，来自汉字计的草书，可以和汉字“开”做字形联想" class="headerlink" title="9、け，罗马音ke，来自汉字计的草书，可以和汉字“开”做字形联想"></a>9、け，罗马音ke，来自汉字<strong>计</strong>的草书，可以和汉字“<strong>开</strong>”做字形联想</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%879.png" class title="图片9">
+
+<h3 id="10、こ，罗马音ko，字形与口（kou）的部分相近，发音接近"><a href="#10、こ，罗马音ko，字形与口（kou）的部分相近，发音接近" class="headerlink" title="10、こ，罗马音ko，字形与口（kou）的部分相近，发音接近"></a>10、こ，罗马音ko，字形与<strong>口</strong>（<strong>ko</strong>u）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8710.png" class title="图片10">
+
+<hr>
+<h3 id="11、さ，罗马音sa，字形与杀（sha）的部分相近，发音接近"><a href="#11、さ，罗马音sa，字形与杀（sha）的部分相近，发音接近" class="headerlink" title="11、さ，罗马音sa，字形与杀（sha）的部分相近，发音接近"></a>11、さ，罗马音sa，字形与<strong>杀</strong>（<strong>s</strong>h<strong>a</strong>）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8711.png" class title="图片11">
+
+<h3 id="12、し，罗马音shi，字形与洗（xi）的部分相近，发音接近"><a href="#12、し，罗马音shi，字形与洗（xi）的部分相近，发音接近" class="headerlink" title="12、し，罗马音shi，字形与洗（xi）的部分相近，发音接近"></a>12、し，罗马音shi，字形与<strong>洗</strong>（xi）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8712.png" class title="图片12">
+
+<h3 id="13、す，罗马音su，但是日文发音其实接近汉语拼音的si，字形与寺（si）下方的寸部分相近，把す联想成寺下方寸的草书就好"><a href="#13、す，罗马音su，但是日文发音其实接近汉语拼音的si，字形与寺（si）下方的寸部分相近，把す联想成寺下方寸的草书就好" class="headerlink" title="13、す，罗马音su，但是日文发音其实接近汉语拼音的si，字形与寺（si）下方的寸部分相近，把す联想成寺下方寸的草书就好"></a>13、す，罗马音su，但是日文发音其实接近汉语拼音的si，字形与<strong>寺</strong>（si）下方的寸部分相近，把<strong>す</strong>联想成寺下方<strong>寸</strong>的草书就好</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8713.png" class title="图片13">
+
+<h3 id="14、せ，罗马音se，来自汉字世的草书"><a href="#14、せ，罗马音se，来自汉字世的草书" class="headerlink" title="14、せ，罗马音se，来自汉字世的草书"></a>14、せ，罗马音se，来自汉字<strong>世</strong>的草书</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8714.png" class title="图片14">
+
+<h3 id="15、そ，罗马音so，字形与缩（suo）的绞丝旁相似，发音也挺接近"><a href="#15、そ，罗马音so，字形与缩（suo）的绞丝旁相似，发音也挺接近" class="headerlink" title="15、そ，罗马音so，字形与缩（suo）的绞丝旁相似，发音也挺接近"></a>15、そ，罗马音so，字形与缩（suo）的绞丝旁相似，发音也挺接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8715.png" class title="图片15">
+
+<hr>
+<h3 id="16、た，罗马音ta，来自汉字太（tai）的草书，发音接近"><a href="#16、た，罗马音ta，来自汉字太（tai）的草书，发音接近" class="headerlink" title="16、た，罗马音ta，来自汉字太（tai）的草书，发音接近"></a>16、た，罗马音ta，来自汉字<strong>太</strong>（<strong>ta</strong>i）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8716.png" class title="图片16">
+
+<h3 id="17、ち，罗马音chi，字形与奇（qi）的部分相近，发音接近"><a href="#17、ち，罗马音chi，字形与奇（qi）的部分相近，发音接近" class="headerlink" title="17、ち，罗马音chi，字形与奇（qi）的部分相近，发音接近"></a>17、ち，罗马音chi，字形与<strong>奇</strong>（qi）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8717.png" class title="图片17">
+
+<h3 id="18、つ，罗马音tsu，字形与词（ci）的部分相近，发音接近"><a href="#18、つ，罗马音tsu，字形与词（ci）的部分相近，发音接近" class="headerlink" title="18、つ，罗马音tsu，字形与词（ci）的部分相近，发音接近"></a>18、つ，罗马音tsu，字形与<strong>词</strong>（ci）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8718.png" class title="图片18">
+
+<h3 id="19、て，罗马音te，来自汉字天（tian）的草书，发音接近"><a href="#19、て，罗马音te，来自汉字天（tian）的草书，发音接近" class="headerlink" title="19、て，罗马音te，来自汉字天（tian）的草书，发音接近"></a>19、て，罗马音te，来自汉字<strong>天</strong>（<strong>t</strong>ian）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8719.png" class title="图片19">
+
+<h3 id="20、と，罗马音to，字形与托（tuo）的部分相近，发音接近"><a href="#20、と，罗马音to，字形与托（tuo）的部分相近，发音接近" class="headerlink" title="20、と，罗马音to，字形与托（tuo）的部分相近，发音接近"></a>20、と，罗马音to，字形与<strong>托</strong>（<strong>t</strong>u<strong>o</strong>）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8720.png" class title="图片20">
+
+<hr>
+<h3 id="21、な，罗马音na，来自汉字奈（nai）的草书，发音接近"><a href="#21、な，罗马音na，来自汉字奈（nai）的草书，发音接近" class="headerlink" title="21、な，罗马音na，来自汉字奈（nai）的草书，发音接近"></a>21、な，罗马音na，来自汉字<strong>奈</strong>（<strong>na</strong>i）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8721.png" class title="图片21">
+
+<h3 id="22、に，罗马音ni，与日本数字“二”发音相同，字形来自草书写法的仁，可以和妮作联想记忆"><a href="#22、に，罗马音ni，与日本数字“二”发音相同，字形来自草书写法的仁，可以和妮作联想记忆" class="headerlink" title="22、に，罗马音ni，与日本数字“二”发音相同，字形来自草书写法的仁，可以和妮作联想记忆"></a>22、に，罗马音ni，与日本数字“二”发音相同，字形来自草书写法的<strong>仁</strong>，可以和妮作联想记忆</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8722.png" class title="图片22">
+
+<h3 id="23、ぬ，罗马音nu，来自汉字奴（nu）的草书，发音接近"><a href="#23、ぬ，罗马音nu，来自汉字奴（nu）的草书，发音接近" class="headerlink" title="23、ぬ，罗马音nu，来自汉字奴（nu）的草书，发音接近"></a>23、ぬ，罗马音nu，来自汉字<strong>奴</strong>（<strong>nu</strong>）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8723.png" class title="图片23">
+
+<h3 id="24、ね，罗马音ne，字形与捏（nie）的部分相近，发音接近"><a href="#24、ね，罗马音ne，字形与捏（nie）的部分相近，发音接近" class="headerlink" title="24、ね，罗马音ne，字形与捏（nie）的部分相近，发音接近"></a>24、ね，罗马音ne，字形与<strong>捏</strong>（<strong>n</strong>i<strong>e</strong>）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8724.png" class title="图片24">
+
+<h3 id="25、の，罗马音no，字形与NO相近"><a href="#25、の，罗马音no，字形与NO相近" class="headerlink" title="25、の，罗马音no，字形与NO相近"></a>25、の，罗马音no，字形与NO相近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8725.png" class title="图片25">
+
+<hr>
+<h3 id="26、は，罗马音ha，写法来自汉字波的草书，和龟波气功的波读音一样"><a href="#26、は，罗马音ha，写法来自汉字波的草书，和龟波气功的波读音一样" class="headerlink" title="26、は，罗马音ha，写法来自汉字波的草书，和龟波气功的波读音一样"></a>26、は，罗马音ha，写法来自汉字<strong>波</strong>的草书，和龟波气功的波读音一样</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8726.png" class title="图片26">
+
+<h3 id="27、ひ，罗马音hi，字形想象这是一个笑嘻嘻（xi）的人脸"><a href="#27、ひ，罗马音hi，字形想象这是一个笑嘻嘻（xi）的人脸" class="headerlink" title="27、ひ，罗马音hi，字形想象这是一个笑嘻嘻（xi）的人脸"></a>27、ひ，罗马音hi，字形想象这是一个笑<strong>嘻嘻</strong>（xi）的人脸</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8727.png" class title="图片27">
+
+<h3 id="28、ふ，罗马音fu，来自汉字不（bu）的草书，发音接近"><a href="#28、ふ，罗马音fu，来自汉字不（bu）的草书，发音接近" class="headerlink" title="28、ふ，罗马音fu，来自汉字不（bu）的草书，发音接近"></a>28、ふ，罗马音fu，来自汉字<strong>不</strong>（b<strong>u</strong>）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8728.png" class title="图片28">
+
+<h3 id="29、へ，罗马音he，字形与黑（hei）的四点水相近，发音接近"><a href="#29、へ，罗马音he，字形与黑（hei）的四点水相近，发音接近" class="headerlink" title="29、へ，罗马音he，字形与黑（hei）的四点水相近，发音接近"></a>29、へ，罗马音he，字形与黑（<strong>he</strong>i）的四点水相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8729.png" class title="图片29">
+
+<h3 id="30、ほ，罗马音ho，字形与活（huo）的部分相近，发音接近"><a href="#30、ほ，罗马音ho，字形与活（huo）的部分相近，发音接近" class="headerlink" title="30、ほ，罗马音ho，字形与活（huo）的部分相近，发音接近"></a>30、ほ，罗马音ho，字形与<strong>活</strong>（<strong>h</strong>u<strong>o</strong>）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8730.png" class title="图片30">
+
+<hr>
+<h3 id="31、ま，罗马音ma，来自汉字末（mo）的草书，可联系记忆汉字抹布的“抹”（ma）"><a href="#31、ま，罗马音ma，来自汉字末（mo）的草书，可联系记忆汉字抹布的“抹”（ma）" class="headerlink" title="31、ま，罗马音ma，来自汉字末（mo）的草书，可联系记忆汉字抹布的“抹”（ma）"></a>31、ま，罗马音ma，来自汉字<strong>末</strong>（mo）的草书，可联系记忆汉字抹布的“<strong>抹</strong>”（ma）</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8731.png" class title="图片31">
+
+<h3 id="32、み，罗马音mi，来自汉字美（mei）的草书，发音接近"><a href="#32、み，罗马音mi，来自汉字美（mei）的草书，发音接近" class="headerlink" title="32、み，罗马音mi，来自汉字美（mei）的草书，发音接近"></a>32、み，罗马音mi，来自汉字<strong>美</strong>（mei）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8732.png" class title="图片32">
+
+<h3 id="33、む，罗马音mu，来自汉字武（wu）的草书，发音接近"><a href="#33、む，罗马音mu，来自汉字武（wu）的草书，发音接近" class="headerlink" title="33、む，罗马音mu，来自汉字武（wu）的草书，发音接近"></a>33、む，罗马音mu，来自汉字<strong>武</strong>（w<strong>u</strong>）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8733.png" class title="图片33">
+
+<h3 id="34、め，罗马音me，你就想像这是妹（mei）的女字旁，发音也接近"><a href="#34、め，罗马音me，你就想像这是妹（mei）的女字旁，发音也接近" class="headerlink" title="34、め，罗马音me，你就想像这是妹（mei）的女字旁，发音也接近"></a>34、め，罗马音me，你就想像这是<strong>妹</strong>（mei）的女字旁，发音也接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8734.png" class title="图片34">
+
+<h3 id="35、も，罗马音mo，来自汉字毛（mao）的草书，发音接近"><a href="#35、も，罗马音mo，来自汉字毛（mao）的草书，发音接近" class="headerlink" title="35、も，罗马音mo，来自汉字毛（mao）的草书，发音接近"></a>35、も，罗马音mo，来自汉字<strong>毛</strong>（<strong>m</strong>a<strong>o</strong>）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8735.png" class title="图片35">
+
+<hr>
+<h3 id="36、や，罗马音ya，来自汉字也（ye）的草书，发音和粤语的也（ya）接近"><a href="#36、や，罗马音ya，来自汉字也（ye）的草书，发音和粤语的也（ya）接近" class="headerlink" title="36、や，罗马音ya，来自汉字也（ye）的草书，发音和粤语的也（ya）接近"></a>36、や，罗马音ya，来自汉字<strong>也</strong>（<strong>y</strong>e）的草书，发音和粤语的也（ya）接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8736.png" class title="图片36">
+
+<h3 id="37、ゆ，罗马音yu，来自汉字由（you）的草书，发音接近"><a href="#37、ゆ，罗马音yu，来自汉字由（you）的草书，发音接近" class="headerlink" title="37、ゆ，罗马音yu，来自汉字由（you）的草书，发音接近"></a>37、ゆ，罗马音yu，来自汉字<strong>由</strong>（<strong>y</strong>o<strong>u</strong>）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8737.png" class title="图片37">
+
+<h3 id="38、よ，罗马音yo，来自汉字与（yu）的草书，发音接近"><a href="#38、よ，罗马音yo，来自汉字与（yu）的草书，发音接近" class="headerlink" title="38、よ，罗马音yo，来自汉字与（yu）的草书，发音接近"></a>38、よ，罗马音yo，来自汉字<strong>与</strong>（<strong>y</strong>u）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8738.png" class title="图片38">
+
+<hr>
+<h3 id="39、ら，罗马音ra，字形与的落（la）的部分相近，发音与粤语“la低滴野”接近，虽说罗马音写成r，但是发音还是接近汉语拼音的l"><a href="#39、ら，罗马音ra，字形与的落（la）的部分相近，发音与粤语“la低滴野”接近，虽说罗马音写成r，但是发音还是接近汉语拼音的l" class="headerlink" title="39、ら，罗马音ra，字形与的落（la）的部分相近，发音与粤语“la低滴野”接近，虽说罗马音写成r，但是发音还是接近汉语拼音的l"></a>39、ら，罗马音ra，字形与的<strong>落</strong>（la）的部分相近，发音与粤语“la低滴野”接近，<strong>虽说罗马音写成r，但是发音还是接近汉语拼音的l</strong></h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8739.png" class title="图片39">
+
+<h3 id="40、り，罗马音ri，来自汉字利（li）的立刀旁，发音接近"><a href="#40、り，罗马音ri，来自汉字利（li）的立刀旁，发音接近" class="headerlink" title="40、り，罗马音ri，来自汉字利（li）的立刀旁，发音接近"></a>40、り，罗马音ri，来自汉字<strong>利</strong>（li）的立刀旁，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8740.png" class title="图片40">
+
+<h3 id="41、る，罗马音ru，字形与路（lu）的部分相近，发音接近"><a href="#41、る，罗马音ru，字形与路（lu）的部分相近，发音接近" class="headerlink" title="41、る，罗马音ru，字形与路（lu）的部分相近，发音接近"></a>41、る，罗马音ru，字形与<strong>路</strong>（lu）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8741.png" class title="图片41">
+
+<h3 id="42、れ，罗马音re，来自汉字礼（li）的草书，发音接近"><a href="#42、れ，罗马音re，来自汉字礼（li）的草书，发音接近" class="headerlink" title="42、れ，罗马音re，来自汉字礼（li）的草书，发音接近"></a>42、れ，罗马音re，来自汉字<strong>礼</strong>（li）的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8742.png" class title="图片42">
+
+<h3 id="43、ろ，罗马音ro，字形与咯（lo）的部分相近，发音接近"><a href="#43、ろ，罗马音ro，字形与咯（lo）的部分相近，发音接近" class="headerlink" title="43、ろ，罗马音ro，字形与咯（lo）的部分相近，发音接近"></a>43、ろ，罗马音ro，字形与<strong>咯</strong>（lo）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8743.png" class title="图片43">
+
+<hr>
+<h3 id="44、わ，罗马音wa，字形与挖（wa）的部分相近，字形源自汉字和的草书，发音接近"><a href="#44、わ，罗马音wa，字形与挖（wa）的部分相近，字形源自汉字和的草书，发音接近" class="headerlink" title="44、わ，罗马音wa，字形与挖（wa）的部分相近，字形源自汉字和的草书，发音接近"></a>44、わ，罗马音wa，字形与<strong>挖</strong>（wa）的部分相近，字形源自汉字<strong>和</strong>的草书，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8744.png" class title="图片44">
+
+<h3 id="45、を，罗马拼音是wo，写法是一横、一个小h，加一个大C，和上面学过的お读音一样，都是o，字形与我（wo）的部分相近，发音接近"><a href="#45、を，罗马拼音是wo，写法是一横、一个小h，加一个大C，和上面学过的お读音一样，都是o，字形与我（wo）的部分相近，发音接近" class="headerlink" title="45、を，罗马拼音是wo，写法是一横、一个小h，加一个大C，和上面学过的お读音一样，都是o，字形与我（wo）的部分相近，发音接近"></a>45、を，罗马拼音是wo，<strong>写法是一横、一个小h，加一个大C</strong>，和上面学过的お读音一样，都是o，字形与<strong>我</strong>（wo）的部分相近，发音接近</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8745.png" class title="图片45">
+
+<h3 id="46、ん，罗马音n，读音和字形跟小写字母n差不多，都是鼻音"><a href="#46、ん，罗马音n，读音和字形跟小写字母n差不多，都是鼻音" class="headerlink" title="46、ん，罗马音n，读音和字形跟小写字母n差不多，都是鼻音"></a>46、ん，罗马音n，读音和字形跟小写字母n差不多，都是鼻音</h3><img src="/femcn.gitee.io/2020/11/01/%E4%BA%94%E5%8D%81%E9%9F%B3/%E5%9B%BE%E7%89%8746.png" class title="图片46">]]></content>
+      <categories>
+        <category>杂</category>
+      </categories>
+  </entry>
+</search>

@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/femcn.gitee.io/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/femcn.gitee.io/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/femcn.gitee.io/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/femcn.gitee.io/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/femcn.gitee.io/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/femcn.gitee.io/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/femcn.gitee.io/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/femcn.gitee.io/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/femcn.gitee.io/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）解决办法：先清除缓存，再部署网站，建议养成此习惯- hexo clean- hexo g- hexo s 2、搭建完在本地运行没问题，但通过域名访问时却404解决办法：修改_config.yml文件中的url地址和根目录- url: 填github pages给我们分配的网址，setting里有个绿勾那里">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建博客时遇到的问题">
+<meta property="og:url" content="https://femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/index.html">
+<meta property="og:site_name" content="Femcn&#39;s Blogs">
+<meta property="og:description" content="1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）解决办法：先清除缓存，再部署网站，建议养成此习惯- hexo clean- hexo g- hexo s 2、搭建完在本地运行没问题，但通过域名访问时却404解决办法：修改_config.yml文件中的url地址和根目录- url: 填github pages给我们分配的网址，setting里有个绿勾那里">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://femcn.gitee.io/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png">
+<meta property="og:image" content="https://femcn.gitee.io/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png">
+<meta property="og:image" content="https://femcn.gitee.io/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%873.png">
+<meta property="og:image" content="https://femcn.gitee.io/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%874.png">
+<meta property="og:image" content="https://femcn.gitee.io/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%875.png">
+<meta property="og:image" content="https://femcn.gitee.io/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%876.png">
+<meta property="og:updated_time" content="2020-08-05T07:15:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://femcn.gitee.io/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/femcn.gitee.io/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://femcn.gitee.io/2020/08/05/搭建博客时遇到的问题/"/>
+
+
+
+
+
+
+  <title>搭建博客时遇到的问题 | Femcn's Blogs</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/femcn.gitee.io/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Femcn's Blogs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/femcn.gitee.io/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/femcn.gitee.io/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/femcn.gitee.io/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/femcn.gitee.io/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/femcn.gitee.io/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://femcn.gitee.io/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="femcn">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/femcn.gitee.io/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Femcn's Blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">搭建博客时遇到的问题</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-08-05T15:15:15+08:00">
+                2020-08-05
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/femcn.gitee.io/categories/blog/" itemprop="url" rel="index">
+                    <span itemprop="name">blog</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count gitment-comments-count" data-xid="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  679
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  2
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"><a href="#1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）" class="headerlink" title="1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"></a>1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）</h2><h3 id="解决办法：先清除缓存，再部署网站，建议养成此习惯"><a href="#解决办法：先清除缓存，再部署网站，建议养成此习惯" class="headerlink" title="解决办法：先清除缓存，再部署网站，建议养成此习惯"></a><strong>解决办法：先清除缓存，再部署网站，建议养成此习惯</strong></h3><h4 id="hexo-clean"><a href="#hexo-clean" class="headerlink" title="- hexo clean"></a>- hexo clean</h4><h4 id="hexo-g"><a href="#hexo-g" class="headerlink" title="- hexo g"></a>- hexo g</h4><h4 id="hexo-s"><a href="#hexo-s" class="headerlink" title="- hexo s"></a>- hexo s</h4><hr>
+<h2 id="2、搭建完在本地运行没问题，但通过域名访问时却404"><a href="#2、搭建完在本地运行没问题，但通过域名访问时却404" class="headerlink" title="2、搭建完在本地运行没问题，但通过域名访问时却404"></a>2、搭建完在本地运行没问题，但通过域名访问时却404</h2><h3 id="解决办法：修改-config-yml文件中的url地址和根目录"><a href="#解决办法：修改-config-yml文件中的url地址和根目录" class="headerlink" title="解决办法：修改_config.yml文件中的url地址和根目录"></a>解决办法：修改_config.yml文件中的url地址和根目录</h3><h4 id="url-填github-pages给我们分配的网址，setting里有个绿勾那里"><a href="#url-填github-pages给我们分配的网址，setting里有个绿勾那里" class="headerlink" title="- url: 填github pages给我们分配的网址，setting里有个绿勾那里"></a>- url: 填github pages给我们分配的网址，setting里有个绿勾那里</h4><img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%871.png" class title="图片1">
+
+<h4 id="root-填搭建博客的仓库名，setting里的repository-name"><a href="#root-填搭建博客的仓库名，setting里的repository-name" class="headerlink" title="- root: 填搭建博客的仓库名，setting里的repository name"></a>- root: 填搭建博客的仓库名，setting里的repository name</h4><img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%872.png" class title="图片2">
+
+<hr>
+<h2 id="3、hexo-categories和tags页面不显示，网址后出现-20"><a href="#3、hexo-categories和tags页面不显示，网址后出现-20" class="headerlink" title="3、hexo categories和tags页面不显示，网址后出现/20%/"></a>3、hexo categories和tags页面不显示，网址后出现/20%/</h2><h3 id="解决办法：修改主题配置文件-config-yml中的menu"><a href="#解决办法：修改主题配置文件-config-yml中的menu" class="headerlink" title="解决办法：修改主题配置文件_config.yml中的menu"></a>解决办法：修改主题配置文件_config.yml中的menu</h3><h4 id="把-后面的空格全部去掉-就是-变成"><a href="#把-后面的空格全部去掉-就是-变成" class="headerlink" title="- 把 / 后面的空格全部去掉,就是/ ||变成/||"></a>- 把 / 后面的空格全部去掉,就是/ ||变成/||</h4><img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%873.png" class title="图片3">
+
+<hr>
+<h2 id="4、github-com-拒绝了我们的连接请求-打不开"><a href="#4、github-com-拒绝了我们的连接请求-打不开" class="headerlink" title="4、github.com 拒绝了我们的连接请求,打不开"></a>4、github.com 拒绝了我们的连接请求,打不开</h2><h3 id="解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限"><a href="#解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限" class="headerlink" title="解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限"></a>解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限</h3><h4 id="1、打开https-link-jianshu-com-t-http-3A-2F-2Ftool-chinaz-com-2Fdns"><a href="#1、打开https-link-jianshu-com-t-http-3A-2F-2Ftool-chinaz-com-2Fdns" class="headerlink" title="- 1、打开https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns"></a>- 1、打开<a href="https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns" target="_blank" rel="noopener">https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns</a></h4><h4 id="2、在检测输入栏中输入GitHub官网"><a href="#2、在检测输入栏中输入GitHub官网" class="headerlink" title="- 2、在检测输入栏中输入GitHub官网"></a>- 2、在检测输入栏中输入<a href="https://link.jianshu.com/?t=https%3A%2F%2Fgithub.com%2F" target="_blank" rel="noopener">GitHub</a>官网</h4><h4 id="3、把检测列表的某个ip输入到hosts里，并加上域名"><a href="#3、把检测列表的某个ip输入到hosts里，并加上域名" class="headerlink" title="- 3、把检测列表的某个ip输入到hosts里，并加上域名"></a>- 3、把检测列表的某个ip输入到hosts里，并加上域名</h4><h5 id="修改hosts方法：选中记事本——-gt-右键——-gt-点击“以管理员身份运行”，打开记事本——-gt-在记事本左上角点击文件-gt-打开，在搜索框输C-Windows-System32-drivers-etc，进入hosts所在目录——-gt-点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。"><a href="#修改hosts方法：选中记事本——-gt-右键——-gt-点击“以管理员身份运行”，打开记事本——-gt-在记事本左上角点击文件-gt-打开，在搜索框输C-Windows-System32-drivers-etc，进入hosts所在目录——-gt-点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。" class="headerlink" title="- 修改hosts方法：选中记事本——&gt;右键——&gt;点击“以管理员身份运行”，打开记事本——&gt;在记事本左上角点击文件-&gt;打开，在搜索框输C:\Windows\System32\drivers\etc，进入hosts所在目录——&gt;点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。"></a>- 修改hosts方法：选中记事本——&gt;右键——&gt;点击“以管理员身份运行”，打开记事本——&gt;在记事本左上角点击文件-&gt;打开，在搜索框输C:\Windows\System32\drivers\etc，进入hosts所在目录——&gt;点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。</h5><img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%874.png" class title="图片4">
+
+<hr>
+<h2 id="5、git-clone-失败-fatal-early-EOF-fatal-the-remote-end-hung-up-unexpectedly-fatal-index-pack-failed"><a href="#5、git-clone-失败-fatal-early-EOF-fatal-the-remote-end-hung-up-unexpectedly-fatal-index-pack-failed" class="headerlink" title="5、git clone 失败 fatal: early EOF fatal: the remote end hung up unexpectedly fatal: index-pack failed"></a>5、git clone 失败 fatal: early EOF fatal: the remote end hung up unexpectedly fatal: index-pack failed</h2><h3 id="解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。"><a href="#解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。" class="headerlink" title="解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。"></a>解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。</h3><img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%875.png" class title="图片5">
+
+<h3 id="下面说的是网上查的，也可以试一下"><a href="#下面说的是网上查的，也可以试一下" class="headerlink" title="下面说的是网上查的，也可以试一下"></a>下面说的是网上查的，也可以试一下</h3><h4 id="1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT-SSL-NO-VERIFY环境变量为”ture”，并同时调用正常的git-clone命令"><a href="#1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT-SSL-NO-VERIFY环境变量为”ture”，并同时调用正常的git-clone命令" class="headerlink" title="- 1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT_SSL_NO_VERIFY环境变量为”ture”，并同时调用正常的git clone命令"></a>- 1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT_SSL_NO_VERIFY环境变量为”ture”，并同时调用正常的git clone命令</h4><p>完整的命令如下：env GIT_SSL_NO_VERIFY=true git clone https://&lt;host_name/git/project.git</p>
+<h4 id="2、在克隆完毕的仓库中将http-sslVerify设置为”false”"><a href="#2、在克隆完毕的仓库中将http-sslVerify设置为”false”" class="headerlink" title="- 2、在克隆完毕的仓库中将http.sslVerify设置为”false”"></a>- 2、在克隆完毕的仓库中将http.sslVerify设置为”false”</h4><p>完整的命令如下：git config http.sslVerify “false”</p>
+<hr>
+<h2 id="6、博客文章上插入图片"><a href="#6、博客文章上插入图片" class="headerlink" title="6、博客文章上插入图片"></a>6、博客文章上插入图片</h2><h3 id="1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true"><a href="#1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true" class="headerlink" title="1、把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true"></a>1、把主页配置文件<code>_config.yml</code> 里的<code>post_asset_folder:</code>这个选项设置为<code>true</code></h3><h3 id="2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件"><a href="#2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件" class="headerlink" title="2、在你的hexo目录下执行这样一句话npm install https://github.com/7ym0n/hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件"></a>2、在你的hexo目录下执行这样一句话<strong>npm install <a href="https://github.com/7ym0n/hexo-asset-image" target="_blank" rel="noopener">https://github.com/7ym0n/hexo-asset-image</a> –save</strong>，这是下载安装一个可以上传本地图片的插件</h3><h3 id="3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹"><a href="#3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹" class="headerlink" title="3、等待一小段时间后，再运行hexo n &quot;xxxx&quot;来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹"></a>3、等待一小段时间后，再运行<code>hexo n &quot;xxxx&quot;</code>来生成md博文时，<code>/source/_posts</code>文件夹内除了<code>xxxx.md</code>文件还有一个<strong>同名的文件夹</strong></h3><h3 id="4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"><a href="#4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是" class="headerlink" title="4、最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"></a>4、最后在<code>xxxx.md</code>中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是<img src="/femcn.gitee.io/2020/08/05/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/%E5%9B%BE%E7%89%876.png" class title="图片6"></h3>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/femcn.gitee.io/2020/08/12/java-note/" rel="prev" title="java note">
+                java note <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      
+        <div id="gitment-container"></div>
+      
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/femcn.gitee.io/images/avatar.jpg"
+                alt="femcn" />
+            
+              <p class="site-author-name" itemprop="name">femcn</p>
+              <p class="site-description motion-element" itemprop="description">less is more</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/femcn.gitee.io/archives/%7C%7C%20archive">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/femcn.gitee.io/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/femcn" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:1402892792@qq.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、hexo更换主题后，hexo-s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）"><span class="nav-number">1.</span> <span class="nav-text">1、hexo更换主题后，hexo s在本地查看发现网页乱了，css样式没了（只剩下字，没格式）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决办法：先清除缓存，再部署网站，建议养成此习惯"><span class="nav-number">1.1.</span> <span class="nav-text">解决办法：先清除缓存，再部署网站，建议养成此习惯</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-clean"><span class="nav-number">1.1.1.</span> <span class="nav-text">- hexo clean</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-g"><span class="nav-number">1.1.2.</span> <span class="nav-text">- hexo g</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hexo-s"><span class="nav-number">1.1.3.</span> <span class="nav-text">- hexo s</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、搭建完在本地运行没问题，但通过域名访问时却404"><span class="nav-number">2.</span> <span class="nav-text">2、搭建完在本地运行没问题，但通过域名访问时却404</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决办法：修改-config-yml文件中的url地址和根目录"><span class="nav-number">2.1.</span> <span class="nav-text">解决办法：修改_config.yml文件中的url地址和根目录</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#url-填github-pages给我们分配的网址，setting里有个绿勾那里"><span class="nav-number">2.1.1.</span> <span class="nav-text">- url: 填github pages给我们分配的网址，setting里有个绿勾那里</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#root-填搭建博客的仓库名，setting里的repository-name"><span class="nav-number">2.1.2.</span> <span class="nav-text">- root: 填搭建博客的仓库名，setting里的repository name</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、hexo-categories和tags页面不显示，网址后出现-20"><span class="nav-number">3.</span> <span class="nav-text">3、hexo categories和tags页面不显示，网址后出现/20%/</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决办法：修改主题配置文件-config-yml中的menu"><span class="nav-number">3.1.</span> <span class="nav-text">解决办法：修改主题配置文件_config.yml中的menu</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#把-后面的空格全部去掉-就是-变成"><span class="nav-number">3.1.1.</span> <span class="nav-text">- 把 / 后面的空格全部去掉,就是/ ||变成/||</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、github-com-拒绝了我们的连接请求-打不开"><span class="nav-number">4.</span> <span class="nav-text">4、github.com 拒绝了我们的连接请求,打不开</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限"><span class="nav-number">4.1.</span> <span class="nav-text">解决办法：估计又是墙的问题，修改hosts文件，需要管理员权限</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、打开https-link-jianshu-com-t-http-3A-2F-2Ftool-chinaz-com-2Fdns"><span class="nav-number">4.1.1.</span> <span class="nav-text">- 1、打开https://link.jianshu.com/?t=http%3A%2F%2Ftool.chinaz.com%2Fdns</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、在检测输入栏中输入GitHub官网"><span class="nav-number">4.1.2.</span> <span class="nav-text">- 2、在检测输入栏中输入GitHub官网</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3、把检测列表的某个ip输入到hosts里，并加上域名"><span class="nav-number">4.1.3.</span> <span class="nav-text">- 3、把检测列表的某个ip输入到hosts里，并加上域名</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#修改hosts方法：选中记事本——-gt-右键——-gt-点击“以管理员身份运行”，打开记事本——-gt-在记事本左上角点击文件-gt-打开，在搜索框输C-Windows-System32-drivers-etc，进入hosts所在目录——-gt-点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。"><span class="nav-number">4.1.3.1.</span> <span class="nav-text">- 修改hosts方法：选中记事本——&gt;右键——&gt;点击“以管理员身份运行”，打开记事本——&gt;在记事本左上角点击文件-&gt;打开，在搜索框输C:\Windows\System32\drivers\etc，进入hosts所在目录——&gt;点击右下方所有文件，打开hosts文件，然后进行修改，最后保存并退出即可。</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5、git-clone-失败-fatal-early-EOF-fatal-the-remote-end-hung-up-unexpectedly-fatal-index-pack-failed"><span class="nav-number">5.</span> <span class="nav-text">5、git clone 失败 fatal: early EOF fatal: the remote end hung up unexpectedly fatal: index-pack failed</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。"><span class="nav-number">5.1.</span> <span class="nav-text">解决办法：最简单的是直接在github上下载你要克隆的仓库的压缩包，然后粘贴到对应的文件夹并解压。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下面说的是网上查的，也可以试一下"><span class="nav-number">5.2.</span> <span class="nav-text">下面说的是网上查的，也可以试一下</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT-SSL-NO-VERIFY环境变量为”ture”，并同时调用正常的git-clone命令"><span class="nav-number">5.2.1.</span> <span class="nav-text">- 1、导致这样的原因是SSL错误，克隆远程仓库时，用env命令设置GIT_SSL_NO_VERIFY环境变量为”ture”，并同时调用正常的git clone命令</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2、在克隆完毕的仓库中将http-sslVerify设置为”false”"><span class="nav-number">5.2.2.</span> <span class="nav-text">- 2、在克隆完毕的仓库中将http.sslVerify设置为”false”</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6、博客文章上插入图片"><span class="nav-number">6.</span> <span class="nav-text">6、博客文章上插入图片</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、把主页配置文件-config-yml-里的post-asset-folder-这个选项设置为true"><span class="nav-number">6.1.</span> <span class="nav-text">1、把主页配置文件_config.yml 里的post_asset_folder:这个选项设置为true</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、在你的hexo目录下执行这样一句话npm-install-https-github-com-7ym0n-hexo-asset-image-–save，这是下载安装一个可以上传本地图片的插件"><span class="nav-number">6.2.</span> <span class="nav-text">2、在你的hexo目录下执行这样一句话npm install https://github.com/7ym0n/hexo-asset-image –save，这是下载安装一个可以上传本地图片的插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3、等待一小段时间后，再运行hexo-n-quot-xxxx-quot-来生成md博文时，-source-posts文件夹内除了xxxx-md文件还有一个同名的文件夹"><span class="nav-number">6.3.</span> <span class="nav-text">3、等待一小段时间后，再运行hexo n &quot;xxxx&quot;来生成md博文时，/source/_posts文件夹内除了xxxx.md文件还有一个同名的文件夹</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4、最后在xxxx-md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是"><span class="nav-number">6.4.</span> <span class="nav-text">4、最后在xxxx.md中想引入图片时，先把图片复制到xxxx这个文件夹中，然后插入图片不是用md语法，而是</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; 2020.8.2 &mdash; <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">femcn</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">9k</span>
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/femcn.gitee.io/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.gitee.io/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.gitee.io/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.gitee.io/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.gitee.io/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.gitee.io/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/femcn.gitee.io/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/femcn.gitee.io/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/femcn.gitee.io/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/femcn.gitee.io/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/femcn.gitee.io/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/femcn.gitee.io/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/femcn.gitee.io/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/femcn.gitee.io/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+
+    
+      <script type="text/javascript">
+      function renderGitment(){
+        var gitment = new Gitmint({
+            id: window.location.pathname, 
+            owner: 'femcn',
+            repo: 'femcn.github.io',
+            
+            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
+            
+            oauth: {
+            
+            
+                client_secret: 'e06a3e9afb8a1f9e2daf32efc34436d39ddfdf1e',
+            
+                client_id: '66be804dba013f733606'
+            }});
+        gitment.render('gitment-container');
+      }
+
+      
+      renderGitment();
+      
+      </script>
+    
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '5lNy345UyPHdWjT7UgAtTeEq-gzGzoHsz',
+        appKey: 'nOmHXvaXx5W5UI0eYopQKGRL',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
